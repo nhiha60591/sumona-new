@@ -1,5 +1,6 @@
 <?php 
 ob_start();
+include "more-file/membership-tab.php";
 if (defined('WP_DEBUG') and WP_DEBUG == true){
     error_reporting(E_ALL ^ E_NOTICE);
 } else {
