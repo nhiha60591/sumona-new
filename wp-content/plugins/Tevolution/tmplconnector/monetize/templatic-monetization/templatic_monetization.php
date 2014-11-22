@@ -20,7 +20,7 @@
 	 <a id="packages_settings" class='nav-tab<?php if($tab == 'packages' || $tab == '' ) echo $class;  ?>' href='?page=monetization&tab=packages'><?php echo __('Price Packages',ADMINDOMAIN); ?> </a>
 	 <a id="currency_settings" class='nav-tab<?php if($tab == 'currency_settings') echo $class;  ?>' href='?page=monetization&tab=currency_settings'><?php echo __('Currency',ADMINDOMAIN); ?> </a>
 	 <a id="payment_options_settings" class='nav-tab<?php if($tab == 'payment_options') echo $class;  ?>' href='?page=monetization&tab=payment_options'><?php echo __('Payment Gateways',ADMINDOMAIN); ?> </a>
-	 
+
      <?php 
 	 /* add additional tabs in monetization section */
 	 do_action('templatic_monetizations_tabs',$tab,$class); ?>     
