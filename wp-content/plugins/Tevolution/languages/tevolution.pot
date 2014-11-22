@@ -1,0 +1,1265 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Tevolution\n"
+"POT-Creation-Date: 2014-08-20 10:52+0530\n"
+"PO-Revision-Date: 2014-08-20 10:52+0530\n"
+"Last-Translator: \n"
+"Language-Team: Templatic <upendra@templatic.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.7\n"
+"X-Poedit-Basepath: D:\\wamp\\www\\translationtesting\\wp-content\\plugins"
+"\\Tevolution\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _e\n"
+"X-Poedit-SearchPath-0: D:\\wamp\\www\\translationtesting\\wp-content\\plugins"
+"\\Tevolution\n"
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/templates/archive-tevolution.php:67
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/templates/taxonomy-tevolution-tag.php:71
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/templates/taxonomy-tevolution.php:64
+msgid "Apologies, no results were found matching this search criteria."
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/templatic.php:291
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/custom_fields_function.php:1293
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/image_uploader.php:193
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/tevolution_custom_fields_functions.php:549
+msgid "Upload Image"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/templatic.php:304
+msgid ""
+"Are you really sure want to DELETE this post? Deleted post can not be "
+"recovered later."
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/templatic.php:305
+msgid "Deleting."
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/templatic.php:308
+msgid "Deleting.."
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/templatic.php:311
+msgid "Deleting..."
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-claim_ownership/claim_functions.php:520
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-claim_ownership/claim_functions.php:794
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-claim_ownership/claim_functions.php:809
+msgid "Your claim for this post has been sent successfully."
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-claim_ownership/claim_functions.php:655
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-claim_ownership/claim_functions.php:664
+msgid "Claim Ownership"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-claim_ownership/claim_widget.php:97
+msgid "Claim Ownership Is Not Enable"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-claim_ownership/claim_widget.php:119
+msgid "Title"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-claim_ownership/popup_claim_form.php:22
+msgid "Do you own this"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-claim_ownership/popup_claim_form.php:23
+msgid "Verify your ownership for"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-claim_ownership/popup_claim_form.php:27
+msgid "Full Name"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-claim_ownership/popup_claim_form.php:28
+msgid "Your Email"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-claim_ownership/popup_claim_form.php:29
+msgid "Contact No"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-claim_ownership/popup_claim_form.php:30
+msgid "Your Claim"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-claim_ownership/popup_claim_form.php:30
+msgid ""
+"Hello, I would like to notify you that I am the owner of this listing. I "
+"would like to verify its authenticity."
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-claim_ownership/popup_claim_form.php:33
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/shortcodes/shortcode_tevlution_submit_form_page.php:251
+msgid "Submit"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-claim_ownership/popup_claim_form.php:34
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-generalization/popup_frms.php:36
+msgid "Loading..."
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-claim_ownership/popup_claim_form.php:73
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-generalization/popup_frms.php:96
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-generalization/popup_inquiry_frm.php:92
+msgid "Invalid captcha. Please try again."
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-claim_ownership/popup_claim_form.php:75
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-generalization/popup_frms.php:98
+msgid "You need to play the game to send the mail successfully."
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-claim_ownership/popup_claim_form.php:104
+msgid "This field is mandatory. Please enter your name."
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-claim_ownership/popup_claim_form.php:143
+msgid "Please enter your valid email address."
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-claim_ownership/popup_claim_form.php:160
+msgid "Please enter your claim message."
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/admin_manage_custom_fields_edit.php:371
+msgid "Edit - "
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/admin_manage_custom_fields_edit.php:378
+msgid "Back to manage custom fields"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/admin_manage_custom_fields_edit.php:467
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/ajax_custom_taxonomy.php:8
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/category.php:42
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/add_price_packages.php:142
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/templatic-connector.php:606
+msgid "Select All"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/custom_fields_function.php:524
+msgid "Select at least one category for your "
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/custom_fields_function.php:542
+msgid "Min value"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/custom_fields_function.php:543
+msgid "Max value"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/custom_fields_function.php:617
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-widgets/templatic_metakey_search_widget.php:85
+msgid "Address"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/custom_fields_function.php:695
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/submit_preview_buttons.php:235
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/submit_preview_buttons.php:240
+msgid "Go back and edit"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/custom_fields_function.php:2644
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/registration_form.php:293
+msgid "Verify Captcha"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/custom_fields_function.php:3019
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/custom_fields_function.php:4381
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:404
+msgid "Map"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/custom_fields_function.php:3021
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/custom_fields_function.php:4383
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:406
+msgid "Location"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/custom_fields_function.php:4106
+msgid "Accept Terms and Conditions."
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/custom_fields_function.php:4126
+msgid "Please accept Term and Conditions"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/custom_fields_function.php:4127
+msgid "Please accept Terms and Conditions."
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/custom_fields_function.php:4322
+msgid "Package Type"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/custom_fields_function.php:4328
+msgid "Validity"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/custom_fields_function.php:4328
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:564
+msgid "Days"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/custom_fields_function.php:4332
+msgid "Number of Posts"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/custom_fields_function.php:4337
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:581
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:2259
+msgid "Recurring Charges"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/custom_fields_function.php:4353
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:386
+msgid "Post Description"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/custom_fields_function.php:4366
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:242
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:357
+msgid "Post Excerpt"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/custom_fields_function.php:4679
+msgid ""
+"Safari will allow you to upload only one image, so we suggest you use some "
+"other browser."
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/custom_fields_function.php:4756
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/custom_fields_function.php:4768
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/custom_fields_function.php:4782
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:185
+msgid "Information"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/custom_fields_function.php:5444
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/registration_functions.php:431
+msgid "Country"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/custom_fields_function.php:5447
+msgid "State"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/custom_fields_function.php:5450
+msgid "City"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/custom_fields_function.php:5492
+msgid "Edit Video"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/custom_fields_function.php:5767
+msgid "Category: "
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/custom_fields_function.php:5774
+msgid "Tags: "
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/custom_fields_function.php:5781
+msgid "Author: "
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/custom_fields_preview.php:150
+msgid "Back to Top"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/image_uploader.php:28
+msgid "Uploading..."
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/image_uploader.php:35
+msgid "Your image size must be less then"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/image_uploader.php:35
+msgid "kilobytes"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/image_uploader.php:42
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/image_uploader.php:53
+msgid "You can upload maximum 10 images"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/post_upgrade_payment.php:68
+msgid "Select payment options"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/tevolution_custom_fields_functions.php:514
+msgid "Please Select"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/tevolution_custom_fields_functions.php:537
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/tevolution_custom_fields_functions.php:664
+msgid "You can drag images from your computer &amp; drop here in this box"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/tevolution_custom_fields_functions.php:538
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/tevolution_custom_fields_functions.php:665
+msgid "OR"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/tevolution_custom_fields_functions.php:793
+msgid "Select a category for your "
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_fields/tevolution_custom_fields_functions.php:814
+msgid "n which category you'd like to publish this "
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/install.php:401
+msgid "Uncategorized"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/install.php:416
+msgid "No Tags"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/install.php:598
+msgid "Price"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/install.php:676
+msgid "A new post has been submitted on your site"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/install.php:740
+msgid "A new post has been submitted"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/install.php:938
+msgid "Pending payment through Pre bank transfer"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/install.php:1067
+msgid "A New Upgrade Request of ID:#[#post_id#]"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/install.php:1133
+msgid "Payment Pending For Upgrade Request: #[#post_id#]"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/install.php:1201
+msgid "[#site_title#] Your new password"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/install.php:1269
+msgid "Claim to - [#post_title#]"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/install.php:1335
+msgid "Listing expiration Notification"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/install.php:1403
+msgid "Payment Cancelled"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/install.php:1469
+msgid "[#post_type#] updated of ID:#[#submition_Id#]"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/install.php:1535
+msgid "[#post_type#] renew of ID:#[#submition_Id#]"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:649
+msgid "Related"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:1035
+msgid "Posted In"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:1067
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:1105
+msgid "Tagged In"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:1408
+msgid "MAP"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:1425
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:1478
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/shortcodes/shortcode_people.php:161
+msgid "Alphabetical"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:1428
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:1480
+msgid "Title Ascending"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:1431
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:1484
+msgid "Title Descending"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:1435
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:1488
+msgid "Publish Date Ascending"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:1439
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:1492
+msgid "Publish Date Descending"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:1445
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:1497
+msgid "Start Date low to high"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:1449
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:1501
+msgid "Start Date high to low"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:1455
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:1506
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/templatic-connector.php:1440
+msgid "Reviews"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:1459
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:1510
+msgid "Rating"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:1463
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:1513
+msgid "Random"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:1522
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/shortcodes/shortcode_people.php:160
+msgid "All"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:1523
+msgid "A"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:1524
+msgid "B"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:1525
+msgid "C"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:1526
+msgid "D"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:1527
+msgid "E"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:1528
+msgid "F"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:1529
+msgid "G"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:1530
+msgid "H"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:1531
+msgid "I"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:1532
+msgid "J"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:1533
+msgid "K"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:1534
+msgid "L"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:1535
+msgid "M"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:1536
+msgid "N"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:1537
+msgid "O"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:1538
+msgid "P"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:1539
+msgid "Q"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:1540
+msgid "R"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:1541
+msgid "S"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:1542
+msgid "T"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:1543
+msgid "U"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:1544
+msgid "V"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:1545
+msgid "W"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:1546
+msgid "X"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:1547
+msgid "Y"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-custom_taxonomy/taxonomy_functions.php:1548
+msgid "Z"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-generalization/add_to_favourites.php:45
+msgid "Add to favorites"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-generalization/general_functions.php:390
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-generalization/general_functions.php:393
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-generalization/general_functions.php:498
+msgid "Email sent successfully"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-generalization/general_functions.php:742
+msgid "Pin"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-generalization/popup_frms.php:10
+msgid "Send To Friend"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-generalization/popup_frms.php:15
+msgid "Friend&rsquo;s name"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-generalization/popup_frms.php:17
+msgid "Friend&rsquo;s email"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-generalization/popup_frms.php:19
+msgid "Your name"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-generalization/popup_frms.php:21
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-generalization/popup_inquiry_frm.php:17
+msgid "Your email"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-generalization/popup_frms.php:23
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-generalization/popup_inquiry_frm.php:21
+msgid "Subject"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-generalization/popup_frms.php:23
+msgid "Check out this post"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-generalization/popup_frms.php:25
+msgid "Comments"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-generalization/popup_frms.php:25
+msgid ""
+"Hello, I just stumbled upon this listing and thought you might like it. Just "
+"check it out."
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-generalization/popup_frms.php:35
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-generalization/popup_inquiry_frm.php:48
+msgid "Send"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-generalization/popup_frms.php:129
+msgid "Please enter your friend's name"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-generalization/popup_frms.php:159
+msgid "Please enter your friend's valid email address"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-generalization/popup_frms.php:175
+msgid "Please Enter Your Name"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-generalization/popup_frms.php:207
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-generalization/popup_inquiry_frm.php:155
+msgid "Please enter your valid email address"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-generalization/popup_frms.php:223
+msgid "Please Enter Comments"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-generalization/popup_inquiry_frm.php:11
+msgid "Inquiry for"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-generalization/popup_inquiry_frm.php:15
+msgid "Full name"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-generalization/popup_inquiry_frm.php:19
+msgid "Contact number"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-generalization/popup_inquiry_frm.php:22
+msgid "Inquiry email"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-generalization/popup_inquiry_frm.php:25
+msgid " Message"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-generalization/popup_inquiry_frm.php:27
+msgid ""
+"Hello, I would like to inquire more about this listing. Please let me know "
+"how can I get in touch with you. Waiting for your prompt reply?"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-generalization/popup_inquiry_frm.php:123
+msgid "Please enter your full name"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-generalization/popup_inquiry_frm.php:172
+msgid "Please enter subject line"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-generalization/popup_inquiry_frm.php:189
+msgid "Please enter message"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-manage_ip/manage_ip_functions.php:98
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/shortcodes/shortcode_submit_form_page.php:489
+msgid ""
+"Apologies, your IP has been blocked for this domain. You are not able to use "
+"the submit form."
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:377
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:708
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:743
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:1348
+msgid "Would you like to make this "
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:377
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:708
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:743
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:1348
+msgid "featured?"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:483
+msgid "Select a Package"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:553
+msgid "Package type"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:553
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:2244
+msgid "Pay per subscription"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:553
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:2250
+msgid "Pay per post"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:560
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:577
+msgid "Charges"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:564
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:584
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:2262
+msgid "Day"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:568
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:588
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:2266
+msgid "Month"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:572
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:592
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:2270
+msgid "Year"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:594
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:2272
+msgid "Cycle"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:598
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:2276
+msgid ""
+"This price package will be offer free trial periods or plan to bill the "
+"first installment of a recurring payment only for paypal payment gateway."
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:711
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:1353
+msgid "Yes &sbquo; feature this listing on homepage."
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:713
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:1356
+msgid "Yes &sbquo; feature this listing on category page."
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:735
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:770
+msgid "An additional amount will be charged to make this"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:735
+msgid "featured."
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:735
+msgid "You have the option to feature your"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:735
+msgid "on home page or category page or both."
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:770
+msgid "comment moderateable."
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:780
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:1380
+msgid "Total price as per your selection."
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:780
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:1380
+msgid "Final amount including discount will be displayed on preview page."
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:1253
+msgid "Select your pricing plan"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:1269
+msgid "Charges: "
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:1286
+msgid "Select"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:2219
+msgid "for a "
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:2241
+msgid " day listing."
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:2244
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:2250
+msgid "Package type: "
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/price_package_functions.php:2245
+msgid "Number of Posts: "
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/templatic-manage_coupon/install.php:105
+msgid "Sorry! coupon code does not exist.Please try another coupon code."
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/templatic-manage_coupon/install.php:125
+msgid "Coupon Code"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/templatic-manage_coupon/install.php:128
+msgid "Validate"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/templatic-manage_coupon/install.php:130
+msgid "Enter coupon code here (optional)"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/templatic-payment_options/payment/paypal/cancel.php:35
+msgid "Home"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/templatic-payment_options/payment_cancel.php:33
+msgid "Invalid procedure."
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/templatic_transaction_detail_report.php:26
+msgid "Transaction Report"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/templatic_transaction_detail_report.php:29
+msgid "Transaction Detail"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/templatic_transaction_detail_report.php:41
+msgid "Package Detail"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/templatic_transaction_detail_report.php:64
+msgid "Transaction Status"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-monetization/templatic_transaction_detail_report.php:85
+msgid "User Information"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-ratings/get_rating.php:11
+msgid "Please give rating"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-ratings/templatic_post_rating.php:147
+msgid "Rate this by clicking a star below"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-ratings/templatic_post_rating.php:173
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/js/login.js.php:37
+msgid "Please Enter Name"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/js/login.js.php:55
+msgid "Please Enter password"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/js/login.js.php:79
+msgid "Please Enter User name"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/js/login.js.php:96
+msgid "Please Enter Email ID"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/login_box_widget.php:181
+msgid "Dashboard"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/login_box_widget.php:184
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/user_profile.php:67
+msgid "Edit profile"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/login_box_widget.php:185
+msgid "Change password"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/login_box_widget.php:189
+msgid "Logout"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/login_box_widget.php:205
+msgid "The password you entered is incorrect. Please try again."
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/login_box_widget.php:216
+msgid "Username"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/login_box_widget.php:219
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/registration_functions.php:749
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/shortcodes_registration.php:276
+msgid "Password"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/login_box_widget.php:226
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/shortcodes_registration.php:285
+msgid "Remember me on this computer"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/login_box_widget.php:231
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/shortcodes_registration.php:197
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/shortcodes_registration.php:294
+msgid "Sign In"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/login_box_widget.php:235
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/registration_functions.php:736
+msgid "New User? Register Now"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/login_box_widget.php:236
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/login_box_widget.php:284
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/shortcodes_registration.php:287
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/shortcodes_registration.php:323
+msgid "Forgot password"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/login_box_widget.php:288
+msgid "Email"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/login_box_widget.php:292
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/shortcodes_registration.php:333
+msgid "Get New Password"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/registration_form.php:265
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/registration_form.php:315
+msgid "Sign Up"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/registration_form.php:321
+msgid "<p>Registration is disabled on this website.</p>"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/registration_functions.php:396
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/shortcodes/shortcode_people.php:237
+msgid "Facebook"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/registration_functions.php:400
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/shortcodes/shortcode_people.php:241
+msgid "Twitter"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/registration_functions.php:404
+msgid "Google Plus"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/registration_functions.php:408
+msgid "LinkedIn"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/registration_functions.php:411
+msgid "Contact Me"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/registration_functions.php:421
+msgid "Edit Profile"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/registration_functions.php:499
+msgid "Total Listing"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/registration_functions.php:532
+msgid "You have subscribed to"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/registration_functions.php:534
+msgid "price package for"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/registration_functions.php:536
+msgid "Total number of posts:"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/registration_functions.php:538
+msgid "Submited:"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/registration_functions.php:540
+msgid "Remaining:"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/registration_functions.php:706
+msgid "Login or register"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/registration_functions.php:727
+msgid "Invalid Username/Password."
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/registration_functions.php:730
+msgid "I am a"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/registration_functions.php:731
+msgid "Existing User"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/registration_functions.php:744
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/registration_functions.php:753
+msgid "Login"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/registration_functions.php:1433
+msgid "Sign in with Facebook"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/registration_functions.php:1436
+msgid "Sign in with Google"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/registration_functions.php:1439
+msgid "Sign in with Twitter"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/registration_js.php:53
+msgid "Email address already exists, Please enter another email"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/registration_js.php:60
+msgid "Your email address is verified."
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/registration_js.php:104
+msgid "Username already exists, Please use another username"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/registration_js.php:111
+msgid "Your user name is verified."
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/shortcodes_registration.php:271
+msgid "User name"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/shortcodes_registration.php:327
+msgid "E-mail"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/shortcodes_registration.php:353
+msgid "Please Enter E-mail"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/shortcodes_registration.php:357
+msgid "Please provide a valid email address"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/user_profile.php:85
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/user_profile.php:105
+msgid "Update"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/user_profile.php:86
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/user_profile.php:106
+msgid "Cancel"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/user_profile.php:94
+msgid "Password changed successfully. Please login with your new password."
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/user_profile.php:98
+msgid "New Password"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/user_profile.php:102
+msgid "Confirm New Password"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/user_profile.php:116
+msgid "Please enter New Password"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/user_profile.php:122
+msgid "Please enter New Password  minimum 5 chars"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/user_profile.php:128
+msgid "Please enter Confirm New Password"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/user_profile.php:134
+msgid "Please enter Confirm New Password minimum 5 chars"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-registration/user_profile.php:140
+msgid "New Password and Confirm New Password should be same"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-widgets/templatic_advanced_search_widget.php:53
+msgid "Post"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-widgets/templatic_browse_by_tag_widget.php:47
+msgid "No Tag Available"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-widgets/templatic_metakey_search_widget.php:73
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/shortcodes/shortcode_advance_search.php:35
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/shortcodes/shortcode_advance_search.php:83
+msgid "Search"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-widgets/templatic_people_list_widget.php:81
+msgid "Submitted"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-widgets/templatic_people_list_widget.php:84
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/shortcodes/shortcode_people.php:224
+msgid "Listings"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-widgets/templatic_people_list_widget.php:88
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/shortcodes/shortcode_people.php:227
+msgid "Listing"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-widgets/templatic_people_list_widget.php:97
+msgid "There is no user registered with"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/monetize/templatic-widgets/templatic_people_list_widget.php:97
+msgid "role."
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/shortcodes/shortcode_advance_search.php:40
+msgid "Tags"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/shortcodes/shortcode_advance_search.php:67
+msgid "Author"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/shortcodes/shortcode_advance_search.php:69
+msgid "Exact author"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/shortcodes/shortcode_people.php:159
+msgid "Sort By"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/shortcodes/shortcode_people.php:162
+msgid "Most Submited"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/shortcodes/shortcode_people.php:229
+msgid "No listings"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/shortcodes/shortcode_people.php:234
+msgid "Visit Website"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/shortcodes/shortcode_people.php:245
+msgid "Linkedin"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/shortcodes/shortcode_people.php:249
+msgid "Email Me"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/shortcodes/shortcode_people.php:253
+msgid "View Profile"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/shortcodes/shortcode_people.php:261
+msgid ""
+"This page is most likely empty now. It will be populated automatically as "
+"people register to your site."
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/shortcodes/shortcode_people.php:318
+msgid "Prev"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/shortcodes/shortcode_people.php:332
+msgid "Next"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/shortcodes/shortcode_post_upgrade.php:130
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/shortcodes/shortcode_submit_form_page.php:465
+msgid "Next Step"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/shortcodes/shortcode_submit_form_page.php:271
+msgid "ERROR: Sorry, you are not allowed to edit this post."
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/shortcodes/shortcode_submit_form_page.php:467
+msgid "Preview This"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/shortcodes/shortcode_taxonomies_map.php:122
+msgid ""
+"<p>Your selected category do not have any records yet at your current "
+"location.</p>"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/shortcodes/shortcode_taxonomies_map.php:126
+msgid "Title or Keyword"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/shortcodes/shortcode_tevlution_submit_form_page.php:125
+msgid "Enter your form details"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/shortcodes/shortcode_tevlution_submit_form_page.php:203
+msgid "Login / Register"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/shortcodes/shortcode_tevlution_submit_form_page.php:245
+msgid "Payment"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/templatic-connector.php:356
+msgid "Facebook Share."
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/templatic-connector.php:365
+msgid "Tweet"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/templatic-connector.php:610
+msgid "Categories"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/templatic-connector.php:1438
+msgid "Review"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution/tmplconnector/tevolution_ajax_results.php:113
+msgid "Apologies, but no results were found for the requested archive."
+msgstr ""

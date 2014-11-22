@@ -1,0 +1,33 @@
+Templatic Plugin - Templatic-AdManager(version 1.0.3)   4th November 2014
+==========================================================================
+4th November 2014 (Version 1.0.3)
+-----------------------------------------------------------------------------------------------------
+Fix: remove  admanager post type after plugin deactivation and string modification.
+-----------------------------------------------------------------------------------------------------
+admanager.php
+library/ad_functions.php
+
+16th July 2014 (Version 1.0.2)
+-----------------------------------------------------------------------------------------------------
+New Feature: Added the ability to display different advertisements in different cities
+-----------------------------------------------------------------------------------------------------
+library/ad_functions.php
+library/ad_widget.php
+library/admanager_post_type/custom_post_type.php
+----------------------------------------------------------------------------------------------------
+New Feature: Added a functionality to show click counts for each advertisements
+-----------------------------------------------------------------------------------------------------
+library/ad_functions.php
+library/ad_widget.php
+-----------------------------------------------------------------------------------------------------
+Fix: Fetch before content and after content area if plugin is active with default WordPress theme
+Fix: Removed the code to delete the add while deactivating a plugin
+------------------------------------------------------------------------------------------------
+library/ad_functions.php
+----------------------------------------------------------------------------------------
+
+20th February 2014 (Version 1.0.1)
+-----------------------------------------------------------------------------------------------
+Fix: The Display Ad widget was showing ads irrespective of the selected categories in that ad
+-----------------------------------------------------------------------------------------------
+library/ad_widget.php

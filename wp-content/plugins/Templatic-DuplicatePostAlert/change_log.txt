@@ -1,0 +1,2 @@
+Templatic Plugin - Templatic-DuplicatePostAlert(version 1.0)   31st Oct 2013
+==============================================================================

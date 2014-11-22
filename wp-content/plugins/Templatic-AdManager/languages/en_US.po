@@ -1,0 +1,500 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Templatic AdManager v1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-09-26 15:55+0530\n"
+"PO-Revision-Date: 2014-09-26 15:56+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.6.7\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-Basepath: C:\\xampp\\htdocs\\wp40beta\\wp-content\\plugins"
+"\\Templatic-AdManager\n"
+"X-Poedit-SearchPath-0: C:\\xampp\\htdocs\\wp40beta\\wp-content\\plugins"
+"\\Templatic-AdManager\n"
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/admanager.php:26
+msgid "Server might be facing problem in including: "
+msgstr ""
+
+# @ temp_admanager
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:60
+msgid "Settings"
+msgstr ""
+
+# @ default
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:224
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:227
+msgid "Advertisement updated."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:224
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:229
+msgid "View Advertisement"
+msgstr ""
+
+# @ default
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:225
+msgid "Custom field updated."
+msgstr ""
+
+# @ default
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:226
+msgid "Custom field deleted."
+msgstr ""
+
+# @ default
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:228
+#, php-format
+msgid "Advertisement restored to revision from %s"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:229
+msgid "Advertisement published."
+msgstr ""
+
+# @ default
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:230
+msgid "Advertisement saved."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:231
+msgid "Advertisement submitted."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:231
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:232
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:234
+msgid "Preview Advertisement"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:232
+msgid "Advertisement scheduled for:"
+msgstr ""
+
+# @ default
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:233
+msgid "M j, Y @ G:i"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:234
+msgid "Advertisement draft updated."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:345
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:352
+msgid "Advertisement Settings"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:346
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/admanager_post_type/custom_post_type.php:74
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/admanager_post_type/custom_post_type.php:82
+msgid "Advertisement Visited"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:356
+msgid "Ad Settings"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:373
+msgid "Number of ad clicks: "
+msgstr ""
+
+# @ temp_admanager
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:407
+msgid "Advertisement Type"
+msgstr ""
+
+# @ temp_admanager
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:413
+msgid "Image Type"
+msgstr ""
+
+# @ temp_admanager
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:416
+msgid "Code Type"
+msgstr ""
+
+# @ default
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:422
+msgid ""
+"Select 'Image Type' to provide an URL of an image or upload one. Select "
+"'Code Type' to for example display an AdSense type of banner"
+msgstr ""
+
+# @ temp_admanager
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:433
+msgid "Enter HTML code"
+msgstr ""
+
+# @ default
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:442
+msgid "Copy and paste your HTML advertisement code here."
+msgstr ""
+
+# @ temp_admanager
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:453
+msgid "Title"
+msgstr ""
+
+# @ temp_admanager
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:457
+msgid "Advertisement title (optional) "
+msgstr ""
+
+# @ default
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:460
+msgid ""
+"Entered titles above will appear on mouseovers on the image in the frontend."
+msgstr ""
+
+# @ temp_admanager
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:471
+msgid "Advertisement Image"
+msgstr ""
+
+# @ temp_admanager
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:475
+msgid "Enter image URL"
+msgstr ""
+
+# @ temp_admanager
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:476
+msgid "Or"
+msgstr ""
+
+# @ temp_admanager
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:479
+msgid "Upload"
+msgstr ""
+
+# @ temp_admanager
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:490
+msgid "Destination Url"
+msgstr ""
+
+# @ temp_admanager
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:494
+msgid "Link of image Advertisement"
+msgstr ""
+
+# @ temp_admanager
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:500
+msgid "Advertisement Display Settings"
+msgstr ""
+
+# @ temp_admanager
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:507
+msgid "Advertisement Size"
+msgstr ""
+
+# @ temp_admanager
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:511
+msgid "Width"
+msgstr ""
+
+# @ temp_admanager
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:511
+msgid "Height"
+msgstr ""
+
+# @ temp_admanager
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:513
+msgid "(pixels)"
+msgstr ""
+
+# @ temp_admanager
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:520
+msgid "Select Display Categories"
+msgstr ""
+
+# @ temp_admanager
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:535
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:594
+msgid "Select All"
+msgstr ""
+
+# @ default
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:571
+msgid ""
+"Select the post or custom post categories to display this advertisement "
+"banner."
+msgstr ""
+
+# @ temp_admanager
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:578
+msgid "Advertisement Display Location"
+msgstr ""
+
+# @ default
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:602
+msgid "Post"
+msgstr ""
+
+# @ temp_admanager
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:636
+msgid "Display location not available"
+msgstr ""
+
+# @ temp_admanager
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:672
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:853
+msgid "Advertisements"
+msgstr ""
+
+# @ temp_admanager
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:694
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:875
+msgid "No advertisement available"
+msgstr ""
+
+# @ default
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:702
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:883
+msgid "Select which Ad you want to display on this post."
+msgstr ""
+
+# @ temp_admanager
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:709
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:890
+msgid "Display Location"
+msgstr ""
+
+# @ default
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:717
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:898
+msgid "Default Locations"
+msgstr ""
+
+# @ default
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:728
+msgid "Page Locations"
+msgstr ""
+
+# @ temp_admanager
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:741
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:922
+msgid "Locations"
+msgstr ""
+
+# @ default
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:758
+msgid "Select location where you want to display Ad."
+msgstr ""
+
+# @ temp_admanager
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:816
+msgid "Select Category Ad"
+msgstr ""
+
+# @ temp_admanager
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:822
+msgid "Please Select"
+msgstr ""
+
+# @ default
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:837
+msgid "Select which Category's Ad you want to display on this post."
+msgstr ""
+
+# @ temp_admanager
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:844
+msgid "OR"
+msgstr ""
+
+# @ default
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:909
+msgid "Post Locations"
+msgstr ""
+
+# @ default
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_functions.php:939
+msgid "Select location where you want to display your Ad."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_widget.php:7
+msgid "Display an ad you created using the Ad Manager add-on."
+msgstr ""
+
+# @ temp_admanager
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_widget.php:8
+msgid "T &rarr; Display Ad"
+msgstr ""
+
+# @ temp_admanager
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_widget.php:190
+msgid "Title:"
+msgstr ""
+
+# @ default
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_widget.php:195
+msgid "Select Ads which you want to display:"
+msgstr ""
+
+# @ temp_admanager
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_widget.php:205
+msgid "No advertisement created yet."
+msgstr ""
+
+# @ default
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/ad_widget.php:210
+msgid "Ads will display randomly on page refresh"
+msgstr ""
+
+# @ default
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/admanager_post_type/custom_post_type.php:70
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/admanager_post_type/custom_post_type.php:79
+msgid "Ad Title"
+msgstr ""
+
+# @ default
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/admanager_post_type/custom_post_type.php:72
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/admanager_post_type/custom_post_type.php:80
+msgid "Ad Type"
+msgstr ""
+
+# @ default
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/admanager_post_type/custom_post_type.php:73
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/admanager_post_type/custom_post_type.php:81
+msgid "Ad Size"
+msgstr ""
+
+# @ temp_admanager
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/admanager_post_type/custom_post_type_lang.php:2
+msgid "admanager"
+msgstr ""
+
+# @ temp_admanager
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/admanager_post_type/custom_post_type_lang.php:3
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/admanager_post_type/custom_post_type_lang.php:4
+msgid "Manage Ads"
+msgstr ""
+
+# @ temp_admanager
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/admanager_post_type/custom_post_type_lang.php:5
+msgid "Manage Ad"
+msgstr ""
+
+# @ temp_admanager
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/admanager_post_type/custom_post_type_lang.php:6
+msgid "Add New Ad"
+msgstr ""
+
+# @ temp_admanager
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/admanager_post_type/custom_post_type_lang.php:7
+msgid "Add new Ad"
+msgstr ""
+
+# @ temp_admanager
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/admanager_post_type/custom_post_type_lang.php:8
+msgid "Edit"
+msgstr ""
+
+# @ temp_admanager
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/admanager_post_type/custom_post_type_lang.php:9
+msgid "Edit Ad"
+msgstr ""
+
+# @ temp_admanager
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/admanager_post_type/custom_post_type_lang.php:10
+msgid "New Ad"
+msgstr ""
+
+# @ temp_admanager
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/admanager_post_type/custom_post_type_lang.php:11
+msgid "View Ad"
+msgstr ""
+
+# @ temp_admanager
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/admanager_post_type/custom_post_type_lang.php:12
+msgid "Search Ads"
+msgstr ""
+
+# @ temp_admanager
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/admanager_post_type/custom_post_type_lang.php:13
+msgid "No Ad found"
+msgstr ""
+
+# @ temp_admanager
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/library/admanager_post_type/custom_post_type_lang.php:14
+msgid "No Ad found in trash"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/templatic_login.php:4
+msgid "Tevolution Update"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/templatic_login.php:36
+msgid ""
+"Invalid UserName or password. are you using templatic member username and "
+"password?"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/templatic_login.php:59
+msgid ""
+"We don't find Templatic - Ad Manager Plugin active in your templatic "
+"account, you will not be able to update without a license"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/templatic_login.php:64
+msgid ""
+"Invalid UserName or password. Please enter templatic member's username and "
+"password."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/templatic_login.php:85
+msgid ""
+"Templatic Login , enter your templatic credentials to take the updates of "
+"Tevolution-AdManager."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/templatic_login.php:89
+msgid "User Name"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/templatic_login.php:93
+msgid "Password"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/templatic_login.php:98
+msgid "Cancel"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/templatic_login.php:106
+msgid "Templatic-AdManager Plugin"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/templatic_login.php:106
+msgid "Update Now"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/wp-updates-plugin.php:41
+msgid "There is a new version of Templatic-AdManager plugin available "
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/wp-updates-plugin.php:46
+msgid "Templatic admanager Update"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/wp-updates-plugin.php:46
+msgid "update now"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/wp-updates-plugin.php:88
+msgid "An Unexpected HTTP Error occurred during the API request."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/wp-updates-plugin.php:88
+msgid "Try again"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-AdManager/wp-updates-plugin.php:92
+msgid "An unknown error occurred"
+msgstr ""

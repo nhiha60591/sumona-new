@@ -1,0 +1,346 @@
+Templatic Plugin - Tevolution-Events (Version 2.0.1)   4th November 2014
+==================================================================
+
+11th November 2014 (Version 2.0.1)
+---------------------------------------------------------------------------------
+Fix - home page single city page map category issue using WPML language wise.
+
+Fix - In certain conditions, when user go in plugins.php its take some time to load.
+
+Fix - Resolve some conflicts.
+
+
+4th November 2014 (Version 2.0)
+-------------------------------------------------------------------------------------
+Change: set category and archive page map zoom level and display map option set 
+-------------------------------------------------------------------------------------
+functions/event_listing_functions.php
+
+-------------------------------------------------------------------------------------
+Change: On listing page show comments count icon only if from back end comment post
+ option is enable
+-------------------------------------------------------------------------------------
+functions/event_listing_functions.php
+
+-------------------------------------------------------------------------------------
+Fix: String tranlations related changes
+-------------------------------------------------------------------------------------
+events/event_widgets.php
+
+-------------------------------------------------------------------------------------
+Fix: Lables for custom post type in Home page display post widget was not proper
+-------------------------------------------------------------------------------------
+functions/event_listing_functions.php
+
+4th June 2014 (Version 1.0.9)
+-------------------------------------------------------------------------------------
+Fix:  .ics file for Add to Calender feature was not saving in directory cache folder
+-------------------------------------------------------------------------------------
+functions/event_single_functions.php
+------------------------------------------------------------------
+
+Fix: Issue in displaying Events on listing detail page
+------------------------------------------------------------------
+functions/event_functions.php
+------------------------------------------------------------------------------------
+
+Improvement: Code optimization, writing common code for similar list/grid blocks
+------------------------------------------------------------------------------------
+functions/event_functions.php
+templates/taxonomy-ecategory.php
+templates/archive-event.php
+templates/event-search.php
+templates/taxonomy-etags.php
+functions/event_listing_functions.php
+events/event_widgets.php
+css/event.css
+------------------------------------------------------------------
+
+Fix: Detail page map breaks while using double quotes in title
+------------------------------------------------------------------
+functions/google_map_detail.php
+------------------------------------------------------------------
+
+Fix - search results conflict with tevolution advance search hook
+------------------------------------------------------------------
+functions/event_filters.php
+------------------------------------------------------------------
+
+
+
+23rd April 2014 (Version 1.0.8)
+------------------------------------------------------------------
+Fix: Phone icon was not appearing on event category page
+--------------------------------------------------------
+functions/event_listing_functions.php
+---------------------------------------------------------------------------------
+
+Fix: Thumbnails were not appearing properly in home page grid view widget in IE8
+---------------------------------------------------------------------------------
+css/event.css
+------------------------------------------------------
+
+Fix: ical calendar passing wrong end date for yahoo
+------------------------------------------------------
+functions/event_single_functions.php
+------------------------------------------------------
+
+1st April 2014 (Version 1.0.7)
+------------------------------------------------------
+New Feature : Hide past events from frontend
+------------------------------------------------------
+events.php
+functions/event_functions.php
+functions/event_listing_functions.php
+-----------------------------------------------------
+
+New Widget: Added a new widget which displays only current and upcoming events
+----------------------------------------------------------------------------------
+events/event_widgets.php
+functions/event_filters.php
+functions/event_functions.php
+templates/event-listing-single-content.php
+css/event.css
+----------------------------------------------------------------------------------
+
+Fix: Calendar widget not working properly if location manager plugin is activated
+and event post type is not selected location management
+----------------------------------------------------------------------------------
+events/calendar_widgets.php
+-----------------------------------------------------
+
+6th March 2014 (Version 1.0.6)
+----------------------------------------------------------------------------------
+Tweak: Change the way we inlclude js
+-----------------------------------------------------
+functions/event_functions.php
+-----------------------------------------------------
+
+Tweak: Improved performance of recurring events query
+-----------------------------------------------------
+functions/events_attend.php
+-----------------------------------------------------
+
+Fix: Google map markers were not appearing in IE8
+-----------------------------------------------------
+functions/event_functions.php
+--------------------------------------------------------
+
+Fix: Made Events search widget search between date range
+--------------------------------------------------------
+functions/event_filters.php
+--------------------------------------------------------------
+
+Fix:  Date wise events are not appearing on event archive page
+--------------------------------------------------------------
+functions/event_filters.php
+-----------------------------------------------------------------------------
+
+Tweak: Changed file name to event_widgets.php from event_search_widget.php
+-----------------------------------------------------------------------------
+Deleted file: events/event_search_widgets.php
+New added file: events/event_widgets.php
+-----------------------------------------------------------------------------
+
+Fix: Show categorywise map icons on all events archive page
+----------------------------------------------------------------
+functions/event_functions.php
+--------------------------------------------------------------------------
+
+Fix: Google map marker info window issue when no image in info- window
+--------------------------------------------------------------------------
+functions/event_functions.php
+--------------------------------------------------------
+
+Fix: Corrected plugin name for WPML language filtering conditions
+----------------------------------------------------------------------------
+functions/event_functions.php
+functions/event_single_functions.php
+events/install.php
+events/recurring_function.php
+functions/event_filters.php
+functions/event_page_templates.php
+functions/event_user_attend.php
+--------------------------------------------------------
+
+
+5th February 2014 (Version 1.0.5)
+-----------------------------------------------------------------------------------------------
+Fix - event parent category page page - number of subcategories shown - changed 3 col to 4 col.
+-------------------------------------------------------------------------------------------------
+css/event.css
+----------------------------------------------------------------
+Fix: Fetch organizer description field label
+----------------------------------------------------
+templates/event-listing-single-content.php
+----------------------------------------------------
+Fix - In the neighbourhood widget image alignment
+----------------------------------------------------
+css/event.css
+--------------------------------------------------
+Fix - Corrected structure of event preview page
+--------------------------------------------------
+functions/event_page_templates.php
+------------------------------------------------------------------------
+Fix: Social sharing options fetched from a common Tevolution function
+------------------------------------------------------------------------
+templates/event-listing-single-content.php
+---------------------------------------------------------------------------
+Fix: Changed the label of orgamizer info , ad we display same in front end
+---------------------------------------------------------------------------
+events/install.php
+----------------------------------------------------------
+Fix: Event calender widget was not working city wise
+-----------------------------------------------------------
+events/calendar_widgets.php
+------------------------------------------------------------------------------------------------------
+Fix: Fix: Made google map not dragabble in mobile devices as it was now allowing to scroll down the page
+------------------------------------------------------------------------------------------------------
+functions/event_functions.php
+-------------------------------------------------------------------------------------------------------------------
+Fix- Generate event post type and custom field on activation of the plugin from Tevolution-> Overview-> Extend tab
+-------------------------------------------------------------------------------------------------------------------
+events/install.php
+------------------------------------------------------------------------------------------------
+Fix: Removed additional Events menu in Tevolution menu in WOrdPress backend
+------------------------------------------------------------------------------------------------
+events.php
+------------------------------------------------------------
+Fix - website link was not displaying on event detail page
+------------------------------------------------------------
+functions/event_functions.php
+------------------------------------------------------------
+
+17th January 2014 (Version 1.0.4)
+----------------------------------------------------------------------------------
+Fix: Show weekly recurring events as per selected date
+---------------------------------------------------------------
+functions/events_attend.php
+--------------------------------------------------------------------------------------------------
+Fix: Occurences of a recurring event were not getting deleting after changing it to a regular event
+--------------------------------------------------------------------------------------------------
+events/recurring_function.php
+---------------------------------------------------------------------------------------------
+Fix: In the event attendees list user profile picture was not coming(only gravtar was there)
+---------------------------------------------------------------------------------------------
+functions/events_attend.php
+--------------------------------------------------------------------
+Fix: Added validations for recurring fields on Submit Event page
+---------------------------------------------------------------
+events/events.php
+events/recurring_function.php
+events/recurring_html.php
+-----------------------------------------------------------------------------------
+Fix: On the Evnt detail page draft listings were also displaying under Listing tab
+-----------------------------------------------------------------------------------
+functions/event_functions.php
+----------------------------------------------------------------
+
+4th December 2013 (Version 1.0.3)
+----------------------
+UPDATED : po-mo files.
+----------------------
+languages/en_US.mo
+languages/en_US.po
+
+---------------------------------------------------------
+Removed Above each post option from ad manager options.
+---------------------------------------------------------
+events.php
+
+--------------------------------------------
+FIX : Swaping share and social media buttons.
+--------------------------------------------
+css/event.css
+templates/event-listing-single-content.php
+
+-------------------------------------------------------------------
+FIX : Display category marker icon in detail page google map direction.
+-------------------------------------------------------------------
+functions/google_map_detail.php
+
+--------------------------------------------------
+Improved : Image processing regarding child themes.
+Calendar widget was taking too much time to load.
+--------------------------------------------------
+events/calendar_widgets.php
+
+-----------------------------------------------------------
+FIX :
+Widget title was not getting translated with po mo.
+Issue of showing recurrence popup open in search page.
+-----------------------------------------------------------
+functions/event_functions.php
+
+-----------------------------------------------------------------
+FIX : Issue of not showing logo and video field on event listing page.
+-----------------------------------------------------------------
+functions/event_listing_functions.php
+
+-------------------------------------------------------
+Improved : Added filter for calendar widget loading image.
+-------------------------------------------------------
+events/calendar_widgets.php
+
+-------------------------------------------------------------
+FIX : Issue of default map view option for hide list view display.
+-------------------------------------------------------------
+templates/archive-event.php
+templates/taxonomy-ecategory.php
+templates/taxonomy-etags.php
+
+------------------------------------------
+Changed the invalid Facebook key message.
+------------------------------------------
+events/recurring_function.php
+
+---------------------------------------------------------
+Changed button name from 'setting' to add facebook event.
+---------------------------------------------------------
+functions/event_functions.php
+
+-------------------------
+FIX : w3c validation issue.
+-------------------------
+templates/event-listing-single-content.php
+
+
+
+20th November 2013 (Version 1.0.2)
+------------------------------------------------------------
+Improvement: Localization of whole plugin
+-----------------------------------------------------------------------------
+Fix - Image gallery was not coming on detail page when featured image is set
+----------------------------------------------------------------------------
+/templates/event-listing-single-content.php
+------------------------------------------------
+
+15th November 2013 (Version 1.0.1)
+---------------------------------------------------------------------------
+Fix: Changed main file of the plugin from event-manager.php to events.php
+IMPORTANT: Your plugin will be deactivated after this update so please reactivate it again
+------------------------------------------------------------------------------------------
+Deleted - event-manager.php
+Added - events.php
+install.php
+wp-updates-plugin.php
+---------------------------------------------------------------------------
+Improvement: Used WP_CONTENT_DIR instead of ABSPATH/wp-content folder path
+--------------------------------------------------------------------------
+events.php
+/functions/event_single_functions.php
+/functions/events_attend.php
+/templates/event-listing-single-content.php
+/templates/single-event-preview.php
+----------------------------------------------------------------------
+Fix: Custom fields were getting generated automatically once deleted
+----------------------------------------------------------------------
+/events/install.php
+-----------------------------------------------------------------------------------
+Improvement: Added Current, Upcoming and Past tabs on home page when selecting 
+Events to be displayed as Your Latest Posts in Reading Settings.
+--------------------------------------------------------------------
+/functions/event_functions.php
+--------------------------------------------------------------------
+Improvement: Other performance related improvements in whole plugin
+--------------------------------------------------------------------

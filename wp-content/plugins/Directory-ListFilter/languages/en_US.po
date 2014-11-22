@@ -1,0 +1,571 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Tevolution Filters\n"
+"POT-Creation-Date: 2014-09-26 15:40+0530\n"
+"PO-Revision-Date: 2014-09-26 15:40+0530\n"
+"Last-Translator: \n"
+"Language-Team: bhargav <bnb@gmail.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.7\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: C:\\xampp\\htdocs\\wp40beta\\wp-content\\plugins"
+"\\Directory-ListFilter\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: C:\\xampp\\htdocs\\wp40beta\\wp-content\\plugins"
+"\\Directory-ListFilter\n"
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/calender.php:10
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-functions.php:964
+msgid "January"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/calender.php:10
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-functions.php:964
+msgid "February"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/calender.php:10
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-functions.php:964
+msgid "March"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/calender.php:10
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-functions.php:964
+msgid "April"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/calender.php:10
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-functions.php:964
+msgid "May"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/calender.php:10
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-functions.php:964
+msgid "June"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/calender.php:10
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-functions.php:964
+msgid "July"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/calender.php:10
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-functions.php:964
+msgid "August"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/calender.php:10
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-functions.php:964
+msgid "September"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/calender.php:10
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-functions.php:964
+msgid "October"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/calender.php:10
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-functions.php:964
+msgid "November"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/calender.php:10
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-functions.php:964
+msgid "December"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/calender.php:31
+msgid "Event Date"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/calender.php:51
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-functions.php:1000
+msgid "Monday"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/calender.php:51
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-functions.php:1000
+msgid "Mon"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/calender.php:52
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-functions.php:1001
+msgid "Tuesday"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/calender.php:52
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-functions.php:1001
+msgid "Tues"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/calender.php:53
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-functions.php:1002
+msgid "Wednesday"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/calender.php:53
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-functions.php:1002
+msgid "Wed"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/calender.php:54
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-functions.php:1003
+msgid "Thursday"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/calender.php:54
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-functions.php:1003
+msgid "Thur"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/calender.php:55
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-functions.php:1004
+msgid "Friday"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/calender.php:55
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-functions.php:1004
+msgid "Fri"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/calender.php:56
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-functions.php:1005
+msgid "Saturday"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/calender.php:56
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-functions.php:1005
+msgid "Sat"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/calender.php:57
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-functions.php:1006
+msgid "Sunday"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/calender.php:57
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-functions.php:1006
+msgid "Sun"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/directory-listfilter.php:52
+#, php-format
+msgid ""
+"You have not activated the base plugin %s. Please activate it to use "
+"Tevolution Filters plugin."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/directory-listfilter.php:94
+msgid "Show a different month"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-functions.php:21
+msgid ""
+"List Filter plugin has been activated, plugin has added a new widget to your "
+"site named List Filter. You can use this widget in the following widget "
+"areas: Listing Category Page Sidebar, Listing Tag Page Sidebar and Primary "
+"Sidebar(for search results page)."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-functions.php:35
+msgid "List Filter widget"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-functions.php:98
+msgid "Clear All Filters"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-functions.php:103
+msgid "Search within results"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-functions.php:292
+msgid "review"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-functions.php:292
+msgid "reviews"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-functions.php:504
+msgid "Apologies, but no results were found for the requested archive."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-functions.php:1336
+#, php-format
+msgid ""
+"You have not created any category for %s post type.So, this listing will be "
+"submited as uncategorized."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-functions.php:1405
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:185
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:207
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:209
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:244
+msgid "Categories"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:19
+msgid ""
+"Filter category page entries and search results in real-time. Use custom "
+"fields as parameters. Available widget areas: Category page sidebars, "
+"Primary sidebar."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:20
+msgid "T &rarr; List Filter"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:253
+msgid "No Category available."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:287
+msgid "Star rating"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:289
+msgid "1"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:290
+msgid "2"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:291
+msgid "3"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:292
+msgid "4"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:293
+msgid "5"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:307
+msgid "Search nearby (in miles)"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:400
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:2115
+msgid "Enter event end time. eg. 18:25 (Follows 24 hrs format)"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:419
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:2144
+msgid "Select Country"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:434
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:2159
+msgid "All Regions"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:453
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:2177
+msgid "All Cities"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:494
+msgid "Select "
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:883
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:2538
+msgid "Min value"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:884
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:2539
+msgid "Max value"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:924
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:2573
+#, php-format
+msgid "Please Select %s Min value"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:936
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:2585
+#, php-format
+msgid "Please Select %s Max value"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:1135
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:1337
+msgid "Wrong criteria for filter."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:1228
+msgid "All"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:1229
+msgid "A"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:1230
+msgid "B"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:1231
+msgid "C"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:1232
+msgid "D"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:1233
+msgid "E"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:1234
+msgid "F"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:1235
+msgid "G"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:1236
+msgid "H"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:1237
+msgid "I"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:1238
+msgid "J"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:1239
+msgid "K"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:1240
+msgid "L"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:1241
+msgid "M"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:1242
+msgid "N"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:1243
+msgid "O"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:1244
+msgid "P"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:1245
+msgid "Q"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:1246
+msgid "R"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:1247
+msgid "S"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:1248
+msgid "T"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:1249
+msgid "U"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:1250
+msgid "V"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:1251
+msgid "W"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:1252
+msgid "X"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:1253
+msgid "Y"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:1254
+msgid "Z"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:1726
+msgid "Search By Filters"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:1781
+msgid "Title:"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:1786
+msgid "Select Post Type"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:1813
+msgid "Enable Filters for"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:1823
+msgid "Event calender"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:1836
+msgid "Ratings"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:1841
+msgid "Distance"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:1845
+msgid "Max Range:"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:1851
+msgid "Limit search to the current city"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:1856
+msgid "Other Custom Fields"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:1890
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:2691
+msgid "Click Here"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:1890
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:2691
+msgid " to set your custom field as 'show as filter' to add in filter"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/filter-widget.php:1912
+msgid ""
+"Use drag and drop to edit the order in which custom filters are shown inside "
+"the widget."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/templatic_login.php:4
+msgid "Directory ListFilter Update"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/templatic_login.php:36
+msgid ""
+"Invalid UserName or password. are you using templatic member username and "
+"password?"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/templatic_login.php:61
+msgid ""
+"Oops, we have a problem. The information you provided is either incorrect or "
+"you don't have"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/templatic_login.php:61
+msgid ""
+"available inside the account. If you think everything should be ok with your "
+"account, please"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/templatic_login.php:61
+msgid "contact us."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/templatic_login.php:67
+msgid ""
+"Invalid UserName or password. Please enter templatic member's username and "
+"password."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/templatic_login.php:88
+msgid ""
+"Enter your Templatic account credentials to proceed with the update. These "
+"are the same details you use for the member area."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/templatic_login.php:92
+msgid "User name: "
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/templatic_login.php:96
+msgid "Password: "
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/templatic_login.php:101
+msgid "Cancel"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/templatic_login.php:106
+msgid "Forgot your password? You can reset it from the"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/templatic_login.php:106
+msgid "member area login screen."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/templatic_login.php:111
+msgid "Important!"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/templatic_login.php:111
+msgid ""
+"Clicking on \"Update Now\" will overwrite all files. If you customized the"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/templatic_login.php:111
+msgid "code in any way please abort the update process and backup now."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/templatic_login.php:111
+msgid "Click here"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/templatic_login.php:111
+msgid "for tips on how to backup your files and database."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/templatic_login.php:111
+msgid "Update Now"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/wp-updates-plugin.php:49
+msgid "There is a new version of tevolution plugin available "
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/wp-updates-plugin.php:54
+msgid "update now"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/wp-updates-plugin.php:96
+msgid "An Unexpected HTTP Error occurred during the API request."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/wp-updates-plugin.php:96
+msgid "Try again"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Directory-ListFilter/wp-updates-plugin.php:100
+msgid "An unknown error occurred"
+msgstr ""

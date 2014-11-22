@@ -1,0 +1,233 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Multiple Rating v1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-09-05 09:39+0530\n"
+"PO-Revision-Date: 2014-09-05 09:39+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.6.7\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-Basepath: C:\\xampp\\htdocs\\wp40beta\\wp-content\\plugins"
+"\\Templatic-MultiRating\n"
+"X-Poedit-SearchPath-0: C:\\xampp\\htdocs\\wp40beta\\wp-content\\plugins"
+"\\Templatic-MultiRating\n"
+
+# @ multiple_rating
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/install.php:29
+msgid "Multi Rating"
+msgstr ""
+
+# @ multiple_rating
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/multiple_rating.php:22
+msgid "Enter suffix to appear after star ratings"
+msgstr ""
+
+# @ comment-rating
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/multiple_rating.php:92
+msgid "Comment Rating"
+msgstr ""
+
+# @ multiple_rating
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/multiple_rating.php:337
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/multiple_rating.php:599
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/multiple_rating.php:1250
+msgid "Average Rating"
+msgstr ""
+
+# @ multiple_rating
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/multiple_rating.php:341
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/multiple_rating.php:604
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/multiple_rating.php:1255
+msgid "Rating"
+msgstr ""
+
+# @ multiple_rating
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/multiple_rating.php:377
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/multiple_rating.php:629
+msgid "Show individual rating"
+msgstr ""
+
+# @ multiple_rating
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/multiple_rating.php:598
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/multiple_rating.php:792
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/multiple_rating.php:1249
+msgid "reviews"
+msgstr ""
+
+# @ multiple_rating
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/multiple_rating.php:603
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/multiple_rating.php:788
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/multiple_rating.php:1254
+msgid "review"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/multiple_rating.php:617
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/multiple_rating.php:1262
+msgid "out of"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/templatic_login.php:4
+msgid "Templatic Rating Update"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/templatic_login.php:60
+msgid ""
+"We don't find Templatic - MultiRating Plugin active in your templatic "
+"account, you will not be able to update without a license"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/templatic_login.php:65
+msgid ""
+"Invalid UserName or password. Please enter templatic member's username and "
+"password."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/templatic_login.php:85
+msgid ""
+"Templatic Login , enter your templatic credentials to take the updates of "
+"Templatic-MultiRating Plugin."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/templatic_login.php:89
+msgid "User Name"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/templatic_login.php:93
+msgid "Password"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/templatic_login.php:98
+msgid "Cancel"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/templatic_login.php:106
+msgid "Templatic-MultipleRating Plugin"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/templatic_login.php:106
+msgid "Update Now"
+msgstr ""
+
+# @ multiple_rating
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/templatic_rating_setting.php:109
+msgid "Name your ratings (e.g. Stars)"
+msgstr ""
+
+# @ multiple_rating
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/templatic_rating_setting.php:120
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/templatic_rating_setting.php:133
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/templatic_rating_setting.php:146
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/templatic_rating_setting.php:214
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/templatic_rating_setting.php:226
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/templatic_rating_setting.php:238
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/templatic_rating_setting.php:330
+msgid "Remove"
+msgstr ""
+
+# @ multiple_rating
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/templatic_rating_setting.php:156
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/templatic_rating_setting.php:248
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/templatic_rating_setting.php:340
+msgid "+ Add New"
+msgstr ""
+
+# @ multiple_rating
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/templatic_rating_setting.php:204
+msgid "It will appear as suffix to the actual ratings"
+msgstr ""
+
+# @ multiple_rating
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/templatic_rating_setting.php:264
+msgid ""
+"NOTE  -  To show overall and individual ratings on your site, add this code "
+"- do_action(\"show_comment\")&#59; in comments.php file of your theme "
+"between the &lt;?php.....?&gt; tags"
+msgstr ""
+
+# @ multiple_rating
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/templatic_rating_setting.php:265
+msgid "Rating Options"
+msgstr ""
+
+# @ multiple_rating
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/templatic_rating_setting.php:270
+msgid "Show average rating"
+msgstr ""
+
+# @ multiple_rating
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/templatic_rating_setting.php:272
+msgid " On hover"
+msgstr ""
+
+# @ multiple_rating
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/templatic_rating_setting.php:273
+msgid " On click"
+msgstr ""
+
+# @ default
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/templatic_rating_setting.php:273
+msgid ""
+"Selecting \"On hover\" will show the average ratings when a user hovers over "
+"the rating stars. Selecting \"On click\" will show the average ratings when "
+"the button is pressed. "
+msgstr ""
+
+# @ multiple_rating
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/templatic_rating_setting.php:317
+msgid "Global rating option for"
+msgstr ""
+
+# @ multiple_rating
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/templatic_rating_setting.php:320
+msgid "Entered text here will show for all categories for this post type."
+msgstr ""
+
+# @ multiple_rating
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/templatic_rating_setting.php:360
+msgid "Rating options per category"
+msgstr ""
+
+# @ multiple_rating
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/templatic_rating_setting.php:361
+msgid ""
+"For not applying the same rating option to all the categories of this post "
+"type or to have multiple rating options along with global rating options, "
+"you can add it for each individual category here."
+msgstr ""
+
+# @ multiple_rating
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/templatic_rating_system_main.php:11
+msgid "Rating System Settings"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/wp-updates-plugin.php:44
+msgid "There is a new version of Tevolution-rating plugin available "
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/wp-updates-plugin.php:50
+msgid "Templatic Multiple Rating Update"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/wp-updates-plugin.php:50
+msgid "update now"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/wp-updates-plugin.php:92
+msgid "An Unexpected HTTP Error occurred during the API request."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/wp-updates-plugin.php:92
+msgid "Try again"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Templatic-MultiRating/wp-updates-plugin.php:97
+msgid "An unknown error occurred"
+msgstr ""

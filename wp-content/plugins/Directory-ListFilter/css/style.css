@@ -1,0 +1,212 @@
+/*  
+ * coupo-style.css
+ * Styling for plugin
+ * 
+ */
+ 
+ #max_range
+ {
+	display: none;
+ }
+
+.search_filter .filter ul li
+{
+	border-bottom: medium none !important;
+}
+
+.ver-list-filter.fil-scroll ul {
+  max-height: 176px;
+    overflow-y: auto;	
+}
+
+#searchfilterform .ui-slider-horizontal .ui-slider-range {
+  height: 100%;
+  top: 0;
+}
+
+#searchfilterform .ui-slider .ui-slider-range {
+  background-position: 0 0;
+  border: 0 none;
+  display: block;
+  font-size: 0.7em;
+  position: absolute;
+  z-index: 1;
+}
+
+#searchfilterform .ui-slider-horizontal .ui-slider-handle {
+  margin-left: -1px;
+  top: -5px;
+}
+
+#searchfilterform .ui-slider .ui-slider-handle {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 1px solid #E0E0E0;
+  border-radius: 4px 4px 4px 4px;
+  cursor: default;
+  height: 17px;
+  outline: 0 none;
+  position: absolute;
+  width: 17px;
+  z-index: 2;
+}
+
+#searchfilterform .ui-widget-content {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px 4px 4px 4px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+#searchfilterform .ui-slider-horizontal {
+  height: 10px;
+}
+
+#searchfilterform .ui-slider {
+  position: relative;
+  text-align: left;
+}
+
+#searchfilterform .filter ul.sf_cat li,#searchfilterform .filter ul.sf_tag li {
+  border-bottom: medium none !important;
+}
+
+#searchfilterform .dp input[type="text"] {
+  display: inline-block;
+  margin-bottom: 5px;
+  width: 78%;
+}
+
+#searchfilterform .dp .ui-datepicker-trigger {
+	float: right;
+	width: 101px !important;
+}
+
+#sidebar-primary #searchfilterform .wp-editor-wrap {
+  margin-left: 0;
+  width: 100%;
+}
+
+#content .sel-filters {
+  background: none repeat scroll 0 center transparent;
+  padding-left: 0;
+  padding-top: 0;
+  color: #808080;
+}
+#content #loop_listing_taxonomy,
+#content #loop_event_taxonomy,
+#content #loop_listing_archive,
+#content #loop_event_archive { position: relative; }
+#content p[class*="_process"] {
+  text-align: center;
+  width: 100%;
+  padding:0;
+  margin: 0;
+}
+#content p[class*="_process"] span.process-overlay ~ i.fa{ position: relative; z-index: 10;}
+#content p[class*="_process"] span.process-overlay {
+  background: #FFF;
+  opacity: 0.8;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  z-index: 10;
+}
+#content p[class*="_process"] img { 
+  position: absolute; 
+  top: 50px;
+  left: 50%;
+  margin-left: -42px;
+  z-index: 99999;
+}
+
+.icon-clear {
+background: url("../images/cross.png") no-repeat scroll 0 0 transparent;
+float: right;
+height: 16px;
+width: 16px;
+}
+
+.value > a {
+color: #444444;
+cursor: default;
+display: inline-block;
+float: left;
+ margin: 0 3px;
+}
+
+
+.rpadding5 {
+float: left;
+padding: 0 6px;
+}
+
+#filter-group-sf_sfrate 
+{
+	float: left;
+	padding: 0 6px 0 0;
+	text-align: left;
+}
+
+#filter-group-sf_sfrate .value > a,#filter-group-sf_checkcats .value > a {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+
+#filter-group-sf_sfrate .icon-clear {
+  position: absolute;
+}
+
+.flit-opt-cols .value i:hover {
+  color: #FF0000;
+}
+
+.filter-options .flit-opt-cols .filter-lable {
+  display: inline-block;
+  float: left;
+  font-weight: bold;
+  margin-right: 5px;
+  vertical-align: top;
+}
+
+.flit-opt-cols .value {
+  float: left;
+}
+
+#filtersAction,#selectedFilters
+{
+	display: none;
+}
+
+#sfevent_cal {
+  text-align: center;
+}
+
+.warn
+{
+	color: #F00;
+}
+
+.active_date
+{
+	font-weight: bold !important;
+}
+
+.nav_btn a {
+  color: #FFFFFF;
+  font-size: 12px;
+}
+
+.prev_month.nav_btn {
+  float: left;
+}
+
+.next_month.nav_btn {
+  float: right;
+}
+
+.filter_list_wrap .flit-opt-cols1 {
+  margin-top: 7px;
+}

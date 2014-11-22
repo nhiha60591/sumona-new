@@ -1,0 +1,385 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Tevolution Filters\n"
+"POT-Creation-Date: 2014-04-25 15:56+0530\n"
+"PO-Revision-Date: 2014-04-25 15:56+0530\n"
+"Last-Translator: \n"
+"Language-Team: bhargav <bnb@gmail.com>\n"
+"Language: English US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: /var/www/wp_39b3/wp-content/plugins/Tevolution-"
+"Filters\n"
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-functions.php:21
+msgid ""
+"Tevolution-filter plugin has been activated and a widget is added named T "
+"&rarr; Listing Filters."
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-functions.php:35
+msgid "Show as a Filter"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-functions.php:188
+msgid "Apologies, but no results were found for the requested archive."
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-functions.php:478
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/calender.php:10
+msgid "January"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-functions.php:478
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/calender.php:10
+msgid "February"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-functions.php:478
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/calender.php:10
+msgid "March"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-functions.php:478
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/calender.php:10
+msgid "April"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-functions.php:478
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/calender.php:10
+msgid "May"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-functions.php:478
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/calender.php:10
+msgid "June"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-functions.php:478
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/calender.php:10
+msgid "July"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-functions.php:478
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/calender.php:10
+msgid "August"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-functions.php:478
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/calender.php:10
+msgid "September"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-functions.php:478
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/calender.php:10
+msgid "October"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-functions.php:478
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/calender.php:10
+msgid "November"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-functions.php:478
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/calender.php:10
+msgid "December"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-functions.php:529
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/calender.php:31
+msgid "Monday"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-functions.php:529
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/calender.php:31
+msgid "Mon"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-functions.php:530
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/calender.php:32
+msgid "Tuesday"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-functions.php:530
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/calender.php:32
+msgid "Tues"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-functions.php:531
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/calender.php:33
+msgid "Wednesday"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-functions.php:531
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/calender.php:33
+msgid "Wed"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-functions.php:532
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/calender.php:34
+msgid "Thursday"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-functions.php:532
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/calender.php:34
+msgid "Thur"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-functions.php:533
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/calender.php:35
+msgid "Friday"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-functions.php:533
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/calender.php:35
+msgid "Fri"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-functions.php:534
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/calender.php:36
+msgid "Saturday"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-functions.php:534
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/calender.php:36
+msgid "Sat"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-functions.php:535
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/calender.php:37
+msgid "Sunday"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-functions.php:535
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/calender.php:37
+msgid "Sun"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:18
+msgid ""
+"Search within specific custom fields and many other fields using ajax. It "
+"can be used inside sidebar areas."
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:19
+msgid "T &rarr; Listing Filters"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:64
+msgid " You place the widget in wrong/unsupported  area."
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:148
+msgid "Star Rating"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:150
+msgid "1"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:151
+msgid "2"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:152
+msgid "3"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:153
+msgid "4"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:154
+msgid "5"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:186
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:1121
+msgid "Categories"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:220
+msgid "No Category available."
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:255
+msgid "Mile range:"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:320
+msgid "Enter event end time. eg. 18:25 (Follows 24 hrs format)"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:640
+msgid "All"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:641
+msgid "A"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:642
+msgid "B"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:643
+msgid "C"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:644
+msgid "D"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:645
+msgid "E"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:646
+msgid "F"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:647
+msgid "G"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:648
+msgid "H"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:649
+msgid "I"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:650
+msgid "J"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:651
+msgid "K"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:652
+msgid "L"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:653
+msgid "M"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:654
+msgid "N"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:655
+msgid "O"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:656
+msgid "P"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:657
+msgid "Q"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:658
+msgid "R"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:659
+msgid "S"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:660
+msgid "T"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:661
+msgid "U"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:662
+msgid "V"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:663
+msgid "W"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:664
+msgid "X"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:665
+msgid "Y"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:666
+msgid "Z"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:1065
+msgid "Search By Filters"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:1081
+msgid "Title:"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:1086
+msgid "Select Post Type"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:1113
+msgid "Enable Filters for"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:1116
+msgid "Event calender"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:1132
+msgid "Ratings"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:1137
+msgid "Distance"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:1141
+msgid "Max Range:"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:1145
+msgid "Search from current city"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:1179
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:1278
+msgid " to set your custom field as 'show as filter' to add in filter"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:1190
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/filter-widget.php:1290
+msgid "Other Custom Fields"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/calender.php:22
+msgid "Event Date"
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/tevolution-filters.php:38
+#, php-format
+msgid ""
+"You have not activated the base plugin %s. Please activate it to use "
+"Tevolution Filters plugin."
+msgstr ""
+
+#: /var/www/wp_39b3/wp-content/plugins/Tevolution-Filters/tevolution-filters.php:67
+msgid "Show a different month"
+msgstr ""

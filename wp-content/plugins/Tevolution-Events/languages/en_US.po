@@ -1,0 +1,2230 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Tevolution - Events v1.0.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-09-26 15:19+0530\n"
+"PO-Revision-Date: 2014-09-26 15:25+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.6.7\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: C:\\xampp\\htdocs\\wp40beta\\wp-content\\plugins"
+"\\Tevolution-Events\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-SearchPath-0: C:\\xampp\\htdocs\\wp40beta\\wp-content\\plugins"
+"\\Tevolution-Events\n"
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/bundle_box.php:20
+msgid "Tevolution Event Manager"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/bundle_box.php:24
+msgid ""
+"An event management module that will let you add, sort and manage your "
+"events easily and effectively. By management, we mean you can do excerpt "
+"settings, decide the publishing status on event addition, fire e-mail "
+"notification to user on event expiry, sort the listings as per the locations "
+"and their near by locations too. Show and share your listings using your "
+"social accounts from your website itself and many more."
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/bundle_box.php:29
+msgid "Activate &rarr;"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/bundle_box.php:34
+msgid "Deactivate "
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/bundle_box.php:35
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events.php:76
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events.php:80
+msgid "Settings"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events.php:24
+msgid "System might facing the problem in include "
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events.php:66
+msgid ""
+"You have not activated the base plugin <b>Tevolution</b>. Please activate it "
+"to use Tevolution-Event-manager plugin."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:8
+msgid ""
+"Display a calendar that showcases events available on your site. Events are "
+"shown after hovering over a specific date in the calendar. Works best in "
+"sidebar areas."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:9
+msgid "T &rarr; Events Calendar"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:15
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:32
+msgid "Event Listing Calendar"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:35
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/event_widgets.php:250
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/events.php:51
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/widgets.php:238
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/widgets.php:636
+msgid "Title"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:73
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:529
+msgid "January"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:73
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:529
+msgid "February"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:73
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:529
+msgid "March"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:73
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:529
+msgid "April"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:73
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:529
+msgid "May"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:73
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:529
+msgid "June"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:73
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:529
+msgid "July"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:73
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:529
+msgid "August"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:73
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:529
+msgid "September"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:73
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:529
+msgid "October"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:73
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:529
+msgid "November"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:73
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:529
+msgid "December"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:124
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:580
+msgid "Monday"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:124
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:580
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:53
+msgid "Mon"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:125
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:581
+msgid "Tuesday"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:125
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:581
+msgid "Tues"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:126
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:582
+msgid "Wednesday"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:126
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:582
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:53
+msgid "Wed"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:127
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:583
+msgid "Thursday"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:127
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:583
+msgid "Thur"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:128
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:584
+msgid "Friday"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:128
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:584
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:53
+msgid "Fri"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:129
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:585
+msgid "Saturday"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:129
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:585
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:53
+msgid "Sat"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:130
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:586
+msgid "Sunday"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:130
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:586
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:53
+msgid "Sun"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:435
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:442
+msgid "Location :"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:436
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:443
+msgid "Start Date :"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:437
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:444
+msgid "End Date :"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:450
+msgid "View more"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/calendar_widgets.php:452
+msgid "No Event in this date"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/event_widgets.php:4
+msgid "Search For"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/event_widgets.php:5
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/event_widgets.php:101
+msgid "Enter Event name"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/event_widgets.php:6
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/event_widgets.php:106
+msgid "Select a Category"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/event_widgets.php:7
+msgid "Event start date"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/event_widgets.php:8
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/event_widgets.php:111
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/events.php:53
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:1527
+msgid "Address"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/event_widgets.php:9
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/event_widgets.php:120
+msgid "Search Events"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/event_widgets.php:14
+msgid ""
+"Search events based on their name, category, start date, city and more. "
+"Works best in sidebar areas."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/event_widgets.php:15
+msgid "T &rarr; Events Search"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/event_widgets.php:21
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/event_widgets.php:135
+msgid "Event Search"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/event_widgets.php:28
+msgid "Show a different month"
+msgstr ""
+
+# @ templatic
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/event_widgets.php:43
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/event_widgets.php:102
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/event-listing-search-form.php:3
+msgid "Search for"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/event_widgets.php:151
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/event_widgets.php:494
+msgid "Select Category"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/event_widgets.php:163
+msgid ""
+"Allows visitors to connect their Listings with Events while editing them in "
+"the front-end. Use the widget inside the Primary Sidebar area."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/event_widgets.php:164
+msgid "T &rarr; Add Related Event"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/event_widgets.php:185
+msgid "Related event saved successfully."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/event_widgets.php:217
+msgid "Select an events"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/event_widgets.php:225
+msgid "Currently no event created by the owner of this list/place."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/event_widgets.php:233
+msgid "Save"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/event_widgets.php:255
+msgid "Description"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/event_widgets.php:276
+msgid "Listing of current and upcoming events."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/event_widgets.php:277
+msgid "T &rarr; Events Listing"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/event_widgets.php:283
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/event_widgets.php:474
+msgid "Event Listing"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/event_widgets.php:488
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/widgets.php:257
+msgid "Number of posts"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/event_widgets.php:492
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:333
+msgid "Categories:"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/event_widgets.php:511
+msgid "View"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/event_widgets.php:513
+msgid "List view"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/event_widgets.php:514
+msgid "Grid view"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/event_widgets.php:518
+msgid ""
+"Grid View is not available for sidebar area. It is available for Home page "
+"content area only."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/event_widgets.php:520
+msgid "Limit content to"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/event_widgets.php:520
+msgid "characters"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/event_widgets.php:523
+msgid "Read More Text"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/event_widgets.php:528
+msgid "Sort Event"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/event_widgets.php:530
+msgid "As Per Start Date"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/event_widgets.php:531
+msgid "Latest Published"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/event_widgets.php:532
+msgid "Random"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/event_widgets.php:533
+msgid "Alphabetical"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/events.php:11
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/events.php:12
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_category_customfield.php:143
+msgid "Events"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/events.php:13
+msgid "Event"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/events.php:14
+msgid "Add an Event"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/events.php:15
+msgid "Add new Event"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/events.php:16
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:487
+msgid "Edit"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/events.php:17
+msgid "Edit Event"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/events.php:18
+msgid "New Event"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/events.php:19
+msgid "View Event"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/events.php:20
+msgid "Search Event"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/events.php:21
+msgid "No Event found"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/events.php:22
+msgid "No Event found in trash"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/events.php:23
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/events.php:24
+msgid "Event Categories"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/events.php:25
+msgid "Event Category"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/events.php:26
+msgid "Search category"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/events.php:27
+msgid "Popular categories"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/events.php:28
+msgid "All categories"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/events.php:29
+msgid "Parent category"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/events.php:30
+msgid "Parent category:"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/events.php:31
+msgid "Edit category"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/events.php:32
+msgid "Update category"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/events.php:33
+msgid "Add new category"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/events.php:34
+msgid "New category name"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/events.php:35
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/events.php:36
+msgid "Event Tags"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/events.php:37
+msgid "Event tags"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/events.php:38
+msgid "Popular Event tags"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/events.php:39
+msgid "All Event tags"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/events.php:40
+msgid "Parent Event tags"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/events.php:41
+msgid "Parent Event tags:"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/events.php:42
+msgid "Edit Event tags"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/events.php:43
+msgid "Update Event tags"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/events.php:44
+msgid "Add new Event tags"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/events.php:45
+msgid "New Event tag name"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/events.php:46
+msgid "Start Time"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/events.php:47
+msgid "End Time"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/events.php:49
+msgid "Event Custom Information"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/events.php:50
+msgid "Custom Information"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/events.php:52
+msgid "Event type"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/events.php:54
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:1026
+msgid "Categories"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/events.php:55
+msgid "Tags"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/events.php:57
+msgid "are you going to attend"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/events.php:58
+msgid "You are going to attend"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/events.php:59
+msgid "Yes, I am"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/events.php:60
+msgid "Not attending now."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/events.php:62
+msgid "Please Select Recurring per"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/events.php:63
+msgid "Please Select Recurring end day after"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/install.php:25
+msgid ""
+"You have no event post type now but your event-manager is in active status "
+"so you can generate event post type again. "
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/install.php:26
+msgid "Generate Event Taxonomy"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:53
+msgid "Tue"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:53
+msgid "Thu"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:1229
+msgid "Manage tickets"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:1232
+msgid "Recurrence"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:1241
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:1547
+msgid "Show Recurrence"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:1266
+msgid "Uncategorized"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:1305
+msgid "Date: "
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:1311
+msgid "Recurring event"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:1313
+msgid "Regular event"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:1317
+msgid "Recurrence of "
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:1337
+msgid "Event Data"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:1338
+msgid "Event Type"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:1508
+msgid "This event is the recurrence of the event."
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:1517
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:1699
+msgid "Start date"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:1522
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:1701
+msgid "End date"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:1534
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:1561
+msgid ""
+"Modification in this event will be applied to all other occurrences of this "
+"recurring event."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:1547
+msgid "NOTE:"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:1547
+msgid ""
+"Moving this event to trash and restoring it again, will only restore the "
+"main event and not its recurrence. To add recurrence again, select the &quot;"
+"Recurring event&quot; option field and add the recurrence dates as per your "
+"need."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:1552
+msgid ""
+"As this is an occurrence, you can edit only the description of this event. "
+"To edit other fields go to main event of"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:1552
+msgid "this"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:1552
+msgid "occurrence ."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:1703
+msgid "Time"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:1709
+msgid "Location"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:1712
+msgid "More Info"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:1740
+msgid "Looks like you have entered invalid keys."
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:1745
+msgid "Facebook Plugin not installed."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:1750
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:701
+msgid ""
+"CURL is not installed on your server, please enbale CURL to use Facebook "
+"evenst API."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:1833
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:1958
+msgid "Status:"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:1834
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:1959
+msgid "Type:"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:1835
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:1960
+msgid "Date:"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:1841
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:1872
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:1965
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:1996
+msgid "Payment Success Confirmation Email"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:1846
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:1877
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:1970
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:2001
+msgid "Dear"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:1846
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:1877
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:1970
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:2001
+msgid "We hope you enjoy. Thanks!"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:1865
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_function.php:1989
+msgid "Information Submitted URL"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_html.php:49
+msgid "Event will repeat"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_html.php:52
+msgid "Daily"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_html.php:52
+msgid "Weekly"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_html.php:52
+msgid "Monthly"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_html.php:52
+msgid "Yearly"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_html.php:60
+msgid "every"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_html.php:62
+msgid "It will be better to select regular event for single day."
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_html.php:63
+msgid "day"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_html.php:64
+msgid "days"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_html.php:66
+msgid "week on"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_html.php:67
+msgid "weeks on"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_html.php:68
+msgid "month on the"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_html.php:69
+msgid "months on the"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_html.php:71
+msgid "year"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_html.php:72
+msgid "years"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_html.php:86
+msgid "first"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_html.php:86
+msgid "second"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_html.php:86
+msgid "third"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_html.php:86
+msgid "fourth"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_html.php:86
+msgid "last"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_html.php:93
+msgid "of each month"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_html.php:98
+msgid "Each event ends after "
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_html.php:100
+msgid "day(s)"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_html.php:106
+msgid "Please note"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_html.php:106
+msgid ""
+"Updating these recurring properties will generate new URLs for instances of "
+"this recurring event. When that happens external links to those instances "
+"will stop working."
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/events/recurring_html.php:111
+msgid ""
+"Each occurrence of this recurring event will be created as a separate event."
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_category_customfield.php:58
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_category_customfield.php:141
+msgid "Map Marker"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_category_customfield.php:60
+msgid "Or"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_category_customfield.php:61
+msgid "Browse"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_category_customfield.php:62
+msgid ""
+"It will appear on the homepage Google map for events placed in this "
+"category. "
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_category_customfield.php:99
+msgid "Remove Image"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_category_customfield.php:101
+msgid "Remove"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_category_customfield.php:145
+msgid "listings"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:15
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:524
+msgid "Add to favorites"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:18
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:525
+msgid "Added"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:41
+msgid "Event Category Pages - Below Header"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:41
+msgid ""
+"Widgets placed here appear on the event category page below the header part."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:111
+msgid "Event Settings"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:127
+msgid "Add Event Description here"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:136
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:98
+msgid "Settings saved"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:148
+msgid "Select default tab"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:154
+msgid "Please select current tab"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:155
+msgid "Current"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:156
+msgid "Past"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:157
+msgid "Upcoming"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:161
+msgid "The selected tab will show on all event category and tag pages."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:166
+msgid "Attending events feature"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:173
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:209
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:222
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:26
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:41
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:1244
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:1253
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:1285
+msgid "Enable"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:178
+msgid "Select the people attending page"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:193
+msgid "No pages found"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:197
+msgid ""
+"This page should have been created while installing the Event Manager "
+"plugin. To create it manually go to Pages -> Add New and insert the "
+"following shortcode: [event-user-attend-list]"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:202
+msgid "Show Facebook events on author pages"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:210
+msgid "For details on setting up Facebook events visit the"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:210
+msgid "documentation guide"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:215
+msgid "Hide past events"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:223
+msgid ""
+"Choosing &quot;Enable&quot; will change the status of your past events from "
+"&quot;Published&quot; to &quot;Draft&quot;. The &quot;Past Events&quot; tab "
+"on event category pages will be hidden as well."
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:275
+msgid "Start Date Ascending (Only for event post type)"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:276
+msgid "Start Date Descending (Only for event post type)"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:338
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/archive-event.php:90
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/mobile-event.php:91
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/mobile-event_bk.php:91
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/taxonomy-ecategory.php:103
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/taxonomy-etags.php:96
+msgid "Apologies, but no results were found for the requested archive."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:566
+msgid "Attending Events"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:638
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:654
+msgid "Facebook Events"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:652
+msgid "Add Facebook event"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:653
+msgid "Hide Options"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:655
+msgid "Author has not shared any Facebook events yet."
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:669
+msgid "AppID"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:673
+msgid "Secret ID"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:677
+msgid "Page ID"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:681
+msgid "Submit"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:795
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:1774
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_listing_functions.php:267
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_listing_functions.php:300
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_user_attend.php:132
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:546
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:895
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/map_functions.php:143
+msgid "review"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:795
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:1774
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_listing_functions.php:267
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_listing_functions.php:300
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_user_attend.php:132
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:546
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:895
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/map_functions.php:143
+msgid "reviews"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:813
+msgid "recurrences"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:822
+msgid "Recurrence for"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:964
+msgid "Sorry! No results were found for particular date search."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:994
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:1007
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:1140
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:1142
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:1210
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:1212
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:2229
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:2247
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_listing_functions.php:162
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_listing_functions.php:177
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_listing_functions.php:182
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_manager_shortcodes.php:27
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_manager_shortcodes.php:38
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_user_attend.php:74
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_user_attend.php:121
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/events_attend.php:440
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/events_attend.php:556
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/events_attend.php:658
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/events_attend.php:726
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/events_attend.php:835
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/events_attend.php:939
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/events_attend.php:1039
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/events_attend.php:1106
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/single-event-preview.php:64
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/single-event-preview.php:95
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/tevolution-single-event-preview.php:18
+msgid "To"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:1055
+msgid "Venue"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:1089
+#, php-format
+msgid "Address: %s"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:1140
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:1142
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:1210
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:1212
+msgid "From:"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:1165
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:1230
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/events_manage_tickets.php:40
+msgid "tickets are available."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:1166
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:1231
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/events_manage_tickets.php:80
+msgid "Book now"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:1244
+msgid "(Sample csv file)"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:1847
+msgid "Events linked to this listing"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:1974
+msgid ""
+"This connects your event listings to this listing and will show the selected "
+"events on the listing detail page.<br><strong>Note:</strong> Feature is only "
+"available with the &lsquo;Event Manager&rsquo; plugin."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:2111
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_listing_functions.php:105
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_listing_functions.php:122
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_user_attend.php:94
+msgid "Featured"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:2150
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_listing_functions.php:197
+msgid "twitter"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:2156
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_listing_functions.php:203
+msgid "facebook"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:2162
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_listing_functions.php:209
+msgid "Google+"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_functions.php:2203
+msgid "Read More"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_listing_functions.php:220
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_single_functions.php:270
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/event-listing-single-content.php:296
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/mobile-single-event.php:379
+msgid "Event Information"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_listing_functions.php:279
+msgid "Pinpoint"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_listing_functions.php:319
+#, php-format
+msgid ""
+"Here are the results found for the %s you are looking for, matching to your "
+"specified criteria"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_listing_functions.php:378
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_user_attend.php:50
+msgid "Past Events"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_listing_functions.php:381
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_user_attend.php:51
+msgid "Current Events"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_listing_functions.php:382
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_user_attend.php:52
+msgid "Upcoming Events"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_listing_functions.php:425
+msgid "Start Date low to high"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_listing_functions.php:429
+msgid "Start Date high to low"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_manager_shortcodes.php:38
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/events_attend.php:439
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/events_attend.php:545
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/events_attend.php:657
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/events_attend.php:725
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/events_attend.php:834
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/events_attend.php:938
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/events_attend.php:1038
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/events_attend.php:1105
+msgid "From"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_manager_shortcodes.php:39
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/single-event-preview.php:204
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/tevolution-single-event-preview.php:62
+msgid "Time:"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_manager_shortcodes.php:40
+msgid "Address:"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_manager_shortcodes.php:53
+msgid "Name:"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_manager_shortcodes.php:62
+msgid ""
+"Sorry, invalid request! Head over to your desired event&acute;s detail page "
+"and click the link that says \"people attending\" to see the total list of "
+"people attending that particular event."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_single_functions.php:11
+msgid "Posted In "
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_single_functions.php:35
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_single_functions.php:65
+msgid " and "
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_single_functions.php:46
+#, php-format
+msgid "Posted In %s"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_single_functions.php:77
+#, php-format
+msgid "Tagged In %s"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_single_functions.php:86
+msgid "Tagged In "
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_single_functions.php:323
+msgid "Add to my calendar"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_single_functions.php:326
+msgid "Outlook Calendar"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_single_functions.php:327
+msgid "Google Calendar"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_single_functions.php:328
+msgid "Yahoo! Calendar"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_single_functions.php:329
+msgid "iCal Calendar"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_single_functions.php:411
+msgid "For+details,+link+"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_single_functions.php:447
+msgid "Related Events"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_user_attend.php:108
+#, php-format
+msgid "Permalink to %s"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_user_attend.php:149
+msgid "Apologies, no one is attending any events yet!"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_user_attend.php:164
+msgid "For viewing event attending listing please login for"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/event_user_attend.php:164
+msgid "here"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/events_attend.php:47
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/events_attend.php:50
+msgid "Show occurrences"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/events_attend.php:48
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/events_attend.php:51
+msgid "Hide occurrences"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/events_attend.php:169
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/events_attend.php:346
+msgid "person is attending."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/events_attend.php:171
+msgid "people are attending."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/events_attend.php:174
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/events_attend.php:351
+msgid "No one is attending yet."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/events_attend.php:348
+msgid "peoples are attending."
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/events_attend.php:461
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/events_attend.php:570
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/events_attend.php:745
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/events_attend.php:853
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/events_attend.php:951
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/events_attend.php:1124
+msgid ""
+"All recurrences of this event are ended. Please follow other events to "
+"attend or you can check it out later when we have upcoming recurrences for "
+"it."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/events_attend.php:548
+msgid "On"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/events_attend.php:670
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/events_attend.php:1050
+msgid ""
+"All recurrences have come to an end. You can check it out later when we have "
+"upcoming recurrences for it."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/events_manage_tickets.php:14
+msgid "Select Events Ticket"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/events_manage_tickets.php:27
+msgid "Select a ticket."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/events_manage_tickets.php:43
+msgid ""
+"It helps you to connect your product with your event and it will appear on "
+"your event detail page. (e.g. Creating event tickets and select it here in "
+"your event)<br><strong>Note:</strong> It will appear only when you have "
+"WooCommerce plugin activated."
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/functions/events_manage_tickets.php:79
+msgid " tickets are available."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/direction_map_widget.php:7
+msgid ""
+"Shows a map of the posts location. By entering their address, visitors can "
+"also get directions to the location. Use the widget in detail page sidebar "
+"areas."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/direction_map_widget.php:8
+msgid "T &rarr; Detail Page Map"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/direction_map_widget.php:55
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:314
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:725
+msgid ""
+"Map Height <small>(default height: 425px) to change, only enter a numeric "
+"value.)</small>"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_map_detail.php:29
+msgid "By car"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_map_detail.php:30
+msgid "By public transit"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_map_detail.php:31
+msgid "By Bicycling"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_map_detail.php:32
+msgid "By Walking"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_map_detail.php:35
+msgid "Metric"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_map_detail.php:36
+msgid "Imperial"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_map_detail.php:39
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_map_detail.php:58
+msgid "Enter Location"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_map_detail.php:41
+msgid "Get Directions"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_map_detail.php:42
+msgid "View Large Map"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_map_detail.php:60
+msgid "Please enter your address to get the direction map."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_map_detail.php:86
+msgid "Directions failed: "
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_map_detail.php:107
+msgid "Unsupported travel mode."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_map_detail.php:189
+msgid "Street View data not found for this location."
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_map_detail.php:214
+msgid "View Larger Map"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:20
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:68
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:91
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:1223
+msgid "Map Settings"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:24
+msgid "Show map view in category pages"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:27
+msgid ""
+"Disable this option only if you want to use a widget to display the map on "
+"category pages. Enabling the option will prevent map widgets from working."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:38
+msgid "Pinpoint on category page"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:43
+#, php-format
+msgid ""
+"Pinpoint button allows you to focus the map on a specific entry. It will "
+"only work with the map listing widget so make sure you uncheck \"Show Map "
+"View\" in %s"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:51
+msgid "Pinpoint button activates on"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:53
+msgid "Mouse hover"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:54
+msgid "Click"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:55
+msgid ""
+"\"Mouse hover\" option will not work if you have \"Show map view in category "
+"pages\" option ( given above ) enabled. "
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:92
+msgid ""
+"Use this settings area to tweak the maps on your site. If you happen to have "
+"\"Tevolution - Location Manager\" disabled, use the \"Single city map "
+"settings\" area to define map properties for your single city."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:123
+msgid "Single city map settings"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:128
+msgid "City name"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:132
+msgid "City latitude"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:133
+msgid "Enter the latitude for the city defined above. Generate the value using"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:133
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:137
+msgid "this website"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:136
+msgid "City longitude"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:137
+msgid ""
+"Enter the longitude for the city defined above. Generate the value using"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:140
+msgid "Map type"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:143
+msgid "Road Map"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:145
+msgid "Terrain Map"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:147
+msgid "Satellite Map"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:149
+msgid ""
+"The selection made here will affect your homepage and category page map."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:154
+msgid "Map display"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:157
+msgid "According to Map Scaling factor"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:158
+msgid "Fit all available listings"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:159
+msgid ""
+"If \"Fit all available listings\" is selected the map scaling factor set "
+"above is ignored. The zoom factor will be set automatically so that all "
+"listings fit the screen."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:171
+msgid "Map scaling factor"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:181
+msgid ""
+"Set to zoom level for the map. The higher the number, the larger the zoom. "
+"To show a city area set the factor to around 13."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:188
+msgid "Save Changes"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:213
+msgid ""
+"Use it while operating a single city. Edit the map location in Tevolution "
+"&raquo; map settings. Widget works best inside the Homepage Slider or "
+"Homepage - Main Content area."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:214
+msgid "T &rarr; Homepage Map - single city"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:238
+msgid "No Records Found"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:240
+msgid ""
+"Sorry, no records were found. Please adjust your search criteria and try "
+"again."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:247
+msgid "Title or Keyword"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:319
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/widgets.php:243
+msgid "Select Post:"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:369
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:733
+msgid "Disable Clustering"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:423
+msgid ""
+"Show a map on category pages while operating a single city. Use in category "
+"page sidebar and category page - below header areas."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:424
+msgid "T &rarr; Category Page Map - single city"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:737
+msgid "Show all posts on category map"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:738
+msgid ""
+"With large categories this can significantly increase category page load "
+"time. When this option is disabled, the map will only show posts from the "
+"current page."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:1018
+msgid "Select All"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:1118
+#, php-format
+msgid "There is no categories in %s"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:1132
+msgid "Please select any post type."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:1237
+msgid "Map description"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:1242
+msgid "Hide maps on mobile devices"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:1245
+msgid ""
+"With this option enabled, maps won&rsquo;t be shown on mobile phones and "
+"tablets."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:1251
+msgid "Show map in full width"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:1254
+msgid ""
+"Stretches the homepage map across the full width of the screen. This setting "
+"will be applied to any widget inserted in the \"Home Page Slider\" area."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:1264
+msgid "Save All Settings"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:1283
+msgid "Show \"Map\" tab in detail pages"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/google_maps.php:1286
+msgid ""
+"Disable this only if you want to use a widget to display a map on the detail "
+"page. This option prevents map widgets on detail pages from working."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/widgets.php:24
+msgid ""
+"Display posts that are in the vicinity of the post that is currently "
+"displayed. Use in detail page sidebar areas."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/widgets.php:25
+msgid "T &rarr; In The Neighborhood"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/widgets.php:32
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/widgets.php:219
+msgid "Nearest Listing"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/widgets.php:106
+msgid "Sorry! There is no near by results found"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/widgets.php:204
+msgid "Sorry! No near by results found."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/widgets.php:265
+msgid "Show list by distance?"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/widgets.php:271
+msgid "Show Listings From"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/widgets.php:273
+msgid "So Far Away"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/widgets.php:274
+msgid "Far Away"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/widgets.php:275
+msgid "At Some Distance"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/widgets.php:276
+msgid "Nearer"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/widgets.php:277
+msgid "Very Near"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/widgets.php:284
+msgid "Select Distance"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/widgets.php:286
+msgid "1"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/widgets.php:287
+msgid "5"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/widgets.php:288
+msgid "10"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/widgets.php:289
+msgid "100"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/widgets.php:290
+msgid "1000"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/widgets.php:291
+msgid "5000"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/widgets.php:296
+msgid "Display By"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/widgets.php:298
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/widgets.php:644
+msgid "Kilometers"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/widgets.php:299
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/widgets.php:643
+msgid "Miles"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/widgets.php:329
+msgid ""
+"Shows a list of all categories and their sub-categories. Works best in main "
+"content and subsidiary areas."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/widgets.php:330
+msgid "T &rarr; All Categories List"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/widgets.php:413
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/widgets.php:451
+msgid "View all &raquo;"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/widgets.php:464
+msgid "Invalid Category."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/widgets.php:485
+msgid "Title:"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/widgets.php:490
+msgid "Post Type:"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/widgets.php:501
+msgid "Category Level"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/widgets.php:513
+msgid "Number of child categories"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/widgets.php:519
+msgid "Hide empty categories"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/widgets.php:532
+msgid ""
+"Search through nearby posts by setting a range. Use in category page sidebar "
+"areas."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/widgets.php:533
+msgid "T &rarr; Search by Miles Range"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/widgets.php:545
+#, php-format
+msgid "Find a %s"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/widgets.php:568
+msgid "Enter Your Location"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/widgets.php:570
+msgid "Mile range:"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/widgets.php:572
+msgid "Kilometer range:"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/widgets.php:641
+msgid "Search By"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/google-maps/widgets.php:649
+msgid "Max Range"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/event-listing-search-form.php:6
+msgid "Search"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/event-listing-single-content.php:58
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/single-event-preview.php:234
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/tevolution-single-event-preview.php:92
+msgid "Photos"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/event-listing-single-content.php:62
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/mobile-single-event.php:219
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/single-event-preview.php:230
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/tevolution-single-event-preview.php:88
+msgid "Map"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/event-listing-single-content.php:66
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/mobile-single-event.php:231
+msgid "Video"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/event-listing-single-content.php:84
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/event-listing-single-content.php:337
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/mobile-single-event.php:252
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/mobile-single-event.php:420
+msgid "Edit Video"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/event-listing-single-content.php:179
+msgid "Upload Images"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/event-listing-single-content.php:222
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/mobile-single-event.php:276
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/single-event-preview.php:402
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/tevolution-single-event-preview.php:260
+msgid "Organizers"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/event-listing-single-content.php:233
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/mobile-single-event.php:299
+msgid "Upload "
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/event-listing-single-content.php:358
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/mobile-single-event.php:441
+msgid "Upload File"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/event-listing-single-content.php:422
+#, php-format
+msgid "Visited %s times"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/event-listing-single-content.php:423
+msgid " Visits today"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/event-search.php:40
+#, php-format
+msgid "Search Results for: %s %s"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/event-search.php:107
+#, php-format
+msgid ""
+"Sorry! No results were found in %s events for the requested search or its "
+"may be in %s events. Try searching with some different keywords"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/mobile-single-event.php:82
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/single-event.php:47
+msgid "Review"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/mobile-single-event.php:82
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/single-event.php:47
+msgid "Reviews"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/mobile-single-event.php:210
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/single-event-preview.php:397
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/tevolution-single-event-preview.php:255
+msgid "Event Description"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/single-event-preview.php:199
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/tevolution-single-event-preview.php:57
+msgid "Start Date:"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/single-event-preview.php:200
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/tevolution-single-event-preview.php:58
+msgid "End Date:"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/single-event-preview.php:207
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/tevolution-single-event-preview.php:65
+msgid "Fees:"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/single-event-preview.php:213
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/tevolution-single-event-preview.php:71
+msgid "Location: "
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/single-event-preview.php:216
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/single-event-preview.php:432
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/tevolution-single-event-preview.php:74
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/tevolution-single-event-preview.php:290
+msgid "Website:"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/single-event-preview.php:412
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/tevolution-single-event-preview.php:270
+msgid "Organized by:"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/single-event-preview.php:416
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/tevolution-single-event-preview.php:274
+msgid "Organizers Address:"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/single-event-preview.php:420
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/tevolution-single-event-preview.php:278
+msgid "Organizers Contact Info:"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/single-event-preview.php:424
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/tevolution-single-event-preview.php:282
+msgid "Mobile:"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/single-event-preview.php:428
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/tevolution-single-event-preview.php:286
+msgid "Email:"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/single-event-preview.php:440
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/tevolution-single-event-preview.php:298
+msgid "About the Organizers"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templates/single-event-preview.php:482
+msgid "Back to Top"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templatic_login.php:36
+msgid ""
+"Invalid UserName or password. are you using templatic member username and "
+"password?"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templatic_login.php:59
+msgid ""
+"We don't find Tevolution - Events Plugin active in your templatic account, "
+"you will not be able to update without a license"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templatic_login.php:64
+msgid ""
+"Invalid UserName or password. Please enter templatic member's username and "
+"password."
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templatic_login.php:84
+msgid ""
+"Templatic Login , enter your templatic credentials to take the updates of "
+"Tevolution-Events."
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templatic_login.php:88
+msgid "User Name"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templatic_login.php:92
+msgid "Password"
+msgstr ""
+
+# @ tevolution_event
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templatic_login.php:97
+msgid "Cancel"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templatic_login.php:105
+msgid "Tevolution-event manager Plugin"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/templatic_login.php:105
+msgid "Update Now"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/wp-updates-plugin.php:42
+msgid "There is a new version of Tevolution-Event Manager plugin available "
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/wp-updates-plugin.php:47
+msgid "update now"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/wp-updates-plugin.php:90
+msgid "An Unexpected HTTP Error occurred during the API request."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/wp-updates-plugin.php:90
+msgid "Try again"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-Events/wp-updates-plugin.php:94
+msgid "An unknown error occurred"
+msgstr ""

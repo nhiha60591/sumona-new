@@ -1,0 +1,95 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Tevolution v1.0.9\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-01 11:52+0530\n"
+"PO-Revision-Date: 2014-07-01 14:11+0530\n"
+"Last-Translator: admin <shakil@templatic.net>\n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _e\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: /var/www/wordpress/wp-content/plugins/Tevolution-"
+"Statistics\n"
+
+#: /var/www/wordpress/wp-content/plugins/Tevolution-Statistics/statistics_settings.php:13
+msgid "Allow user to view statistics on detail page"
+msgstr ""
+
+#: /var/www/wordpress/wp-content/plugins/Tevolution-Statistics/statistics_settings.php:106
+#: /var/www/wordpress/wp-content/plugins/Tevolution-Statistics/statistics_settings.php:183
+msgid "Statistics"
+msgstr ""
+
+#: /var/www/wordpress/wp-content/plugins/Tevolution-Statistics/statistics_settings.php:110
+msgid "Monthly Statistics"
+msgstr ""
+
+#: /var/www/wordpress/wp-content/plugins/Tevolution-Statistics/statistics_settings.php:157
+msgid "Today"
+msgstr ""
+
+#: /var/www/wordpress/wp-content/plugins/Tevolution-Statistics/statistics_settings.php:160
+#: /var/www/wordpress/wp-content/plugins/Tevolution-Statistics/statistics_settings.php:186
+msgid "Impressions from Front Page"
+msgstr ""
+
+#: /var/www/wordpress/wp-content/plugins/Tevolution-Statistics/statistics_settings.php:161
+#: /var/www/wordpress/wp-content/plugins/Tevolution-Statistics/statistics_settings.php:165
+#: /var/www/wordpress/wp-content/plugins/Tevolution-Statistics/statistics_settings.php:169
+#: /var/www/wordpress/wp-content/plugins/Tevolution-Statistics/statistics_settings.php:173
+#: /var/www/wordpress/wp-content/plugins/Tevolution-Statistics/statistics_settings.php:187
+#: /var/www/wordpress/wp-content/plugins/Tevolution-Statistics/statistics_settings.php:191
+#: /var/www/wordpress/wp-content/plugins/Tevolution-Statistics/statistics_settings.php:195
+#: /var/www/wordpress/wp-content/plugins/Tevolution-Statistics/statistics_settings.php:199
+#: /var/www/wordpress/wp-content/plugins/Tevolution-Statistics/statistics_settings.php:207
+#: /var/www/wordpress/wp-content/plugins/Tevolution-Statistics/statistics_settings.php:473
+#: /var/www/wordpress/wp-content/plugins/Tevolution-Statistics/statistics_settings.php:474
+#: /var/www/wordpress/wp-content/plugins/Tevolution-Statistics/statistics_settings.php:475
+#: /var/www/wordpress/wp-content/plugins/Tevolution-Statistics/statistics_settings.php:476
+#: /var/www/wordpress/wp-content/plugins/Tevolution-Statistics/statistics_settings.php:477
+#: /var/www/wordpress/wp-content/plugins/Tevolution-Statistics/statistics_settings.php:510
+#: /var/www/wordpress/wp-content/plugins/Tevolution-Statistics/statistics_settings.php:511
+#: /var/www/wordpress/wp-content/plugins/Tevolution-Statistics/statistics_settings.php:512
+#: /var/www/wordpress/wp-content/plugins/Tevolution-Statistics/statistics_settings.php:513
+#: /var/www/wordpress/wp-content/plugins/Tevolution-Statistics/statistics_settings.php:514
+msgid "Visits"
+msgstr ""
+
+#: /var/www/wordpress/wp-content/plugins/Tevolution-Statistics/statistics_settings.php:164
+#: /var/www/wordpress/wp-content/plugins/Tevolution-Statistics/statistics_settings.php:190
+msgid "Impressions from Category Page"
+msgstr ""
+
+# @ templatic
+#: /var/www/wordpress/wp-content/plugins/Tevolution-Statistics/statistics_settings.php:168
+#: /var/www/wordpress/wp-content/plugins/Tevolution-Statistics/statistics_settings.php:194
+msgid "Send Inquiry"
+msgstr ""
+
+# @ templatic
+#: /var/www/wordpress/wp-content/plugins/Tevolution-Statistics/statistics_settings.php:172
+#: /var/www/wordpress/wp-content/plugins/Tevolution-Statistics/statistics_settings.php:198
+msgid "Send to friend"
+msgstr ""
+
+#: /var/www/wordpress/wp-content/plugins/Tevolution-Statistics/statistics_settings.php:176
+#: /var/www/wordpress/wp-content/plugins/Tevolution-Statistics/statistics_settings.php:202
+msgid "Favorites"
+msgstr ""
+
+#: /var/www/wordpress/wp-content/plugins/Tevolution-Statistics/statistics_settings.php:177
+#: /var/www/wordpress/wp-content/plugins/Tevolution-Statistics/statistics_settings.php:203
+msgid "People"
+msgstr ""
+
+#: /var/www/wordpress/wp-content/plugins/Tevolution-Statistics/statistics_settings.php:206
+msgid "Overall"
+msgstr ""

@@ -1,0 +1,32 @@
+Templatic Plugin - Templatic-MultiRating(version 1.0.3)   28th October 2014
+======================================================================
+
+28th October 2014 (Version 1.0.3)
+----------------------------------------------------
+String changes
+
+Change the code make some structural changes in star rating
+
+Use font awesome instead of start image
+
+4th March 2014 (Version 1.0.2)
+---------------------------------------------------------------------
+Fix: Fetch ratings only frm approved reviews
+-----------------------------------------------
+multiple_rating.php
+-----------------------------------------------
+
+Fix: Localization issue fixed and updated language files
+----------------------------------------------------------
+languages/en_US.mo
+languages/en_US.po
+templatic_rating_setting.php
+----------------------------------------------------------
+
+18th January 2014 (Version 1.0.1)
+------------------------------------------------------------------
+Fix: Some design issues were coming up when this plugin is activated
+---------------------------------------------------------------------
+multiple_rating.php
+css/jquery.rating.css
+-----------------------------------------------
