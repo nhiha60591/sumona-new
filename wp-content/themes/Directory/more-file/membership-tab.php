@@ -18,6 +18,11 @@ class HH_Membership_Tab{
     function membership_panel(){
         global $membership_element;
         if( isset( $_REQUEST['tab'] ) && $_REQUEST['tab'] =='membership' ):
+            if( isset( $_REQUEST['METHOD']) && $_REQUEST['POST']){
+                global $monetization;
+
+                $monetization->insert_package_data($_POST);
+            }
             if( isset( $_REQUEST['action'] ) && !empty( $_REQUEST['action'] )){
                 switch( $_REQUEST['action'] ){
                     case "add_membership":

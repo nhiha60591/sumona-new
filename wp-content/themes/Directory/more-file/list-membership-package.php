@@ -331,18 +331,34 @@ class ListMembershipPackage extends WP_List_Table {
          * use sort and pagination data to build a custom query instead, as you'll
          * be able to use your precisely-queried data immediately.
          */
-        $data = array(
-            array(
-                'ID'=>1,
-                'title' => 'Gold',
-                'amount' => 1234,
-                'duration' => '123 days',
-                'link' => 'abc',
-                'status' => 1
+        $data = array();
+
+        $args =  array(
+            'post_status'   => 'publish',
+            'post_type'     => 'monetization_package',
+            'posts_per_page' => -1,
+            'meta_query' => array(
+                array(
+                    'key' => 'package_type',
+                    'value' => '3'
+                )
             )
         );
-                
-        
+        /* CREATING A POST OBJECT AND INSERT THE POST INTO THE DATABAE */
+        $listMembership = new WP_Query($args);
+        if( $listMembership->have_posts() ){
+            while($listMembership->have_posts()){
+                $listMembership->the_post();
+                $data[] = array(
+                    'ID'=>get_the_ID(),
+                    'title' => get_the_title(),
+                    'amount' => get_post_meta( get_the_ID(), 'package_amount', true ),
+                    'duration' => get_post_meta( get_the_ID(), 'validity', true ) ." ". get_post_meta( get_the_ID(), 'validity_per', true ),
+                    'link' => get_permalink(),
+                    'status' => get_post_meta( get_the_ID(), 'show_package', true )
+                );
+            }
+        }
         /**
          * This checks for sorting input and sorts the data in our array accordingly.
          * 
