@@ -151,7 +151,7 @@ class ListMembershipPackage extends WP_List_Table {
         //Build row actions
         $actions = array(
             'edit'      => sprintf('<a href="?page=%s&tab=%s&action=%s&msid=%s">Edit</a>',$_REQUEST['page'], $_REQUEST['tab'], 'edit_membership',$item['ID']),
-            'delete'    => sprintf('<a href="?page=%s&tab=%s&action=%s&msid=%s">Delete</a>',$_REQUEST['page'], $_REQUEST['tab'], 'delete',$item['ID']),
+            'delete'    => sprintf('<a href="?page=%s&tab=%s&action=%s&msid=%s">Delete</a>',$_REQUEST['page'], $_REQUEST['tab'], 'delete_membership',$item['ID']),
         );
         
         //Return the title contents
@@ -335,14 +335,8 @@ class ListMembershipPackage extends WP_List_Table {
 
         $args =  array(
             'post_status'   => 'publish',
-            'post_type'     => 'monetization_package',
+            'post_type'     => 'membership',
             'posts_per_page' => -1,
-            'meta_query' => array(
-                array(
-                    'key' => 'package_type',
-                    'value' => '3'
-                )
-            )
         );
         /* CREATING A POST OBJECT AND INSERT THE POST INTO THE DATABAE */
         $listMembership = new WP_Query($args);

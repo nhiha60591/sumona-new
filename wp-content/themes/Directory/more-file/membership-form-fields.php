@@ -32,10 +32,10 @@
 
             <tr class="" id="billing_period">
                 <th valign="top">
-                    <label for="billing_period" class="form-textfield-label">Package Duration <span class="required">*</span></label>
+                    <label for="billing_period" class="form-textfield-label">Membership Duration <span class="required">*</span></label>
                 </th>
                 <td>
-                    <input type="text" class="billing_num" name="validity" id="validity" value="">
+                    <input type="text" class="billing_num" name="validity" id="validity" value="<?php echo @$membership_element['validity']; ?>">
                     <select name="validity_per" id="validity_per" class="textfield billing_per">
                         <option value="D" <?php selected( 'D', @$membership_element['validity_per']); ?>>Days</option>
                         <option value="M" <?php selected( 'M', @$membership_element['validity_per']); ?>>Months</option>
@@ -50,7 +50,7 @@
                     <label for="package_status" class="form-textfield-label">Enable Package</label>
                 </th>
                 <td>
-                    <input type="checkbox" name="package_status" id="package_status" value="1" checked="checked">
+                    <input type="checkbox" name="package_status" id="package_status" <?php checked( 1, @$membership_element['package_status'] ); ?> value="1" checked="checked">
                     &nbsp;<label for="package_status">Yes</label><br>
                 </td>
             </tr>
@@ -60,7 +60,7 @@
                     <label for="is_recurring" class="form-textfield-label" style="width:100px;">Recurring package</label>
                 </th>
                 <td>
-                    <label><input type="checkbox" name="recurring" id="recurring" value="1" onclick="rec_div_show(this.id)">&nbsp; Yes</label>
+                    <label><input type="checkbox" name="recurring" id="recurring" value="1" <?php checked( 1, @$membership_element['recurring'] ); ?> onclick="rec_div_show(this.id)">&nbsp; Yes</label>
                     <br>
                     <p class="description">If "Yes" is selected, Listing owners will be billed automatically as soon as the price package's billing period expires. <b>Recurring packages should with PayPal, 2CO, Skrill, Google wallet</b></p>
                 </td>
@@ -72,11 +72,11 @@
                 </th>
                 <td>
                     <span class="option_label">Charge users every </span>
-                    <input type="text" class="textfield billing_num" name="billing_num" id="billing_num" value="">
+                    <input type="text" class="textfield billing_num" name="billing_num" id="billing_num" value="<?php echo @$membership_element['billing_num']; ?>">
                     <select name="billing_per" id="billing_per" class="textfield billing_per">
-                        <option value="D">Days</option>
-                        <option value="M">Months</option>
-                        <option value="Y">Years</option>
+                        <option value="D" <?php selected( 'D', @$membership_element['billing_per']); ?>>Days</option>
+                        <option value="M" <?php selected( 'M', @$membership_element['billing_per']); ?>>Months</option>
+                        <option value="Y" <?php selected( 'Y', @$membership_element['billing_per']); ?>>Years</option>
                     </select><br>
                     <p class="description">Time between each billing.</p>
                 </td>
@@ -87,7 +87,7 @@
                     <label for="billing_cycle" class="form-textfield-label">Number of cycles</label>
                 </th>
                 <td>
-                    <input type="text" class="textfield" name="billing_cycle" id="billing_cycle" value=""><br><p class="description">The number of times members will be billed, i.e. the number of times the process will be repeated.</p>
+                    <input type="text" class="textfield" name="billing_cycle" id="billing_cycle" value="<?php echo @$membership_element['billing_cycle']; ?>"><br><p class="description">The number of times members will be billed, i.e. the number of times the process will be repeated.</p>
                 </td>
             </tr>
 
@@ -95,7 +95,7 @@
                 <th valign="top"><label class="form-textfield-label">Free trial period</label></th>
                 <td>
                     <div class="input-switch">
-                        <input id="first_free_trail_period" type="checkbox" name="first_free_trail_period" value="1">
+                        <input id="first_free_trail_period" type="checkbox" name="first_free_trail_period" <?php checked( 1, @$membership_element['first_free_trail_period'] ); ?> value="1">
                         <label for="first_free_trail_period">&nbsp;Enable</label>
                     </div>
                     <p class="description">With this enabled the first period of the subscription will be free. For the second period the user will be charged the amount you specified above. This only works with PayPal. </p>
