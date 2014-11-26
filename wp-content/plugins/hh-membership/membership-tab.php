@@ -1,16 +1,19 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: nhiha60591
- * Date: 11/22/14
- * Time: 10:48 AM
- */
+/*
+Plugin Name: Tevolution Membership
+Plugin URI: https://github.com/nhiha60591/sumona-new
+Description: Membership Package
+Version: 1.0.1
+Author: Huu Hien
+Author URI: https://github.com/nhiha60591/sumona-new
+*/
 class HH_Membership_Tab{
     function __construct(){
         add_action( 'templatic_monetizations_tabs', array( $this, 'add_tab_link' ), 10, 2 );
         add_action( 'monetization_tabs_content', array( $this, 'membership_panel' ), 10, 2 );
-        add_action( 'hh_update_membership_package', array( $this, 'update_membership_package' ), 10, 2 );
+        add_action( 'init', array( $this, 'update_membership_package' ), 10, 2 );
         add_action( 'init', array( $this, 'register_post_type' ),1 );
+        add_filter( 'template_include', array( $this, 'template_include') );
     }
     function add_tab_link( $tab, $class ){
         ?>
@@ -30,6 +33,7 @@ class HH_Membership_Tab{
             'billing_per',
             'billing_cycle',
             'first_free_trail_period',
+            'post_type_access',
         );
         if( isset( $_REQUEST['msid'] ) ){
             foreach( $data as $key ){
@@ -79,41 +83,67 @@ class HH_Membership_Tab{
 
     }
     function update_membership( $msid = 0 ){
-        $current_user = wp_get_current_user();
-        $data = array(
-            'package_type' => $_POST['package_type'],
-            'package_amount' => $_POST['package_amount'],
-            'validity' => $_POST['validity'],
-            'validity_per' => $_POST['validity_per'],
-            'package_status' => !empty( $_POST['package_status'] ) ? $_POST['package_status'] : 0,
-            'recurring' => !empty( $_POST['recurring'] ) ? $_POST['recurring'] : 0,
-            'billing_num' => !empty( $_POST['billing_num'] ) ? $_POST['billing_num'] : 0,
-            'billing_per' => !empty( $_POST['billing_per'] ) ? $_POST['billing_per'] : 'D',
-            'billing_cycle' => !empty( $_POST['billing_cycle'] ) ? $_POST['billing_cycle'] : 0,
-            'first_free_trail_period' => !empty( $_POST['first_free_trail_period'] ) ? $_POST['first_free_trail_period'] : 0,
-        );
-        // Create post object
-        $my_post = array(
-            'post_title'    => $_POST['package_name'],
-            'post_content'  => $_POST['package_desc'],
-            'post_status'   => 'publish',
-            'post_author'   => $current_user->ID,
-            'post_type'     => 'membership'
-        );
-        if( $msid ){
-            $my_post['ID'] = $msid;
-        }
+        if( isset( $_SERVER['REQUEST_METHOD']) && $_SERVER['REQUEST_METHOD'] == 'POST' ){
+            $current_user = wp_get_current_user();
+            $data = array(
+                'package_type' => $_POST['package_type'],
+                'package_amount' => $_POST['package_amount'],
+                'validity' => $_POST['validity'],
+                'validity_per' => $_POST['validity_per'],
+                'package_status' => !empty( $_POST['package_status'] ) ? $_POST['package_status'] : 0,
+                'recurring' => !empty( $_POST['recurring'] ) ? $_POST['recurring'] : 0,
+                'billing_num' => !empty( $_POST['billing_num'] ) ? $_POST['billing_num'] : 0,
+                'billing_per' => !empty( $_POST['billing_per'] ) ? $_POST['billing_per'] : 'D',
+                'billing_cycle' => !empty( $_POST['billing_cycle'] ) ? $_POST['billing_cycle'] : 0,
+                'first_free_trail_period' => !empty( $_POST['first_free_trail_period'] ) ? $_POST['first_free_trail_period'] : 0,
+                'post_type_access' => !empty( $_POST['post_type_access'] ) ? $_POST['post_type_access'] : array(),
+            );
+            // Create post object
+            $my_post = array(
+                'post_title'    => $_POST['package_name'],
+                'post_content'  => $_POST['package_desc'],
+                'post_status'   => 'publish',
+                'post_author'   => $current_user->ID,
+                'post_type'     => 'membership'
+            );
+            if( $msid ){
+                $my_post['ID'] = $msid;
+            }
 
-        // Insert the post into the database
-        $post_id = wp_insert_post( $my_post );
-        if( absint( $post_id ) && $post_id > 0 ){
-            foreach( $data as $key=>$val){
-                if( !empty( $val ) ){
-                    update_post_meta( $post_id, $key, $val );
-                }else{
-                    delete_post_meta( $post_id, $key );
+            // Insert the post into the database
+            $post_id = wp_insert_post( $my_post );
+            if( absint( $post_id ) && $post_id > 0 ){
+                foreach( $data as $key=>$val){
+                    if( !empty( $val ) ){
+                        update_post_meta( $post_id, $key, $val );
+                    }else{
+                        delete_post_meta( $post_id, $key );
+                    }
                 }
             }
+            $roleslug = "package_".$post_id;
+            remove_role($roleslug);
+            $caps = array();
+            $role = add_role( $roleslug,$_POST['package_name'].' Package Role',$caps);
+            foreach($_POST['post_type_access'] as $rows){
+                $role->add_cap( 'edit_'.$rows );
+                $role->add_cap( 'read_'.$rows );
+                $role->add_cap( 'delete_'.$rows );
+                $role->add_cap( 'edit_post'.$rows.'s' );
+                $role->add_cap( 'edit_others_'.$rows.'s' );
+                $role->add_cap( 'publish_'.$rows.'s' );
+                $role->add_cap( 'read_private_'.$rows.'s' );
+                $role->add_cap( 'delete_'.$rows.'s' );
+                $role->add_cap( 'delete_private_'.$rows.'s' );
+                $role->add_cap( 'delete_published_'.$rows.'s' );
+                $role->add_cap( 'delete_others_'.$rows.'s' );
+                $role->add_cap( 'edit_private_'.$rows.'s' );
+                $role->add_cap( 'edit_published_'.$rows.'s' );
+                $role->add_cap( 'create_'.$rows.'s' );
+            }
+            $role->add_cap('read');
+            $role->add_cap('upload_files');
+            wp_redirect( add_query_arg( array('page'=>'monetization', 'tab'=> 'membership' ), admin_url("admin.php") ) );
         }
     }
     function register_post_type(){
@@ -150,6 +180,17 @@ class HH_Membership_Tab{
         );
 
         register_post_type( 'membership', $args );
+    }
+    function template_include( $template ){
+        if( is_singular( 'membership') ){
+            $new_template = locate_template( array( 'archive-program.php' ) );
+            if ( '' != $new_template ) {
+                return $new_template;
+            }else{
+                return plugin_dir_path(__FILE__)."templates/register-membership.php";
+            }
+        }
+        return $template;
     }
 }
 new HH_Membership_Tab();

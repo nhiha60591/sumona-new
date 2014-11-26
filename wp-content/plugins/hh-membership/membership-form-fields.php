@@ -60,13 +60,13 @@
                     <label for="is_recurring" class="form-textfield-label" style="width:100px;">Recurring package</label>
                 </th>
                 <td>
-                    <label><input type="checkbox" name="recurring" id="recurring" value="1" <?php checked( 1, @$membership_element['recurring'] ); ?> onclick="rec_div_show(this.id)">&nbsp; Yes</label>
+                    <label><input type="checkbox" name="recurring" id="recurring" value="1" <?php checked( 1, @$membership_element['recurring'] ); ?>>&nbsp; Yes</label>
                     <br>
                     <p class="description">If "Yes" is selected, Listing owners will be billed automatically as soon as the price package's billing period expires. <b>Recurring packages should with PayPal, 2CO, Skrill, Google wallet</b></p>
                 </td>
             </tr>
 
-            <tr id="rec_tr" style="display: none;">
+            <tr id="rec_tr" <?php if( !@$membership_element['recurring'] ): ?> style="display: none;" <?php endif; ?>>
                 <th valign="top">
                     <label for="recurring_billing" class="form-textfield-label">Billing Period for Recurring package</label>
                 </th>
@@ -82,7 +82,7 @@
                 </td>
             </tr>
 
-            <tr id="rec_tr1" style="display: none;">
+            <tr id="rec_tr1" <?php if( !@$membership_element['recurring'] ): ?> style="display: none;" <?php endif; ?>>
                 <th valign="top">
                     <label for="billing_cycle" class="form-textfield-label">Number of cycles</label>
                 </th>
@@ -91,7 +91,7 @@
                 </td>
             </tr>
 
-            <tr id="rec_tr2" style="display: none;">
+            <tr id="rec_tr2" <?php if( !@$membership_element['recurring'] ): ?> style="display: none;" <?php endif; ?>>
                 <th valign="top"><label class="form-textfield-label">Free trial period</label></th>
                 <td>
                     <div class="input-switch">
@@ -101,7 +101,36 @@
                     <p class="description">With this enabled the first period of the subscription will be free. For the second period the user will be charged the amount you specified above. This only works with PayPal. </p>
                 </td>
             </tr>
+            <?php
+            $args = get_option('templatic_custom_post');
+            if($args):
+                if( !is_array( $membership_element['post_type_access'] ) ) $membership_element['post_type_access'] = array();
+                ?>
+                <tr class="">
+                    <th>Custom post type access</th>
+                    <td>
+                        <?php foreach( $args as $key => $_args): ?>
+                            <label><input type="checkbox" name="post_type_access[]" <?php checked( true ,in_array( @$key, @$membership_element['post_type_access'] ) ) ?> value="<?php echo $key; ?>"> <?php echo $_args['label']; ?></label><br />
+                        <?php endforeach; ?>
+                    </td>
+                </tr>
+            <?php endif;?>
         </tbody>
     </table>
     <?php submit_button('Save Change'); ?>
 </form>
+<script type="text/javascript">
+    jQuery(document).ready(function ( $){
+        $("#recurring").change( function() {
+            if( $(this).is(":checked")){
+                $("#rec_tr").show();
+                $("#rec_tr1").show();
+                $("#rec_tr2").show();
+            }else{
+                $("#rec_tr").hide();
+                $("#rec_tr1").hide();
+                $("#rec_tr2").hide();
+            }
+        });
+    });
+</script>

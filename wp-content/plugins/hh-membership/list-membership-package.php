@@ -155,11 +155,21 @@ class ListMembershipPackage extends WP_List_Table {
         );
         
         //Return the title contents
-        return sprintf('%1$s <span style="color:silver">(id:%2$s)</span>%3$s',
+        return sprintf('%1$s %2$s',
             /*$1%s*/ $item['title'],
-            /*$2%s*/ $item['ID'],
             /*$3%s*/ $this->row_actions($actions)
         );
+    }
+
+    function column_link($item){
+        //Return the link contents
+        return sprintf('<input type="text" value="%1$s" readonly>',
+            /*$1%s*/ $item['link']
+        );
+    }
+    function column_status($item){
+        //Return the link contents
+        return $item['status'] ? '<font color="green">Active</font>' : '<font color="red">Inactive</font>';
     }
 
 
@@ -199,6 +209,7 @@ class ListMembershipPackage extends WP_List_Table {
             'cb'        => '<input type="checkbox" />', //Render a checkbox instead of text
             'title'     => 'Title',
             'type'    => 'Type',
+            'amount'     => 'Amount',
             'duration'  => 'Membership Duration',
             'link'  => 'Package Link',
             'status'  => 'Status',
@@ -343,13 +354,25 @@ class ListMembershipPackage extends WP_List_Table {
         if( $listMembership->have_posts() ){
             while($listMembership->have_posts()){
                 $listMembership->the_post();
+                $duration = get_post_meta( get_the_ID(), 'validity_per', true );
+                switch ($duration){
+                    case "D":
+                        $duration = 'Days';
+                        break;
+                    case "M":
+                        $duration = 'Months';
+                        break;
+                    case "Y":
+                        $duration = 'Years';
+                        break;
+                }
                 $data[] = array(
                     'ID'=>get_the_ID(),
                     'title' => get_the_title(),
-                    'amount' => get_post_meta( get_the_ID(), 'package_amount', true ),
-                    'duration' => get_post_meta( get_the_ID(), 'validity', true ) ." ". get_post_meta( get_the_ID(), 'validity_per', true ),
+                    'amount' => fetch_currency_with_position(get_post_meta( get_the_ID(), 'package_amount', true )),
+                    'duration' => get_post_meta( get_the_ID(), 'validity', true ) ." ". $duration,
                     'link' => get_permalink(),
-                    'status' => get_post_meta( get_the_ID(), 'show_package', true )
+                    'status' => get_post_meta( get_the_ID(), 'package_status', true )
                 );
             }
         }
