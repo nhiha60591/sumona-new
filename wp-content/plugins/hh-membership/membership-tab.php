@@ -14,6 +14,9 @@ class HH_Membership_Tab{
         add_action( 'init', array( $this, 'update_membership_package' ), 10, 2 );
         add_action( 'init', array( $this, 'register_post_type' ),1 );
         add_filter( 'template_include', array( $this, 'template_include') );
+        add_action( 'wp_enqueue_scripts', array( $this, 'front_script' ) );
+        add_action( 'admin_print_scripts', array( $this, 'admin_script' ) );
+        add_filter( 'tevolution_package_link', array( $this, 'change_link_membership'), 10, 2 );
     }
     function add_tab_link( $tab, $class ){
         ?>
@@ -121,6 +124,10 @@ class HH_Membership_Tab{
                     }
                 }
             }
+            /**
+             * Set Package Default
+             */
+            update_post_meta( $post_id, 'package_select', $post_id );
             $roleslug = "package_".$post_id;
             remove_role($roleslug);
             $caps = array();
@@ -191,6 +198,21 @@ class HH_Membership_Tab{
             }
         }
         return $template;
+    }
+    function front_script(){
+        wp_enqueue_script( 'hh-membership-ui', plugin_dir_url( __FILE__ )."assets/js/jquery.validate.js", array( 'jquery' ) );
+    }
+    function admin_script(){
+        wp_register_script( 'hh-admin-membership', plugins_url( '/assets/js/hh-admin-membership.js', __FILE__ ) );
+        wp_enqueue_script( 'hh-admin-membership' );
+        wp_enqueue_script( 'hh-membership-ui', plugin_dir_url( __FILE__ )."assets/js/jquery.validate.js", array( 'jquery' ) );
+    }
+    function change_link_membership( $package, $post_id ){
+        $post = get_post( $post_id );
+        if( $post->post_type == 'membership' ){
+            $package = ( @$post->post_title)?'<a target="_blank" href="'.site_url().'/wp-admin/admin.php?page=monetization&action=edit_membership&msid='.$post->ID.'&tab=membership">'.$post->post_title.'</a>' :'-';
+        }
+        return $package;
     }
 }
 new HH_Membership_Tab();

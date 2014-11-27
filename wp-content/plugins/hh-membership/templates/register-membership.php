@@ -21,12 +21,40 @@ do_action( 'templ_before_container_breadcrumb' );  ?>
                     <div id="post-<?php the_ID(); ?>" class="<?php supreme_entry_class(); ?>">
                         <?php
                             if( isset($_POST['hh_register']) ){
-                                $payable_amount = get_post_meta( get_the_ID(), 'payable_amount', true );
-                                payment_menthod_response_url($_POST[''],get_the_ID(),'aa',get_the_ID(),$payable_amount);
+                                $error = new WP_Error();
+                                if( !isset( $_POST['username'] ) || empty( $_POST['username']) ){
+                                    $error->add( 'username', '<strong>ERROR: </strong>Please enter a username');
+                                }
+                                if( !isset( $_POST['password'] ) || empty( $_POST['password']) ){
+                                    $error->add( 'password', '<strong>ERROR: </strong>Please provide a password');
+                                }
+                                if( isset( $_POST['password'] ) && isset( $_POST['confirm_password'] ) && $_POST['password'] != $_POST['confirm_password'] ){
+                                    $error->add( 'confirm_password', '<strong>ERROR: </strong>Please enter the same password as above');
+                                }
+                                if( !isset( $_POST['user_email'] ) || empty( $_POST['user_email']) ){
+                                    $error->add( 'user_email', '<strong>ERROR: </strong>Please enter a valid email address');
+                                }
+                                if( !isset( $_POST['first_name'] ) || empty( $_POST['first_name']) ){
+                                    $error->add( 'first_name', '<strong>ERROR: </strong>Please enter your first name');
+                                }
+                                if( !isset( $_POST['last_name'] ) || empty( $_POST['last_name']) ){
+                                    $error->add( 'last_name', '<strong>ERROR: </strong>Please enter your last name');
+                                }
+                                if ( sizeof( $error->get_error_codes() ) > 0 ){
+                                    foreach( $error->get_error_messages() as $mess ){
+                                        echo '<div class="error">'.$mess.'</div>';
+                                    }
+                                }else{
+                                    global $post;
+                                    $payable_amount = get_post_meta( $post->ID, 'package_amount', true );
+                                    $trans_id = insert_transaction_detail($_POST['paymentmethod'],$post->ID,0,1);
+                                    insert_update_users_packageperlist(0,$_POST,$trans_id);
+                                    payment_menthod_response_url($_POST['paymentmethod'],get_the_ID(),'membership',get_the_ID(),$payable_amount);
+                                }
                             }
                         ?>
                         <section class="entry-content">
-                            <form name="membership_register" id="submit_form" action="<?php echo add_query_arg( array('action'=>'payment-method'), get_the_permalink()); ?>" method="post" _lpchecked="1">
+                            <form name="membership_register" id="membership_register" action="<?php echo add_query_arg( array('action'=>'payment-method'), get_the_permalink()); ?>" method="post" _lpchecked="1">
                                 <p class="register_membership">
                                     <label for="username">Username:</label>
                                     <input type="text" name="username" value="" id="username" placeholder="" class="placeholder" style="cursor: auto; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==); background-attachment: scroll; background-position: 100% 50%; background-repeat: no-repeat;">
@@ -57,6 +85,51 @@ do_action( 'templ_before_container_breadcrumb' );  ?>
                                 </div>
                                 <input type="submit" name="hh_register" value="Register">
                             </form>
+                            <script type="text/javascript">
+                                jQuery(document).ready(function($){
+                                    $("#membership_register").validate({
+                                        rules: {
+                                            first_name: "required",
+                                            last_name: "required",
+                                            username: {
+                                                required: true,
+                                                minlength: 2
+                                            },
+                                            password: {
+                                                required: true,
+                                                minlength: 5
+                                            },
+                                            confirm_password: {
+                                                required: true,
+                                                minlength: 5,
+                                                equalTo: "#password"
+                                            },
+                                            user_email: {
+                                                required: true,
+                                                email: true
+                                            }
+                                        },
+                                        messages: {
+                                            first_name: "Please enter your firstname",
+                                            last_name: "Please enter your lastname",
+                                            username: {
+                                                required: "Please enter a username",
+                                                minlength: "Your username must consist of at least 2 characters"
+                                            },
+                                            password: {
+                                                required: "Please provide a password",
+                                                minlength: "Your password must be at least 5 characters long"
+                                            },
+                                            confirm_password: {
+                                                required: "Please provide a password",
+                                                minlength: "Your password must be at least 5 characters long",
+                                                equalTo: "Please enter the same password as above"
+                                            },
+                                            user_email: "Please enter a valid email address"
+                                        }
+                                    });
+                                });
+                            </script>
                         </section>
                         <!-- .entry-content -->
                     </div>

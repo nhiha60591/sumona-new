@@ -64,7 +64,11 @@ class wp_list_transaction extends WP_List_Table
 				$color_taxonomy_value = '';
 				
 				$package = ( @$post_package->post_title)?'<a target="_blank" href="'.site_url().'/wp-admin/admin.php?page=monetization&action=edit&package_id='.$post_package->ID.'&tab=packages">'.$post_package->post_title.'</a>' :'-';
-				if(isset($tmpdata[$color_taxonomy]) && $tmpdata[$color_taxonomy]!= '') { $color_taxonomy_value = $tmpdata[$color_taxonomy]; } 
+                 /**
+                  * Huu Hien Add Package Filter
+                  */
+                 $package = apply_filters( 'tevolution_package_link', $package, $post_package->ID );
+                 if(isset($tmpdata[$color_taxonomy]) && $tmpdata[$color_taxonomy]!= '') { $color_taxonomy_value = $tmpdata[$color_taxonomy]; }
 				
 				
 				$transaction_price_pkg = $monetization->templ_get_price_info($transinfoObj->package_id,'');
