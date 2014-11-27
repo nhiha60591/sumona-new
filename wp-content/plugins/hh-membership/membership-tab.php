@@ -15,6 +15,7 @@ class HH_Membership_Tab{
         add_action( 'init', array( $this, 'register_post_type' ),1 );
         add_filter( 'template_include', array( $this, 'template_include') );
         add_action( 'wp_enqueue_scripts', array( $this, 'front_script' ) );
+        add_action( 'tovolution_confirm_transaction', array( $this, 'confirm_membership_transaction' ), 10, 1 );
         add_action( 'admin_print_scripts', array( $this, 'admin_script' ) );
         add_filter( 'tevolution_package_link', array( $this, 'change_link_membership'), 10, 2 );
     }
@@ -213,6 +214,19 @@ class HH_Membership_Tab{
             $package = ( @$post->post_title)?'<a target="_blank" href="'.site_url().'/wp-admin/admin.php?page=monetization&action=edit_membership&msid='.$post->ID.'&tab=membership">'.$post->post_title.'</a>' :'-';
         }
         return $package;
+    }
+    function confirm_membership_transaction( $cid ){
+        global $wpdb;
+        $transection_db_table_name=$wpdb->prefix.'transactions';
+        $cid = explode(",",$cid);
+        $post = get_post( $cid[1] );
+        if( $post->post_type == 'membership'){
+            $user_id = $wpdb->get_var( "SELECT `user_id` FROM {$transection_db_table_name} WHERE `trans_id` = '{$cid[0]}'");
+            $users = new WP_User( $user_id );
+            if( !is_super_admin( $user_id ) ){
+                $users->set_role( "package_".$cid[1] );
+            }
+        }
     }
 }
 new HH_Membership_Tab();

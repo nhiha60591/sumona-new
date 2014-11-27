@@ -148,6 +148,7 @@ class wp_list_transaction extends WP_List_Table
 			$cids = $_REQUEST['cf'];
 			foreach( $cids as $cid )
 			{
+                do_action( 'tovolution_confirm_transaction', $cid );
 				$cid = explode(",",$cid);
 				$my_post['ID'] = $cid[1];
 				$my_post['post_status'] = 'publish';
