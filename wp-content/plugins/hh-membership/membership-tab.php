@@ -19,6 +19,15 @@ class HH_Membership_Tab{
         add_action( 'admin_print_scripts', array( $this, 'admin_script' ) );
         add_filter( 'tevolution_package_link', array( $this, 'change_link_membership'), 10, 2 );
     }
+    public function current_action() {
+        if ( isset( $_REQUEST['action'] ) && -1 != $_REQUEST['action'] )
+            return $_REQUEST['action'];
+
+        if ( isset( $_REQUEST['action2'] ) && -1 != $_REQUEST['action2'] )
+            return $_REQUEST['action2'];
+
+        return false;
+    }
     function add_tab_link( $tab, $class ){
         ?>
         <a id="membership_settings" class='nav-tab<?php if($tab == 'membership') echo $class;  ?>' href='?page=monetization&tab=membership'><?php echo __('Membership',ADMINDOMAIN); ?> </a>
@@ -52,12 +61,16 @@ class HH_Membership_Tab{
                 do_action( 'hh_update_membership_package' );
             }
             if( isset( $_REQUEST['action'] ) && !empty( $_REQUEST['action'] )){
-                switch( $_REQUEST['action'] ){
+                switch( $this->current_action() ){
                     case "add_membership":
                         include "add-membership.php";
                         break;
                     case "edit_membership":
                         include "edit-membership.php";
+                        break;
+                    case "delete_membership":
+                    case "delete":
+                        include "delete-membership.php";
                         break;
                     default:
                         do_action( 'monetization_membership_action' );

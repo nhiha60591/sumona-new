@@ -24,6 +24,8 @@ do_action( 'templ_before_container_breadcrumb' );  ?>
                                 $error = new WP_Error();
                                 if( !isset( $_POST['username'] ) || empty( $_POST['username']) ){
                                     $error->add( 'username', '<strong>ERROR: </strong>Please enter a username');
+                                }elseif( username_exists( $_POST['username']) ){
+                                    $error->add( 'username', '<strong>ERROR: </strong>This username ready exists');
                                 }
                                 if( !isset( $_POST['password'] ) || empty( $_POST['password']) ){
                                     $error->add( 'password', '<strong>ERROR: </strong>Please provide a password');
@@ -33,6 +35,8 @@ do_action( 'templ_before_container_breadcrumb' );  ?>
                                 }
                                 if( !isset( $_POST['user_email'] ) || empty( $_POST['user_email']) ){
                                     $error->add( 'user_email', '<strong>ERROR: </strong>Please enter a valid email address');
+                                }else{
+                                    $error->add( 'user_email', '<strong>ERROR: </strong>This email ready exists');
                                 }
                                 if( !isset( $_POST['first_name'] ) || empty( $_POST['first_name']) ){
                                     $error->add( 'first_name', '<strong>ERROR: </strong>Please enter your first name');
@@ -46,10 +50,22 @@ do_action( 'templ_before_container_breadcrumb' );  ?>
                                     }
                                 }else{
                                     global $post;
-                                    $payable_amount = get_post_meta( $post->ID, 'package_amount', true );
-                                    $trans_id = insert_transaction_detail($_POST['paymentmethod'],$post->ID,0,1);
-                                    insert_update_users_packageperlist(0,$_POST,$trans_id);
-                                    payment_menthod_response_url($_POST['paymentmethod'],get_the_ID(),'membership',get_the_ID(),$payable_amount);
+                                    $userdata = array(
+                                        'user_pass' => $_POST['confirm_password'],
+                                        'user_login' => $_POST['username'],
+                                        'first_name' => $_POST['first_name'],
+                                        'last_name' => $_POST['last_name'],
+                                        'user_email' => $_POST['user_email'],
+                                    );
+                                    $user_id = wp_insert_user( $userdata ) ;
+
+                                    //On success
+                                    if( !is_wp_error($user_id) ) {
+                                        $payable_amount = get_post_meta( $post->ID, 'package_amount', true );
+                                        $trans_id = insert_transaction_detail($_POST['paymentmethod'],$post->ID,0,1);
+                                        insert_update_users_packageperlist(0,$_POST,$trans_id);
+                                        payment_menthod_response_url($_POST['paymentmethod'],get_the_ID(),'membership',get_the_ID(),$payable_amount);
+                                    }
                                 }
                             }
                         ?>

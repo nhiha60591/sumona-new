@@ -87,7 +87,7 @@ class ListMembershipPackage extends WP_List_Table {
                 
         //Set parent defaults
         parent::__construct( array(
-            'singular'  => 'membership',     //singular name of the listed records
+            'singular'  => 'msid',     //singular name of the listed records
             'plural'    => 'memberships',    //plural name of the listed records
             'ajax'      => false        //does this table support ajax?
         ) );
@@ -272,12 +272,12 @@ class ListMembershipPackage extends WP_List_Table {
      * @see $this->prepare_items()
      **************************************************************************/
     function process_bulk_action() {
-        
+
         //Detect when a bulk action is being triggered...
         if( 'delete'===$this->current_action() ) {
             wp_die('Items deleted (or they would be if we had items to delete)!');
         }
-        
+
     }
 
 
@@ -477,6 +477,7 @@ $testListTable->prepare_items();
     <form id="movies-filter" method="get">
         <!-- For plugins, we also need to ensure that the form posts back to our current page -->
         <input type="hidden" name="page" value="<?php echo $_REQUEST['page'] ?>" />
+        <input type="hidden" name="tab" value="<?php echo $_REQUEST['tab'] ?>" />
         <!-- Now we can render the completed list table -->
         <?php $testListTable->display() ?>
     </form>
