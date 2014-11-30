@@ -18,6 +18,10 @@ class HH_Membership_Tab{
         add_action( 'tovolution_confirm_transaction', array( $this, 'confirm_membership_transaction' ), 10, 1 );
         add_action( 'admin_print_scripts', array( $this, 'admin_script' ) );
         add_filter( 'tevolution_package_link', array( $this, 'change_link_membership'), 10, 2 );
+        register_activation_hook( __FILE__, array( $this, 'hh_membership_activation' ) );
+        register_deactivation_hook( __FILE__, array( $this, 'hh_membership_deactivation' ) );
+        add_action( 'hh_membership_expired',  array( $this, 'remove_role_membership_expired' ) );
+        add_action( 'init',  array( $this, 'hh_add_cap_to_post_type' ), 999 );
     }
     public function current_action() {
         if ( isset( $_REQUEST['action'] ) && -1 != $_REQUEST['action'] )
@@ -240,6 +244,106 @@ class HH_Membership_Tab{
                 $users->set_role( "package_".$cid[1] );
             }
         }
+    }
+    /**
+     * On activation, set a time, frequency and name of an action hook to be scheduled.
+     */
+    function hh_membership_activation() {
+        wp_schedule_event( time(), 'daily', 'hh_membership_expired' );
+    }
+    function remove_role_membership_expired(){
+        $agrs = array(
+            'post_type' => 'membership',
+            'post_status'   => 'publish',
+            'posts_per_page' => -1
+        );
+        $MembershipPackage = new WP_Query( $agrs );
+        if( $MembershipPackage->have_posts() ){
+            while( $MembershipPackage->have_posts() ){
+                $MembershipPackage->have_posts();
+                $userargs = array(
+                    'role'         => 'package_'.get_the_ID(),
+                );
+
+                $validity = get_post_meta( get_the_ID(), 'validity', true );
+                $validity_per = get_post_meta( get_the_ID(), 'validity_per', true );
+                $validity_per_text = '';
+                switch( $validity_per ){
+                    case "D":
+                        $validity_per_text = 'day';
+                        break;
+                    case "M":
+                        $validity_per_text = 'month';
+                        break;
+                    case "Y":
+                        $validity_per_text = 'year';
+                        break;
+                    default :
+                        $validity_per_text = 'day';
+                        break;
+                }
+                $users = get_users( $userargs );
+                if( sizeof( $users ) > 0 ){
+                    foreach( $users as $user ){
+                        $user_register = get_user_meta( $user->ID, 'membership_package_register', true );
+                        if( strtotime( "+ {$validity} $validity_per_text",  strtotime( $user_register ) ) <= strtotime( date( "Y-m-d" ) ) ){
+                            $userData = new WP_User( $user->ID );
+                            $userData->set_role( 'subscriber' );
+                        }
+                    }
+                }
+            }
+        }
+        wp_reset_postdata();
+    }
+    /**
+     * On deactivation, remove all functions from the scheduled action hook.
+     */
+    function hh_membership_deactivation() {
+        wp_clear_scheduled_hook( 'hh_membership_expired' );
+    }
+
+    function hh_add_cap_to_post_type() {
+        global $wp_post_types;
+        $args = get_option('templatic_custom_post');
+        if($args):
+            $role = get_role('administrator');
+            foreach($args as $key=> $_args)
+            {
+                $capObject = new stdClass();
+                $capObject->edit_post = 'edit_'.$key;
+                $capObject->read_post = 'read_'.$key;
+                $capObject->delete_post = 'delete_'.$key;
+                $capObject->edit_posts = 'edit_post'.$key.'s';
+                $capObject->edit_others_posts = 'edit_others_'.$key.'s';
+                $capObject->publish_posts = 'publish_'.$key.'s';
+                $capObject->read_private_posts = 'read_private_'.$key.'s';
+                $capObject->read = 'read';
+                $capObject->delete_posts = 'delete_'.$key.'s';
+                $capObject->delete_private_posts = 'delete_private_'.$key.'s';
+                $capObject->delete_published_posts = 'delete_published_'.$key.'s';
+                $capObject->delete_others_posts = 'delete_others_'.$key.'s';
+                $capObject->edit_private_posts = 'edit_private_'.$key.'s';
+                $capObject->edit_published_posts = 'edit_published_'.$key.'s';
+                $capObject->create_posts = 'create_'.$key.'s';
+                $wp_post_types[$key]->cap = $capObject;
+
+                $role->add_cap( 'edit_'.$key );
+                $role->add_cap( 'read_'.$key );
+                $role->add_cap( 'delete_'.$key );
+                $role->add_cap( 'edit_post'.$key.'s' );
+                $role->add_cap( 'edit_others_'.$key.'s' );
+                $role->add_cap( 'publish_'.$key.'s' );
+                $role->add_cap( 'read_private_'.$key.'s' );
+                $role->add_cap( 'delete_'.$key.'s' );
+                $role->add_cap( 'delete_private_'.$key.'s' );
+                $role->add_cap( 'delete_published_'.$key.'s' );
+                $role->add_cap( 'delete_others_'.$key.'s' );
+                $role->add_cap( 'edit_private_'.$key.'s' );
+                $role->add_cap( 'edit_published_'.$key.'s' );
+                $role->add_cap( 'create_'.$key.'s' );
+            }
+        endif;
     }
 }
 new HH_Membership_Tab();

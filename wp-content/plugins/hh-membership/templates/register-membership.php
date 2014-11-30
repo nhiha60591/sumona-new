@@ -61,6 +61,8 @@ do_action( 'templ_before_container_breadcrumb' );  ?>
 
                                     //On success
                                     if( !is_wp_error($user_id) ) {
+                                        update_user_meta( $user_id, 'membership_package_id', $post->ID );
+                                        update_user_meta( $user_id, 'membership_package_register', date( "Y-m-d") );
                                         $payable_amount = get_post_meta( $post->ID, 'package_amount', true );
                                         $trans_id = insert_transaction_detail($_POST['paymentmethod'],$post->ID,0,1);
                                         insert_update_users_packageperlist(0,$_POST,$trans_id);

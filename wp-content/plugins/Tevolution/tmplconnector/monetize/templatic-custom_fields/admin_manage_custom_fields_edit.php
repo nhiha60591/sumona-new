@@ -318,6 +318,15 @@ if(isset($_POST['submit-fields']) && $_POST['submit-fields'] !='')
 		delete_post_meta($post_id,'heading_type');
 	}
 	
+    if(isset($_POST['content_visibility'])){
+        update_post_meta( $post_id, 'content_visibility', $_POST['content_visibility'] );
+    }
+
+    /*if(isset($_POST['content_visible_text'])){
+        $text = !empty($_POST['content_visible_text']) ? $_POST['content_visible_text'] : __("Require membership (not visible to public)", ADMINDOMAIN );
+        update_post_meta( $post_id, 'content_visible_text', $text );
+    }*/
+
 	update_option('tevolution_query_cache',1);
 	$location = site_url().'/wp-admin/admin.php';
 	echo '<form action="'.$location.'" method="get" id="frm_edit_custom_fields" name="frm_edit_custom_fields">
@@ -804,7 +813,44 @@ function selectall_posttype()
           </td>
     </tr>
     
-    <tr id="option_search_ctype" <?php if( @get_post_meta($post_field_id,"is_search",true)=='1' || (is_array($exclude_show_fields) && !in_array($htmlvar_name,$exclude_show_fields))){?> style="display:block;" <?php }else{?> style="display:none;" <?php }?>>
+<!-- Content/Value visibility -->
+<tr style="display:block;">
+    <th><label for="display_option" class="form-textfield-label"><?php echo __('Content/Value visibility',ADMINDOMAIN);?></label></th>
+    <td>
+        <fieldset>
+                <?php
+                $content_visibility = array();
+                $content_visibility_text = __("Require membership (not visible to public)", ADMINDOMAIN );
+                if(isset($_REQUEST['field_id']) && $_REQUEST['field_id'] != ''){
+                    $content_visibility = get_post_meta( $_REQUEST['field_id'], 'content_visibility', true);
+                    $content_visibility_text = get_post_meta( $_REQUEST['field_id'], 'content_visible_text', true);
+                }
+                if(!is_array($content_visibility)) $content_visibility = array('0');
+                $args = array(
+                    'post_type' 		=> 'membership',
+                    'posts_per_page' 	=> -1,
+                    'post_status' 		=> array('publish')
+                );
+                $post_query = null;
+                $post_query = new WP_Query($args);
+                ?>
+                <p><input type="checkbox" <?php checked(in_array('0',$content_visibility)); ?> name="content_visibility[]" id="content_visibility_0" value="0"><label for="content_visibility_0">Default (visible public)</label></p>
+                <?php
+                while ($post_query->have_posts()) : $post_query->the_post();
+                    ?>
+                    <p><input type="checkbox" <?php checked(in_array(get_the_ID(),$content_visibility)); ?> name="content_visibility[]" id="content_visibility_<?php echo get_the_ID(); ?>" value="<?php echo get_the_ID(); ?>"><label for="content_visibility_<?php echo get_the_ID(); ?>"><?php the_title(); ?></label></p>
+                <?php
+                endwhile;
+                wp_reset_postdata();
+                wp_reset_query();
+                ?>
+            <br />
+            <!--<input type="text" name="content_visible_text" value="<?php /*echo $content_visibility_text; */?>" class="regular-text" />-->
+        </fieldset>
+    </td>
+</tr>
+
+<tr id="option_search_ctype" <?php if( @get_post_meta($post_field_id,"is_search",true)=='1'){?> style="display:block;" <?php }else{?> style="display:none;" <?php }?>>
     	<th><label><?php echo __('Show on search as',ADMINDOMAIN);?></label></th>
         <td>
         	<select name="search_ctype" id="search_ctype">
