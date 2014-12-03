@@ -151,6 +151,8 @@ function get_post_admin_custom_fields_templ_plugin($post_types,$category_id='',$
 					"validation_type"  => get_post_meta($post->ID,"validation_type",true),
 					"style_class"  => get_post_meta($post->ID,"style_class",true),
 					"extra_parameter"  => get_post_meta($post->ID,"extra_parameter",true),
+                "content_visibility"  => get_post_meta($post->ID,"content_visibility",true),
+                "content_visible_text"  => get_post_meta($post->ID,"content_visible_text",true),
 					);
 			if($options)
 			{
@@ -4481,7 +4483,10 @@ function callback_on_footer_fn(){ ?>
 add_action("single_post_custom_fields",'tevolution_post_detail_after_singular');
 function tevolution_post_detail_after_singular()
 {
-	if((is_single() || is_archive()) && get_post_type()=='post'){		
+    global $current_user;
+    $permalink = get_link_membership();
+    $current_user = wp_get_current_user();
+	if((is_single() || is_archive()) && get_post_type()=='post'){
 		global $post;
 			$post_type= get_post_type();
 			$cus_post_type = get_post_type($post->ID);
@@ -4542,6 +4547,14 @@ function tevolution_post_detail_after_singular()
 		  foreach($_htmlvar_name as $key=> $_htmlvar_name):	
 			if( $key!="post_content" && $key!="post_excerpt" &&  $key!='category' && $key!='post_title' && $key!='post_images' && $key!='basic_inf' && $_htmlvar_name['show_on_detail'] == 1)
 			{
+                        $check = false;
+                        foreach($_htmlvar_name['content_visibility'] as $row){
+                            if(in_array('package_'.$row,$current_user->roles)){
+                                $check = true;
+                                break;
+                            }
+                        }
+                        if(!is_array($_htmlvar_name['content_visibility'])) $_htmlvar_name['content_visibility'] = array('0');
 				if($_htmlvar_name['type'] == 'multicheckbox' && get_post_meta($post->ID,$key,true) !=''):
 					if($r==0){
 						 if( $mainkey == '[#taxonomy_name#]' ){
@@ -4552,7 +4565,13 @@ function tevolution_post_detail_after_singular()
 							$r++;
 						 }
 					}
-			?>
+                            if( !in_array( '0', $_htmlvar_name['content_visibility'] ) && !in_array('administrator', $current_user->roles) && !$check){
+                                ?>
+                                <li><label><?php echo $_htmlvar_name['label']; ?></label> :<a href="<?php echo $permalink; ?>" target="_blank"><span class="paid_member"><?php echo !empty($_htmlvar_name['content_visibility_text']) ? $_htmlvar_name['content_visibility_text'] : __( "Paid Members Only", ADMINDOMAIN) ; ?></span></a></li>
+                                <?php
+                                continue;
+                            }
+                            ?>
 						<li><label><?php echo $_htmlvar_name['label']; ?></label> : <span><?php echo implode(",",get_post_meta($post->ID,$key,true)); ?></span></li>
 	               <?php elseif($_htmlvar_name['type']=='upload' && get_post_meta($post->ID,$key,true) !=''):
 						if($r==0){
@@ -4564,7 +4583,13 @@ function tevolution_post_detail_after_singular()
 								$r++;
 							 }
 						}
-			?>
+                            if( !in_array( '0', $_htmlvar_name['content_visibility'] ) && !in_array('administrator', $current_user->roles) && !$check){
+                                ?>
+                                <li><label><?php echo $_htmlvar_name['label']; ?></label> : <a href="<?php echo $permalink; ?>" target="_blank"><span class="paid_member"><?php echo !empty($_htmlvar_name['content_visibility_text']) ? $_htmlvar_name['content_visibility_text'] : __( "Paid Members Only", ADMINDOMAIN) ; ?></span></a></li>
+                                <?php
+                                continue;
+                            }
+                            ?>
                	 		<li><label><?php echo $_htmlvar_name['label']; ?> </label>: <span> <?php echo __('Click here to download File',ADMINDOMAIN); ?> <a href="<?php echo stripslashes(get_post_meta($post->ID,$key,true)); ?>">Download</a></span></li>
 			<?php else: 
 					/* else start */					
@@ -4578,7 +4603,13 @@ function tevolution_post_detail_after_singular()
 								$r++;
 							 }
 						}
-						
+                                if( !in_array( '0', $_htmlvar_name['content_visibility'] )  && !$check){
+                                    ?>
+                                    <li><label><?php echo $_htmlvar_name['label']; ?></label> : <a href="<?php echo $permalink; ?>" target="_blank"><span class="paid_member"><?php echo !empty($_htmlvar_name['content_visibility_text']) ? $_htmlvar_name['content_visibility_text'] : __( "Paid Members Only", ADMINDOMAIN) ; ?></span></a></li>
+                                    <?php
+                                    continue;
+                                }
+
 					?>
 					
 						<?php if($_htmlvar_name['type']=='radio'){
@@ -5909,5 +5940,58 @@ if( !function_exists( 'tmpl_check_check_htmlvar_name' ) ){
 			die();
 		}
 	}
+}
+
+function text_visibilitiy($visibility_name = ''){
+    $current_user = wp_get_current_user();
+    $text = __("Paid Members Only", ADMINDOMAIN );
+    if($current_user->ID != 0){
+        if(!check_visibility($visibility_name)){
+            $count = sizeof($visibility_name['content_visibility']);
+            $i=1;
+            $text = '';
+            foreach($visibility_name['content_visibility'] as $packageid){
+                if( $i< ($count-1) ){
+                    $text .= get_the_title($packageid). ", ";
+                }elseif($i<$count){
+                    $text .= get_the_title($packageid). " & ";
+                }else{
+                    $text .= get_the_title($packageid);
+                }
+                $i++;
+            }
+            $text .= ' Members Only';
+        }
+    }
+    return $text;
+}
+
+function check_visibility($visibility_name = ''){
+    global $current_user;
+    $current_user = wp_get_current_user();
+    if(!is_array($visibility_name['content_visibility'])) $visibility_name['content_visibility'] = array();
+    $check = false;
+    foreach($visibility_name['content_visibility'] as $row){
+        if(in_array('package_'.$row,$current_user->roles)){
+            $check = true;
+            break;
+        }
+    }
+    if( !in_array( '0', $visibility_name['content_visibility'] ) && !in_array('administrator', $current_user->roles) && !$check){
+        return false;
+    }else{
+        return true;
+    }
+}
+function get_link_membership(){
+    $pages = get_pages();
+    $permalink = '';
+    foreach($pages as $page){
+        if(has_shortcode( $page->post_content, 'register_membership' )){
+            $permalink = get_the_permalink($page->ID);
+            break;
+        }
+    }
+    return $permalink;
 }
 ?>
