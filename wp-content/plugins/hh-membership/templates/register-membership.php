@@ -5,6 +5,7 @@
  * This is the default post template.  It is used when a more specific template can't be found to display
  * singular views of the 'post' post type.
  */
+$current_user = wp_get_current_user();
 get_header(); // Loads the header.php template.
 do_action( 'before_content' );
 do_action( 'templ_before_container_breadcrumb' );  ?>
@@ -22,42 +23,48 @@ do_action( 'templ_before_container_breadcrumb' );  ?>
                         <?php
                             if( isset($_POST['hh_register']) ){
                                 $error = new WP_Error();
-                                if( !isset( $_POST['username'] ) || empty( $_POST['username']) ){
-                                    $error->add( 'username', '<strong>ERROR: </strong>Please enter a username');
-                                }elseif( username_exists( $_POST['username']) ){
-                                    $error->add( 'username', '<strong>ERROR: </strong>This username ready exists');
-                                }
-                                if( !isset( $_POST['password'] ) || empty( $_POST['password']) ){
-                                    $error->add( 'password', '<strong>ERROR: </strong>Please provide a password');
-                                }
-                                if( isset( $_POST['password'] ) && isset( $_POST['confirm_password'] ) && $_POST['password'] != $_POST['confirm_password'] ){
-                                    $error->add( 'confirm_password', '<strong>ERROR: </strong>Please enter the same password as above');
-                                }
-                                if( !isset( $_POST['user_email'] ) || empty( $_POST['user_email']) ){
-                                    $error->add( 'user_email', '<strong>ERROR: </strong>Please enter a valid email address');
-                                }else{
-                                    $error->add( 'user_email', '<strong>ERROR: </strong>This email ready exists');
-                                }
-                                if( !isset( $_POST['first_name'] ) || empty( $_POST['first_name']) ){
-                                    $error->add( 'first_name', '<strong>ERROR: </strong>Please enter your first name');
-                                }
-                                if( !isset( $_POST['last_name'] ) || empty( $_POST['last_name']) ){
-                                    $error->add( 'last_name', '<strong>ERROR: </strong>Please enter your last name');
-                                }
+                                if( !$current_user->ID ):
+                                    if( !isset( $_POST['username'] ) || empty( $_POST['username']) ){
+                                        $error->add( 'username', '<strong>ERROR: </strong>Please enter a username');
+                                    }elseif( username_exists( $_POST['username']) ){
+                                        $error->add( 'username', '<strong>ERROR: </strong>This username ready exists');
+                                    }
+                                    if( !isset( $_POST['password'] ) || empty( $_POST['password']) ){
+                                        $error->add( 'password', '<strong>ERROR: </strong>Please provide a password');
+                                    }
+                                    if( isset( $_POST['password'] ) && isset( $_POST['confirm_password'] ) && $_POST['password'] != $_POST['confirm_password'] ){
+                                        $error->add( 'confirm_password', '<strong>ERROR: </strong>Please enter the same password as above');
+                                    }
+                                    if( !isset( $_POST['user_email'] ) || empty( $_POST['user_email']) ){
+                                        $error->add( 'user_email', '<strong>ERROR: </strong>Please enter a valid email address');
+                                    }else{
+                                        $error->add( 'user_email', '<strong>ERROR: </strong>This email ready exists');
+                                    }
+                                    if( !isset( $_POST['first_name'] ) || empty( $_POST['first_name']) ){
+                                        $error->add( 'first_name', '<strong>ERROR: </strong>Please enter your first name');
+                                    }
+                                    if( !isset( $_POST['last_name'] ) || empty( $_POST['last_name']) ){
+                                        $error->add( 'last_name', '<strong>ERROR: </strong>Please enter your last name');
+                                    }
+                                endif;
                                 if ( sizeof( $error->get_error_codes() ) > 0 ){
                                     foreach( $error->get_error_messages() as $mess ){
                                         echo '<div class="error">'.$mess.'</div>';
                                     }
                                 }else{
                                     global $post;
-                                    $userdata = array(
-                                        'user_pass' => $_POST['confirm_password'],
-                                        'user_login' => $_POST['username'],
-                                        'first_name' => $_POST['first_name'],
-                                        'last_name' => $_POST['last_name'],
-                                        'user_email' => $_POST['user_email'],
-                                    );
-                                    $user_id = wp_insert_user( $userdata ) ;
+                                    if( !$current_user->ID ):
+                                        $userdata = array(
+                                            'user_pass' => $_POST['confirm_password'],
+                                            'user_login' => $_POST['username'],
+                                            'first_name' => $_POST['first_name'],
+                                            'last_name' => $_POST['last_name'],
+                                            'user_email' => $_POST['user_email'],
+                                        );
+                                        $user_id = wp_insert_user( $userdata ) ;
+                                    else:
+                                        $user_id = $current_user->ID;
+                                    endif;
 
                                     //On success
                                     if( !is_wp_error($user_id) ) {
@@ -72,7 +79,8 @@ do_action( 'templ_before_container_breadcrumb' );  ?>
                             }
                         ?>
                         <section class="entry-content">
-                            <form name="membership_register" id="membership_register" action="<?php echo add_query_arg( array('action'=>'payment-method'), get_the_permalink()); ?>" method="post" _lpchecked="1">
+                            <form name="membership_register" id="membership_register" class="membership_register" action="<?php echo add_query_arg( array('action'=>'payment-method'), get_the_permalink()); ?>" method="post" _lpchecked="1">
+                                <?php if( !$current_user->ID ): ?>
                                 <p class="register_membership">
                                     <label for="username">Username:</label>
                                     <input type="text" name="username" value="" id="username" placeholder="" class="placeholder" style="cursor: auto; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==); background-attachment: scroll; background-position: 100% 50%; background-repeat: no-repeat;">
@@ -97,6 +105,7 @@ do_action( 'templ_before_container_breadcrumb' );  ?>
                                     <label for="last_name">Last Name:</label>
                                     <input type="text" name="last_name" value="" id="last_name" placeholder="" class="placeholder">
                                 </p>
+                                <?php endif; ?>
                                 <h3>Payment method</h3>
                                 <div class="method">
                                     <?php templatic_payment_option_preview_page(); ?>

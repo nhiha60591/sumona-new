@@ -22,6 +22,7 @@ class HH_Membership_Tab{
         register_deactivation_hook( __FILE__, array( $this, 'hh_membership_deactivation' ) );
         add_action( 'hh_membership_expired',  array( $this, 'remove_role_membership_expired' ) );
         add_action( 'init',  array( $this, 'hh_add_cap_to_post_type' ), 999 );
+        add_shortcode( 'membership', array( $this, 'membership_shortcode') );
     }
     public function current_action() {
         if ( isset( $_REQUEST['action'] ) && -1 != $_REQUEST['action'] )
@@ -219,6 +220,7 @@ class HH_Membership_Tab{
     }
     function front_script(){
         wp_enqueue_script( 'hh-membership-ui', plugin_dir_url( __FILE__ )."assets/js/jquery.validate.js", array( 'jquery' ) );
+        wp_enqueue_style( 'hh-membership-package', plugin_dir_url( __FILE__ )."assets/css/style.css" );
     }
     function admin_script(){
         wp_register_script( 'hh-admin-membership', plugins_url( '/assets/js/hh-admin-membership.js', __FILE__ ) );
@@ -344,6 +346,40 @@ class HH_Membership_Tab{
                 $role->add_cap( 'create_'.$key.'s' );
             }
         endif;
+    }
+    function membership_shortcode( $atts){
+        $current_user = wp_get_current_user();
+        if( $current_user->ID ) return;
+        $atts = shortcode_atts( array(
+            'title' => 'Membership Registration',
+            'login_caption' => 'If you have already registered online, then please login',
+        ), $atts );
+        ob_start();
+        ?>
+        <div class="hh-login-form">
+            <h3><?php echo $atts['login_caption']; ?></h3>
+            <?php
+            $args = array(
+                'echo'           => true,
+                'redirect'       => site_url( $_SERVER['REQUEST_URI'] ),
+                'form_id'        => 'loginform',
+                'label_username' => __( 'Username' ),
+                'label_password' => __( 'Password' ),
+                'label_remember' => __( 'Remember Me' ),
+                'label_log_in'   => __( 'Log In' ),
+                'id_username'    => 'user_login',
+                'id_password'    => 'user_pass',
+                'id_remember'    => 'rememberme',
+                'id_submit'      => 'wp-submit',
+                'remember'       => true,
+                'value_username' => NULL,
+                'value_remember' => false
+            );
+            wp_login_form( $args );
+            ?>
+        </div>
+        <?php
+        return ob_get_clean();
     }
 }
 new HH_Membership_Tab();
