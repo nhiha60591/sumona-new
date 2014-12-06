@@ -12,6 +12,7 @@ if(isset($_REQUEST['action']) && $_REQUEST['action']=='edit'){
 }
 
 global $tmpl_flds_varname;
+
 /* to get the common/context custom fields display by default with current post type */
 if(function_exists('tmpl_single_page_default_custom_field')){
 	$tmpl_flds_varname = tmpl_single_page_default_custom_field(get_post_type());
@@ -80,30 +81,70 @@ if(function_exists('tmpl_single_page_default_custom_field')){
 								$listing_timing=get_post_meta(get_the_ID(),'listing_timing',true);
 								$email=get_post_meta(get_the_ID(),'email',true);
 								if($address!="" && $tmpl_flds_varname['address']):?>
-								   <p class="entry_address<?php echo $tmpl_flds_varname['address']['style_class'];?>"><span id="frontend_address" class="listing_custom frontend_address" <?php if($is_edit==1):?>contenteditable="true"<?php endif;?>><?php echo get_post_meta(get_the_ID(),'address',true);?></span></p>
+                                    <?php if( check_visibility($tmpl_flds_varname['address'])){ ?>
+								        <p class="entry_address<?php echo $tmpl_flds_varname['address']['style_class'];?>"><span id="frontend_address" class="listing_custom frontend_address" <?php if($is_edit==1):?>contenteditable="true"<?php endif;?>><?php echo get_post_meta(get_the_ID(),'address',true);?></span></p>
+                                        <?php }else{ ?>
+                                        <p class="entry_address<?php echo $tmpl_flds_varname['address']['style_class'];?>"><label>Address:</label> <a href="<?php echo $permalink; ?>" target="_blank"><span class="paid_member"><?php echo text_visibilitiy($tmpl_flds_varname['address']); ?></span></a><span class="tootip" rel="{content:'tip_address',position:-1}"><img src="<?php echo TEMPL_PLUGIN_URL ?>images/help_icon.jpg" width="20" alt="Help" /></span></p>
+                                        <div style="display:none;">
+                                            <div id="tip_address">
+                                                <?php tooltip_description( true ); ?>
+                                            </div>
+                                        </div>
+                                        <?php }?>
 								   <?php do_action('directory_after_address');
 								endif;
-									if($website!="" && $tmpl_flds_varname['website'] || ($is_edit==1)):
-											if(!strstr($website,'http'))
-												$website = 'http://'.$website;?>
-								   <p class="website <?php echo $tmpl_flds_varname['website']['style_class']; ?>"><a target="_blank" id="website" class="frontend_website <?php if($is_edit==1):?>frontend_link<?php endif; ?>" href="<?php echo $website;?>" ><span><?php echo $tmpl_flds_varname['website']['label']; ?></span></a></p>
-								   <?php endif;
-								   do_action('directory_display_custom_fields_default_left');
-								   ?>
+                               if($website!="" && $tmpl_flds_varname['website'] || ($is_edit==1)):
+                                   if(!strstr($website,'http'))
+                                       $website = 'http://'.$website;
+                                   if( check_visibility($tmpl_flds_varname['website'])){
+                                   ?>
+                                       <p class="website <?php echo $tmpl_flds_varname['website']['style_class']; ?>"><a target="_blank" id="website" class="frontend_website <?php if($is_edit==1):?>frontend_link<?php endif; ?>" href="<?php echo $website;?>" ><span><?php echo $tmpl_flds_varname['website']['label']; ?></span></a></p>
+                                       <?php }else{?>
+                                       <p class="website<?php echo $tmpl_flds_varname['website']['style_class'];?>"><label>Website:</label> <a href="<?php echo $permalink; ?>" target="_blank"><span class="paid_member"><?php echo text_visibilitiy($tmpl_flds_varname['website']); ?></span></a><span class="tootip" rel="{content:'tip_website'}"><img src="<?php echo TEMPL_PLUGIN_URL ?>images/help_icon.jpg" width="20" alt="Help" /></span></p>
+                                       <div style="display:none;">
+                                           <div id="tip_website">
+                                               <?php tooltip_description( true ); ?>
+                                           </div>
+                                       </div>
+                                       <?php } ?>
+                               <?php endif;
+                               do_action('directory_display_custom_fields_default_left');
+                               ?>
 							</div>
 							
 							<div class="entry-header-custom-right">
 							<?php 
-								if($phone!="" && $tmpl_flds_varname['phone'] || ($is_edit==1 && $tmpl_flds_varname['phone'])):?>
+								if($phone!="" && $tmpl_flds_varname['phone'] && check_visibility($tmpl_flds_varname['phone']) || ($is_edit==1 && $tmpl_flds_varname['phone'])):?>
 									<p class="phone <?php echo $tmpl_flds_varname['phone']['style_class']; ?>"><label><?php echo $tmpl_flds_varname['phone']['label']; ?>: </label><span class="entry-phone frontend_phone listing_custom" <?php if($is_edit==1):?>contenteditable="true" <?php endif;?>><?php echo $phone;?></span></p>
+                                <?php else: ?>
+                                    <p class="phone<?php echo $tmpl_flds_varname['phone']['style_class'];?>"><label>Phone:</label> <a href="<?php echo $permalink; ?>" target="_blank"><span class="paid_member"><?php echo text_visibilitiy($tmpl_flds_varname['phone']); ?></span></a><span class="tootip" rel="{content:'tip_phone'}"><img src="<?php echo TEMPL_PLUGIN_URL ?>images/help_icon.jpg" width="20" alt="Help" /></span></p>
+                                    <div style="display:none;">
+                                        <div id="tip_phone">
+                                            <?php tooltip_description( true ); ?>
+                                        </div>
+                                    </div>
 							   <?php endif;
 							   
-							   if($listing_timing!="" && $tmpl_flds_varname['listing_timing'] || ($is_edit==1 && $tmpl_flds_varname['listing_timing'])):?>
+							   if($listing_timing!="" && $tmpl_flds_varname['listing_timing'] && check_visibility($tmpl_flds_varname['listing_timing']) || ($is_edit==1 && $tmpl_flds_varname['listing_timing'])):?>
 									<p class="time <?php echo $tmpl_flds_varname['listing_timing']['style_class']; ?>"><label><?php echo $tmpl_flds_varname['listing_timing']['label']; ?>: </label><span class="entry-listing_timing frontend_listing_timing listing_custom" <?php if($is_edit==1):?>contenteditable="true" <?php endif;?>><?php echo $listing_timing;?></span></p>
+                               <?php else: ?>
+                                   <p class="time<?php echo $tmpl_flds_varname['listing_timing']['style_class'];?>"><label><?php echo $tmpl_flds_varname['listing_timing']['label']; ?>:</label> <a href="<?php echo $permalink; ?>" target="_blank"><span class="paid_member"><?php echo text_visibilitiy($tmpl_flds_varname['listing_timing']); ?></span></a><span class="tootip" rel="{content:'tip_time'}"><img src="<?php echo TEMPL_PLUGIN_URL ?>images/help_icon.jpg" width="20" alt="Help" /></span></p>
+                                   <div style="display:none;">
+                                       <div id="tip_time">
+                                           <?php tooltip_description( true ); ?>
+                                       </div>
+                                   </div>
 							   <?php endif;
 							   
-							   if(@$email!="" && @$tmpl_flds_varname['email'] || ($is_edit==1 && @$tmpl_flds_varname['email'])):?>
+							   if(@$email!="" && @$tmpl_flds_varname['email'] && check_visibility($tmpl_flds_varname['email']) || ($is_edit==1 && @$tmpl_flds_varname['email'])):?>
 									<p class="email  <?php echo $tmpl_flds_varname['email']['style_class']; ?>"><label><?php echo $tmpl_flds_varname['email']['label']; ?>: </label><span class="entry-email frontend_email listing_custom" <?php if($is_edit==1):?>contenteditable="true"<?php endif;?>><?php echo antispambot($email);?></span></p>
+                               <?php else: ?>
+                                   <p class="email<?php echo $tmpl_flds_varname['email']['style_class'];?>"><label><?php echo $tmpl_flds_varname['email']['label']; ?>:</label> <a href="<?php echo $permalink; ?>" target="_blank"><span class="paid_member"><?php echo text_visibilitiy($tmpl_flds_varname['email']); ?></span></a><span class="tootip" rel="{content:'tip_email'}"><img src="<?php echo TEMPL_PLUGIN_URL ?>images/help_icon.jpg" width="20" alt="Help" /></span></p>
+                                   <div style="display:none;">
+                                       <div id="tip_email">
+                                           <?php tooltip_description( true ); ?>
+                                       </div>
+                                   </div>
 							   <?php endif;
 							   do_action('directory_display_custom_fields_default_right');	
 							   ?>

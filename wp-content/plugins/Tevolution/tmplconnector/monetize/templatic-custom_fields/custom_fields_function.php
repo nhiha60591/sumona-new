@@ -5109,13 +5109,15 @@ function tmpl_single_page_default_custom_field($post_type){
 				$option_title=get_post_meta($post->ID,'option_title',true);
 				$option_values=get_post_meta($post->ID,'option_values',true);
 				$default_value=get_post_meta($post->ID,'default_value',true);
+				$content_visibility=get_post_meta($post->ID,'content_visibility',true);
 				$tmpl_flds_varname[$post_name] = array( 'type'=>$ctype,
 											'label'=> $post->post_title,
 											'style_class'=>$style_class,
 											'option_title'=>$option_title,
 											'option_values'=>$option_values,
 											'default'=>$default_value,
-											);			
+											'content_visibility'=>$content_visibility,
+											);
 			endwhile;
 			wp_reset_query();
 		}
@@ -5941,33 +5943,39 @@ if( !function_exists( 'tmpl_check_check_htmlvar_name' ) ){
 		}
 	}
 }
-
+function tooltip_description( $echo = false ){
+    $permalink = get_link_membership();
+    global $current_user;
+    if($current_user->ID){
+        $text = '<p>Upgrade your membership to view this value</p>';
+    }else{
+        $text = '<p>Subscribe a <a href="'.$permalink.'">membership level</a> and unlock all premium contents.</p>';
+    }
+    if($echo) echo $text; else return $text;
+}
 function text_visibilitiy($visibility_name = ''){
-    $current_user = wp_get_current_user();
+    global $current_user;
     $text = __("Paid Members Only", ADMINDOMAIN );
-    if($current_user->ID != 0){
-        if(!check_visibility($visibility_name)){
-            $count = sizeof($visibility_name['content_visibility']);
-            $i=1;
-            $text = '';
-            foreach($visibility_name['content_visibility'] as $packageid){
-                if( $i< ($count-1) ){
-                    $text .= get_the_title($packageid). ", ";
-                }elseif($i<$count){
-                    $text .= get_the_title($packageid). " & ";
-                }else{
-                    $text .= get_the_title($packageid);
-                }
-                $i++;
+    if($current_user->ID && !check_visibility($visibility_name)){
+        $count = sizeof($visibility_name['content_visibility']);
+        $i=1;
+        $text = '';
+        foreach($visibility_name['content_visibility'] as $packageid){
+            if( $i< ($count-1) ){
+                $text .= get_the_title($packageid). ", ";
+            }elseif($i<$count){
+                $text .= get_the_title($packageid). " & ";
+            }else{
+                $text .= get_the_title($packageid);
             }
-            $text .= ' Members Only';
+            $i++;
         }
+        $text .= ' Members Only';
     }
     return $text;
 }
 
 function check_visibility($visibility_name = ''){
-    global $current_user;
     $current_user = wp_get_current_user();
     if(!is_array($visibility_name['content_visibility'])) $visibility_name['content_visibility'] = array();
     $check = false;
@@ -5977,6 +5985,7 @@ function check_visibility($visibility_name = ''){
             break;
         }
     }
+    if( sizeof( $visibility_name['content_visibility'] ) <= 0) $check = true;
     if( !in_array( '0', $visibility_name['content_visibility'] ) && !in_array('administrator', $current_user->roles) && !$check){
         return false;
     }else{
@@ -5984,14 +5993,19 @@ function check_visibility($visibility_name = ''){
     }
 }
 function get_link_membership(){
-    $pages = get_pages();
-    $permalink = '';
-    foreach($pages as $page){
-        if(has_shortcode( $page->post_content, 'register_membership' )){
-            $permalink = get_the_permalink($page->ID);
-            break;
+    $current_user = wp_get_current_user();
+    if($current_user->ID):
+        $permalink = get_author_posts_url($current_user->ID);
+    else:
+        $pages = get_pages();
+        $permalink = '';
+        foreach($pages as $page){
+            if(has_shortcode( $page->post_content, 'register_membership' )){
+                $permalink = get_the_permalink($page->ID);
+                break;
+            }
         }
-    }
+    endif;
     return $permalink;
 }
 ?>

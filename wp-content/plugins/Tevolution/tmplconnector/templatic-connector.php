@@ -94,10 +94,10 @@ add_action('wp_head', 'templ_add_my_stylesheet',0); /* include style sheet */
 
 function templ_add_my_stylesheet()
 {
-  /* Respects SSL, Style.css is relative to the current file */
-  wp_enqueue_script('jquery');
-
+    /* Respects SSL, Style.css is relative to the current file */
+    wp_enqueue_script('jquery');
     wp_enqueue_style('tevolution_tootip',TEMPL_PLUGIN_URL.'stylesheet.css','',false);
+    wp_enqueue_style('tevolution_style',TEMPL_PLUGIN_URL.'style.css','',false);
     wp_enqueue_script('tevolution_tootip_core1',TEMPL_PLUGIN_URL.'js/mootools-1.2.1-core.js');
     wp_enqueue_script('tevolution_tootip_core2',TEMPL_PLUGIN_URL.'js/mootools-1.2-more.js');
     wp_enqueue_script('tevolution_tootip',TEMPL_PLUGIN_URL.'js/MooTooltips.js');
