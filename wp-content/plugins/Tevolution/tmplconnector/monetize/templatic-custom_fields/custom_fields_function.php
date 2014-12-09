@@ -5277,6 +5277,7 @@ function tmpl_fields_detail_informations($not_show = array('title'),$title_text 
 						}
 					
 					}
+if( !check_visibility($value)){continue;}
 					if($val['type'] == 'multicheckbox' &&  ($field!="" || $is_edit==1)):
 						$checkbox_value = '';				
 						$option_values = explode(",",$val['option_values']);				
