@@ -80,6 +80,7 @@ if(function_exists('tmpl_single_page_default_custom_field')){
 								$phone=get_post_meta(get_the_ID(),'phone',true);									
 								$listing_timing=get_post_meta(get_the_ID(),'listing_timing',true);
 								$email=get_post_meta(get_the_ID(),'email',true);
+                                $permalink = get_link_membership();
 								if($address!="" && $tmpl_flds_varname['address']):?>
                                     <?php if( check_visibility($tmpl_flds_varname['address'])){ ?>
 								        <p class="entry_address<?php echo $tmpl_flds_varname['address']['style_class'];?>"><span id="frontend_address" class="listing_custom frontend_address" <?php if($is_edit==1):?>contenteditable="true"<?php endif;?>><?php echo get_post_meta(get_the_ID(),'address',true);?></span></p>

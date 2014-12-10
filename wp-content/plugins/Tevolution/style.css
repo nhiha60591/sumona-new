@@ -1984,6 +1984,9 @@ span.tootip{
     width: auto !important;
     vertical-align:middle;
 }
+.tevolution_custom_field.listing_custom_field span.tootip{
+    padding-top: 20px;
+}
 .register_membership > label {
     display: inline-block;
     width: 150px;

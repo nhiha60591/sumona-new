@@ -5190,13 +5190,15 @@ function tmpl_get_single_page_customfields_details($post_type,$heading='',$headi
 				$option_title=get_post_meta($post->ID,'option_title',true);
 				$option_values=get_post_meta($post->ID,'option_values',true);
 				$default_value=get_post_meta($post->ID,'default_value',true);
+				$content_visibility=get_post_meta($post->ID,'content_visibility',true);
 				$htmlvar_name[$post_name] = array( 'type'=>$ctype,
 											'label'=> $post->post_title,
 											'style_class'=>$style_class,
 											'option_title'=>$option_title,
 											'option_values'=>$option_values,
 											'default'=>$default_value,
-											);			
+											'content_visibility'=>$content_visibility,
+											);
 			endwhile;
 			wp_reset_query();
 		}
@@ -5208,13 +5210,14 @@ function tmpl_get_single_page_customfields_details($post_type,$heading='',$headi
 define('TMPL_HEADING_TITLE',__('Other Information',DOMAIN));
 /* To display the custom fields on detail page */
 function tmpl_fields_detail_informations($not_show = array('title'),$title_text = TMPL_HEADING_TITLE){
-	global $post,$htmlvar_name,$heading_type;
-	
+	global $post,$htmlvar_name,$heading_type, $wpdb;
+    $permalink = get_link_membership();
 	$is_edit='';
 	if(isset($_REQUEST['action']) && $_REQUEST['action']=='edit'){
 		$is_edit=1;
-	}	
-	$j=0;
+	}
+
+    $j=0;
 	if(!empty($htmlvar_name)){
 		echo '<div class="tevolution_custom_field  listing_custom_field">';
 		
@@ -5277,7 +5280,21 @@ function tmpl_fields_detail_informations($not_show = array('title'),$title_text 
 						}
 					
 					}
-if( !check_visibility($value)){continue;}
+                    $post_data = $wpdb->get_results( "SELECT * FROM {$wpdb->posts} WHERE `post_name` = '{$k}' AND `post_type` = 'custom_fields'" );
+                    $content_visibility = get_post_meta( $post_data[0]->ID, 'content_visibility', true ) ;
+                    if( !is_array( $content_visibility ) ) $content_visibility = array();
+                    $val['content_visibility'] = $content_visibility;
+                    if( !check_visibility($val)){
+                        ?>
+                        <p class="<?php echo $k;?>"><label><?php echo $val['label'];?>:</label> <a href="<?php echo $permalink; ?>" target="_blank"><span class="paid_member"><?php echo text_visibilitiy($val); ?></span></a><span class="tootip" rel="{content:'tip_<?php echo $k;?>',position:-1}"><img src="<?php echo TEMPL_PLUGIN_URL ?>images/help_icon.jpg" width="20" alt="Help" /></span></p>
+                        <div style="display:none;">
+                            <div id="tip_<?php echo $k;?>">
+                                <?php tooltip_description( true ); ?>
+                            </div>
+                        </div>
+                        <?php
+                        continue;
+                    }
 					if($val['type'] == 'multicheckbox' &&  ($field!="" || $is_edit==1)):
 						$checkbox_value = '';				
 						$option_values = explode(",",$val['option_values']);				
@@ -5546,13 +5563,15 @@ function tmpl_get_category_list_customfields($post_type){
 			$label=get_post_meta($post->ID,'admin_title',true);
 			$option_title=get_post_meta($post->ID,'option_title',true);
 			$option_values=get_post_meta($post->ID,'option_values',true);
+            $content_visibility=get_post_meta($post->ID,'content_visibility',true);
 			
 			$htmllistvar_name[$post_name] = array( 'type'=>$ctype,
 												'htmlvar_name'=> $post_name,
 												'style_class'=> $style_class,
 												'option_title'=> $option_title,
 												'option_values'=> $option_values,
-												'label'=> $post->post_title
+												'label'=> $post->post_title,
+                                                'content_visibility'=>$content_visibility,
 											  );
 			$posttitle[] = $post->post_title;
 		endwhile;
@@ -5725,13 +5744,15 @@ function tmpl_get_advance_search_list_customfields($post_type){
 			$label=get_post_meta($post->ID,'admin_title',true);
 			$option_title=get_post_meta($post->ID,'option_title',true);
 			$option_values=get_post_meta($post->ID,'option_values',true);
-			
+            $content_visibility=get_post_meta($post->ID,'content_visibility',true);
+
 			$htmllist_advance_search_var_name[$post_name] = array( 'type'=>$ctype,
 												'htmlvar_name'=> $post_name,
 												'style_class'=> $style_class,
 												'option_title'=> $option_title,
 												'option_values'=> $option_values,
-												'label'=> $post->post_title
+												'label'=> $post->post_title,
+												'content_visibility'=> $content_visibility,
 											  );
 			$posttitle[] = $post->post_title;
 		endwhile;
