@@ -221,6 +221,12 @@ class HH_Membership_Tab{
     function front_script(){
         wp_enqueue_script( 'hh-membership-ui', plugin_dir_url( __FILE__ )."assets/js/jquery.validate.js", array( 'jquery' ) );
         wp_enqueue_style( 'hh-membership-package', plugin_dir_url( __FILE__ )."assets/css/style.css" );
+        wp_enqueue_style('tevolution_tootip',TEMPL_PLUGIN_URL.'stylesheet.css','',false);
+        wp_enqueue_style('tevolution_style',TEMPL_PLUGIN_URL.'style.css','',false);
+        wp_enqueue_script('tevolution_tootip_core1',TEMPL_PLUGIN_URL.'js/mootools-1.2.1-core.js');
+        wp_enqueue_script('tevolution_tootip_core2',TEMPL_PLUGIN_URL.'js/mootools-1.2-more.js');
+        wp_enqueue_script('tevolution_tootip',TEMPL_PLUGIN_URL.'js/MooTooltips.js');
+        wp_enqueue_script('tevolution_js_hh',TEMPL_PLUGIN_URL.'js/js_hh.js');
     }
     function admin_script(){
         wp_register_script( 'hh-admin-membership', plugins_url( '/assets/js/hh-admin-membership.js', __FILE__ ) );
