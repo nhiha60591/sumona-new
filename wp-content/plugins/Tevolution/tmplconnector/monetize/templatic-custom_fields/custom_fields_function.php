@@ -6022,7 +6022,7 @@ function get_link_membership(){
         $pages = get_pages();
         $permalink = '';
         foreach($pages as $page){
-            if(has_shortcode( $page->post_content, 'register_membership' )){
+            if(has_shortcode( $page->post_content, 'membership' )){
                 $permalink = get_the_permalink($page->ID);
                 break;
             }
