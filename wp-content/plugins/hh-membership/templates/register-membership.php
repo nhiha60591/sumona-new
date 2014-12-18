@@ -38,7 +38,9 @@ do_action( 'templ_before_container_breadcrumb' );  ?>
                                     if( !isset( $_POST['user_email'] ) || empty( $_POST['user_email']) ){
                                         $error->add( 'user_email', '<strong>ERROR: </strong>Please enter a valid email address');
                                     }else{
-                                        $error->add( 'user_email', '<strong>ERROR: </strong>This email ready exists');
+                                        if( email_exists( $_POST['user_email'])) {
+                                            $error->add('user_email', '<strong>ERROR: </strong>This email ready exists');
+                                        }
                                     }
                                     if( !isset( $_POST['first_name'] ) || empty( $_POST['first_name']) ){
                                         $error->add( 'first_name', '<strong>ERROR: </strong>Please enter your first name');

@@ -7,6 +7,7 @@ Version: 1.0.1
 Author: Huu Hien
 Author URI: https://github.com/nhiha60591/sumona-new
 */
+define( '__HHTEXTDOMAIN__', 'hh_membership');
 class HH_Membership_Tab{
     function __construct(){
         add_action( 'templatic_monetizations_tabs', array( $this, 'add_tab_link' ), 10, 2 );
@@ -23,6 +24,7 @@ class HH_Membership_Tab{
         add_action( 'hh_membership_expired',  array( $this, 'remove_role_membership_expired' ) );
         add_action( 'init',  array( $this, 'hh_add_cap_to_post_type' ), 999 );
         add_shortcode( 'membership', array( $this, 'membership_shortcode') );
+        add_action( 'admin_menu', array( $this, 'hh_admin_menu') );
     }
     public function current_action() {
         if ( isset( $_REQUEST['action'] ) && -1 != $_REQUEST['action'] )
@@ -386,6 +388,16 @@ class HH_Membership_Tab{
         </div>
         <?php
         return ob_get_clean();
+    }
+    function hh_admin_menu(){
+        add_menu_page('Email Options', 'Email Options', 'administrator', 'hh_email_option', array( $this, 'hh_email_option' ) );
+        add_submenu_page( 'hh_email_option', 'Email Template', 'Email Template', 'administrator', 'hh_mail_template', array( $this, 'hh_email_template') );
+    }
+    function hh_email_option(){
+        include "templates/email-options.php";
+    }
+    function hh_email_template(){
+        include "templates/email-template.php";
     }
 }
 new HH_Membership_Tab();
