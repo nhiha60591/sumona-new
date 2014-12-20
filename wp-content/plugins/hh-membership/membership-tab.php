@@ -25,6 +25,7 @@ class HH_Membership_Tab{
         add_action( 'init',  array( $this, 'hh_add_cap_to_post_type' ), 999 );
         add_shortcode( 'membership', array( $this, 'membership_shortcode') );
         add_action( 'admin_menu', array( $this, 'hh_admin_menu') );
+        add_action( 'author_box_content', array( $this, 'upgrade_page' ) );
     }
     public function current_action() {
         if ( isset( $_REQUEST['action'] ) && -1 != $_REQUEST['action'] )
@@ -398,6 +399,18 @@ class HH_Membership_Tab{
     }
     function hh_email_template(){
         include "templates/email-template.php";
+    }
+    function upgrade_page(){
+        $current_user = get_current_user_id();
+        $var = get_query_var( 'author' );
+        if( $var != $current_user ) return;
+
+        ?>
+        <div class="upgrade-box">
+            <input type="submit" value="Upgrade/Downgrade Membership">
+            <input type="submit" value="Cancel Membership">
+        </div>
+        <?php
     }
 }
 new HH_Membership_Tab();
