@@ -13,6 +13,7 @@ class HH_Membership_Tab{
         add_action( 'templatic_monetizations_tabs', array( $this, 'add_tab_link' ), 10, 2 );
         add_action( 'monetization_tabs_content', array( $this, 'membership_panel' ), 10, 2 );
         add_action( 'init', array( $this, 'update_membership_package' ), 10, 2 );
+        add_action( 'init', array( $this, 'cancel_membership_package' ), 10, 2 );
         add_action( 'init', array( $this, 'register_post_type' ),1 );
         add_filter( 'template_include', array( $this, 'template_include') );
         add_action( 'wp_enqueue_scripts', array( $this, 'front_script' ) );
@@ -404,13 +405,39 @@ class HH_Membership_Tab{
         $current_user = get_current_user_id();
         $var = get_query_var( 'author' );
         if( $var != $current_user ) return;
-
+        $pages = get_pages();
+        $permalink = '';
+        foreach($pages as $page){
+            if(has_shortcode( $page->post_content, 'membership' )){
+                $permalink = get_the_permalink($page->ID);
+                break;
+            }
+        }
         ?>
         <div class="upgrade-box">
-            <input type="submit" value="Upgrade/Downgrade Membership">
-            <input type="submit" value="Cancel Membership">
+            <a href="<?php echo $permalink; ?>" class="button upgrade">Upgrade/Downgrade Membership</a>
+            <a href="<?php echo add_query_arg( array('cancel-membership'=>true ), $_SERVER['REQUES_URI'] ); ?>" class="button cancel-mbship">Cancel Membership</a>
         </div>
+        <script type="text/javascript">
+            jQuery(document).ready(function($){
+                $(".cancel-mbship").click(function (){
+                    var r = confirm("<?php _e( 'Do you want cancel your membership?', __HHTEXTDOMAIN__ ); ?>");
+                    if( r == true ){
+                        return true;
+                    }else{
+                        return false;
+                    }
+                });
+            });
+        </script>
         <?php
+    }
+    function cancel_membership_package(){
+        if( isset( $_REQUEST['cancel-membership']) && $_REQUEST['cancel-membership'] ){
+            $current_user = get_current_user_id();
+            $user = new WP_User( $current_user );
+
+        }
     }
 }
 new HH_Membership_Tab();
