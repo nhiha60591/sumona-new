@@ -8,6 +8,10 @@ Author: Huu Hien
 Author URI: https://github.com/nhiha60591/sumona-new
 */
 define( '__HHTEXTDOMAIN__', 'hh_membership');
+
+/**
+ * Class HH_Membership_Tab
+ */
 class HH_Membership_Tab{
     function __construct(){
         add_action( 'templatic_monetizations_tabs', array( $this, 'add_tab_link' ), 10, 2 );
@@ -27,7 +31,14 @@ class HH_Membership_Tab{
         add_shortcode( 'membership', array( $this, 'membership_shortcode') );
         add_action( 'admin_menu', array( $this, 'hh_admin_menu') );
         add_action( 'author_box_content', array( $this, 'upgrade_page' ) );
+        add_action( 'init', array( $this, 'hh_setting_options') );
     }
+
+    /**
+     * Get current action
+     *
+     * @return bool
+     */
     public function current_action() {
         if ( isset( $_REQUEST['action'] ) && -1 != $_REQUEST['action'] )
             return $_REQUEST['action'];
@@ -37,11 +48,22 @@ class HH_Membership_Tab{
 
         return false;
     }
+
+    /**
+     * Add Tab Link
+     *
+     * @param $tab
+     * @param $class
+     */
     function add_tab_link( $tab, $class ){
         ?>
         <a id="membership_settings" class='nav-tab<?php if($tab == 'membership') echo $class;  ?>' href='?page=monetization&tab=membership'><?php echo __('Membership',ADMINDOMAIN); ?> </a>
         <?php
     }
+
+    /**
+     * Add Membership Panel
+     */
     function membership_panel(){
         global $membership_element;
         $data = array(
@@ -91,6 +113,10 @@ class HH_Membership_Tab{
         <?php
         endif;
     }
+
+    /**
+     * Update Membership Package
+     */
     function update_membership_package(){
         if( isset( $_REQUEST['action'] ) && !empty( $_REQUEST['action']) ){
             $msid = !empty( $_REQUEST['msid'] ) ? $_REQUEST['msid'] : 0;
@@ -105,9 +131,21 @@ class HH_Membership_Tab{
             }
         }
     }
+
+    /**
+     * Delete Membership by ID
+     *
+     * @param int $msid
+     */
     function delete_membership( $msid = 0 ){
 
     }
+
+    /**
+     * Update Membership by ID
+     *
+     * @param int $msid
+     */
     function update_membership( $msid = 0 ){
         if( isset( $_SERVER['REQUEST_METHOD']) && $_SERVER['REQUEST_METHOD'] == 'POST' ){
             $current_user = wp_get_current_user();
@@ -176,6 +214,10 @@ class HH_Membership_Tab{
             wp_redirect( add_query_arg( array('page'=>'monetization', 'tab'=> 'membership' ), admin_url("admin.php") ) );
         }
     }
+
+    /**
+     * Register Custom Post Type
+     */
     function register_post_type(){
         $labels = array(
             'name'               => _x( 'Memberships', 'post type general name', 'your-plugin-textdomain' ),
@@ -211,9 +253,16 @@ class HH_Membership_Tab{
 
         register_post_type( 'membership', $args );
     }
+
+    /**
+     * Template Include
+     *
+     * @param $template
+     * @return string
+     */
     function template_include( $template ){
         if( is_singular( 'membership') ){
-            $new_template = locate_template( array( 'archive-program.php' ) );
+            $new_template = locate_template( array( 'register-membership.php' ) );
             if ( '' != $new_template ) {
                 return $new_template;
             }else{
@@ -222,6 +271,10 @@ class HH_Membership_Tab{
         }
         return $template;
     }
+
+    /**
+     * Add Front End Script
+     */
     function front_script(){
         wp_enqueue_script( 'hh-membership-ui', plugin_dir_url( __FILE__ )."assets/js/jquery.validate.js", array( 'jquery' ) );
         wp_enqueue_style( 'hh-membership-package', plugin_dir_url( __FILE__ )."assets/css/style.css" );
@@ -232,11 +285,23 @@ class HH_Membership_Tab{
         wp_enqueue_script('tevolution_tootip',TEMPL_PLUGIN_URL.'js/MooTooltips.js');
         wp_enqueue_script('tevolution_js_hh',TEMPL_PLUGIN_URL.'js/js_hh.js');
     }
+
+    /**
+     * Add Back End Script
+     */
     function admin_script(){
         wp_register_script( 'hh-admin-membership', plugins_url( '/assets/js/hh-admin-membership.js', __FILE__ ) );
         wp_enqueue_script( 'hh-admin-membership' );
         wp_enqueue_script( 'hh-membership-ui', plugin_dir_url( __FILE__ )."assets/js/jquery.validate.js", array( 'jquery' ) );
     }
+
+    /**
+     * Get Link Membership
+     *
+     * @param $package
+     * @param $post_id
+     * @return string
+     */
     function change_link_membership( $package, $post_id ){
         $post = get_post( $post_id );
         if( $post->post_type == 'membership' ){
@@ -244,6 +309,12 @@ class HH_Membership_Tab{
         }
         return $package;
     }
+
+    /**
+     * Confirm Membership Transaction By ID
+     *
+     * @param $cid
+     */
     function confirm_membership_transaction( $cid ){
         global $wpdb;
         $transection_db_table_name=$wpdb->prefix.'transactions';
@@ -263,6 +334,10 @@ class HH_Membership_Tab{
     function hh_membership_activation() {
         wp_schedule_event( time(), 'daily', 'hh_membership_expired' );
     }
+
+    /**
+     * Remove Membership User When Expired
+     */
     function remove_role_membership_expired(){
         $agrs = array(
             'post_type' => 'membership',
@@ -315,6 +390,9 @@ class HH_Membership_Tab{
         wp_clear_scheduled_hook( 'hh_membership_expired' );
     }
 
+    /**
+     * Add Capability To Tevolution Post Type
+     */
     function hh_add_cap_to_post_type() {
         global $wp_post_types;
         $args = get_option('templatic_custom_post');
@@ -357,6 +435,13 @@ class HH_Membership_Tab{
             }
         endif;
     }
+
+    /**
+     * Add Membership Short Code
+     *
+     * @param $atts
+     * @return string
+     */
     function membership_shortcode( $atts){
         $current_user = wp_get_current_user();
         if( $current_user->ID ) return;
@@ -391,16 +476,32 @@ class HH_Membership_Tab{
         <?php
         return ob_get_clean();
     }
+
+    /**
+     * Add Admin Menu
+     */
     function hh_admin_menu(){
         add_menu_page('Email Options', 'Email Options', 'administrator', 'hh_email_option', array( $this, 'hh_email_option' ) );
         add_submenu_page( 'hh_email_option', 'Email Template', 'Email Template', 'administrator', 'hh_mail_template', array( $this, 'hh_email_template') );
     }
+
+    /**
+     * Email Option Page
+     */
     function hh_email_option(){
         include "templates/email-options.php";
     }
+
+    /**
+     * Email Template Page
+     */
     function hh_email_template(){
         include "templates/email-template.php";
     }
+
+    /**
+     * Membership Author Page
+     */
     function upgrade_page(){
         $current_user = get_current_user_id();
         $var = get_query_var( 'author' );
@@ -432,11 +533,25 @@ class HH_Membership_Tab{
         </script>
         <?php
     }
+
+    /**
+     * Cancel Membership Package
+     */
     function cancel_membership_package(){
         if( isset( $_REQUEST['cancel-membership']) && $_REQUEST['cancel-membership'] ){
             $current_user = get_current_user_id();
             $user = new WP_User( $current_user );
-
+            if ( !current_user_can( 'manage_options' ) ) {
+                $user->set_role( 'subscriber' );
+            }
+        }
+    }
+    function hh_setting_options(){
+        if( isset( $_POST['hh_save_email_template'] ) ){
+            do_action( 'before_hh_email_template_save_option' );
+            $options = apply_filters( 'hh_email_membership_option', $_POST['hh_email_membership'] );
+            update_option( 'hh_email_membership', $options );
+            do_action( 'after_hh_email_template_save_option', $options );
         }
     }
 }
