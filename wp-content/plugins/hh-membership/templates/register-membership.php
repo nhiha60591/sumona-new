@@ -70,6 +70,12 @@ do_action( 'templ_before_container_breadcrumb' );  ?>
 
                                     //On success
                                     if( !is_wp_error($user_id) ) {
+                                        $data = get_option('hh_email_membership');
+                                        if (!is_array($data)) {
+                                            $data = array();
+                                        }
+                                        HH_Membership_Mail::send_mail( $userdata['user_email'], $data['new_user']['subject'], $data['new_user']['message']);
+                                        HH_Membership_Mail::send_mail( get_option( "admin_email" ), $data['new_user_admin']['subject'], $data['new_user_admin']['message']);
                                         update_user_meta( $user_id, 'membership_package_id', $post->ID );
                                         update_user_meta( $user_id, 'membership_package_register', date( "Y-m-d") );
                                         $payable_amount = get_post_meta( $post->ID, 'package_amount', true );

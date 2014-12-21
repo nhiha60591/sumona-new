@@ -14,6 +14,7 @@ define( '__HHTEXTDOMAIN__', 'hh_membership');
  */
 class HH_Membership_Tab{
     function __construct(){
+        include ( "includes/class-hh-membership-mail.php");
         add_action( 'templatic_monetizations_tabs', array( $this, 'add_tab_link' ), 10, 2 );
         add_action( 'monetization_tabs_content', array( $this, 'membership_panel' ), 10, 2 );
         add_action( 'init', array( $this, 'update_membership_package' ), 10, 2 );
