@@ -30,9 +30,10 @@ class HH_Membership_Tab{
         add_action( 'hh_membership_expired',  array( $this, 'remove_role_membership_expired' ) );
         add_action( 'init',  array( $this, 'hh_add_cap_to_post_type' ), 999 );
         add_shortcode( 'membership', array( $this, 'membership_shortcode') );
-        add_action( 'admin_menu', array( $this, 'hh_admin_menu') );
+        //add_action( 'admin_menu', array( $this, 'hh_admin_menu') );
         add_action( 'author_box_content', array( $this, 'upgrade_page' ) );
-        add_action( 'init', array( $this, 'hh_setting_options') );
+        add_action( 'templatic_general_data_email', array( $this, 'hh_templatic_general_membership'), 20 );
+        //add_action( 'init', array( $this, 'hh_setting_options') );
     }
 
     /**
@@ -553,6 +554,18 @@ class HH_Membership_Tab{
             $options = apply_filters( 'hh_email_membership_option', $_POST['hh_email_membership'] );
             update_option( 'hh_email_membership', $options );
             do_action( 'after_hh_email_template_save_option', $options );
+        }
+    }
+    function hh_templatic_general_membership( $column ){
+        switch($column)
+        {
+            case 'email':
+                ?>
+                <div id="legend_membership_notifications">
+                    <?php include( "templates/email-template.php"); ?>
+                </div>
+                <?php
+                break;
         }
     }
 }

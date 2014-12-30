@@ -1,383 +1,64 @@
-<div class="wrap">
 <?php
 $data = get_option('hh_email_membership');
 if (!is_array($data)) {
     $data = array();
 }
+$list_membership_mail = array(
+    array(
+        'title' => '',
+        'name' => '',
+    ),
+);
 ?>
-    <h2><?php _e('Email Option', __HHTEXTDOMAIN__); ?></h2>
+<div class="tevo_sub_title" style="padding-top: 10px;">Membership Notification Settings</div>
+<table  class="widefat post email-wide-table email-settings">
+    <thead>
+    <tr>
+        <th class="first-th">
+            <label for="notification_title" class="form-textfield-label"><?php echo __('Notification Title',ADMINDOMAIN); ?></label>
+        </th>
 
-    <div id="poststuff">
-        <form name="" action="" method="post">
-            <div class="postbox-container">
-                <div class="meta-box-sortables ui-sortable">
-                    <?php do_action('before_email_template'); ?>
-                    <div id="hh_new_to_user" class="postbox">
-                        <div class="handlediv" title="Click to toggle"><br></div>
-                        <h3 class="hndle"><span><?php _e("Membership Registration email to user", __HHTEXTDOMAIN__); ?></span></h3>
+        <th class="last-th">
+            <label for="msg_desc" class="form-textfield-label"><?php echo __('Actions',ADMINDOMAIN); ?></label>
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="post-submission-not alternate">
+        <td><label class="form-textfield-label">Successful post submission message</label></td>
 
-                        <div class="inside">
-                            <table id="tvolution_fields" style="width:100%" class="form-table">
-                                <tbody>
-                                <tr>
-                                    <th><label for="membership">Subject</label></th>
-                                    <td>
-                                        <input size="100" class="regular-text pt_input_text" type="text"
-                                               value="<?php echo $data['new_user']['subject']; ?>"
-                                               name="hh_email_membership[new_user][subject]" id="hh_email" placeholder="">
+        <td><a href="javascript:void(0);" onclick="open_quick_edit('post-submission-not','edit-post-submission-not')">Quick Edit</a>
+            |
+            <a href="javascript:void(0);" onclick="reset_to_default('','post_added_success_msg_content','post-submission-not');">Reset</a>
+            <span class="spinner" style="margin:0 18px 0;"></span>
+            <span class="qucik_reset">Data reset</span>
+        </td>
+    </tr>
+    <tr class="edit-post-submission-not" style="display:none">
+        <td width="100%" colspan="2">
+            <h4 class="edit-sub-title">Quick Edit</h4>
+            <table width="98%" align="left" class="tab-sub-table">
+                <tbody><tr>
+                    <td style="line-height:10px">
+                        <label class="form-textfield-label sub-title">Message</label>
+                    </td>
+                    <td width="90%" style="line-height:10px">
 
-                                        <p class="description"></p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th><label for="membership">Message</label></th>
-                                    <td>
-                                        <?php
-                                        $content = $data['new_user']['message'];
-                                        $settings = array(
-                                            'wpautop' => false, // use wpautop?
-                                            'media_buttons' => false, // show insert/upload button(s)
-                                            'textarea_name' => "hh_email_membership[new_user][message]", // set the textarea name to something different, square brackets [] can be used here
-                                            'textarea_rows' => '7', // rows="..."
-                                            'tabindex' => '',
-                                            'editor_css' => '<style>.wp-editor-wrap{width:640px;margin-left:0px;}</style>', // intended for extra styles for both visual and HTML editors buttons, needs to include the <style> tags, can use "scoped".
-                                            'editor_class' => '', // add extra class(es) to the editor textarea
-                                            'teeny' => true, // output the minimal editor config used in Press This
-                                            'dfw' => true, // replace the default fullscreen with DFW (supported on the front-end in WordPress 3.4)
-                                            'tinymce' => true, // load TinyMCE, can be used to pass settings directly to TinyMCE using an array()
-                                            'quicktags' => true // load Quicktags, can be used to pass settings directly to Quicktags using an array()
-                                        );
-                                        wp_editor($content, "hh_new_to_user_editor", $settings);
-                                        ?>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div class="buttons">
+                            <div class="inline_update">
+                                <a class="button-primary save  quick_save" href="javascript:void(0);" accesskey="s">Save Changes</a>
+                                <a class="button-secondary cancel " href="javascript:void(0);" onclick="open_quick_edit('edit-post-submission-not','post-submission-not')" accesskey="c">Cancel</a>
+                                <span class="save_error" style="display:none"></span><span class="spinner"></span>
+                            </div>
                         </div>
-                    </div>
-                    <div id="hh_new_to_admin" class="postbox ">
-                        <div class="handlediv" title="Click to toggle">
-                            <br>
-                        </div>
-                        <h3 class="hndle"><span><?php _e("Membership Registration email to admin", __HHTEXTDOMAIN__); ?></span></h3>
-
-                        <div class="inside">
-                            <table id="tvolution_fields" style="width:100%" class="form-table">
-                                <tbody>
-                                <tr>
-                                    <th><label for="membership">Subject</label></th>
-                                    <td>
-                                        <input size="100" class="regular-text pt_input_text" type="text"
-                                               value="<?php echo $data['new_user_admin']['subject']; ?>"
-                                               name="hh_email_membership[new_user_admin][subject]" id="hh_email" placeholder="">
-
-                                        <p class="description"></p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th><label for="membership">Message</label></th>
-                                    <td>
-                                        <?php
-                                        $content = $data['new_user_admin']['message'];
-                                        $settings = array(
-                                            'wpautop' => false, // use wpautop?
-                                            'media_buttons' => false, // show insert/upload button(s)
-                                            'textarea_name' => "hh_email_membership[new_user_admin][message]", // set the textarea name to something different, square brackets [] can be used here
-                                            'textarea_rows' => '7', // rows="..."
-                                            'tabindex' => '',
-                                            'editor_css' => '<style>.wp-editor-wrap{width:640px;margin-left:0px;}</style>', // intended for extra styles for both visual and HTML editors buttons, needs to include the <style> tags, can use "scoped".
-                                            'editor_class' => '', // add extra class(es) to the editor textarea
-                                            'teeny' => true, // output the minimal editor config used in Press This
-                                            'dfw' => true, // replace the default fullscreen with DFW (supported on the front-end in WordPress 3.4)
-                                            'tinymce' => true, // load TinyMCE, can be used to pass settings directly to TinyMCE using an array()
-                                            'quicktags' => true // load Quicktags, can be used to pass settings directly to Quicktags using an array()
-                                        );
-                                        wp_editor($content, "hh_new_to_admin_editor", $settings);
-                                        ?>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div id="hh_successful_payment_user" class="postbox ">
-                        <div class="handlediv" title="Click to toggle">
-                            <br>
-                        </div>
-                        <h3 class="hndle"><span><?php _e("Successful membership payment notification to user", __HHTEXTDOMAIN__); ?></span>
-                        </h3>
-
-                        <div class="inside">
-                            <table id="tvolution_fields" style="width:100%" class="form-table">
-                                <tbody>
-                                <tr>
-                                    <th><label for="membership">Subject</label></th>
-                                    <td>
-                                        <input size="100" class="regular-text pt_input_text" type="text"
-                                               value="<?php echo $data['successful_payment_user']['subject']; ?>"
-                                               name="hh_email_membership[successful_payment_user][subject]" id="hh_email" placeholder="">
-
-                                        <p class="description"></p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th><label for="membership">Message</label></th>
-                                    <td>
-                                        <?php
-                                        $content = $data['successful_payment_user']['message'];
-                                        $settings = array(
-                                            'wpautop' => false, // use wpautop?
-                                            'media_buttons' => false, // show insert/upload button(s)
-                                            'textarea_name' => "hh_email_membership[successful_payment_user][message]", // set the textarea name to something different, square brackets [] can be used here
-                                            'textarea_rows' => '7', // rows="..."
-                                            'tabindex' => '',
-                                            'editor_css' => '<style>.wp-editor-wrap{width:640px;margin-left:0px;}</style>', // intended for extra styles for both visual and HTML editors buttons, needs to include the <style> tags, can use "scoped".
-                                            'editor_class' => '', // add extra class(es) to the editor textarea
-                                            'teeny' => true, // output the minimal editor config used in Press This
-                                            'dfw' => true, // replace the default fullscreen with DFW (supported on the front-end in WordPress 3.4)
-                                            'tinymce' => true, // load TinyMCE, can be used to pass settings directly to TinyMCE using an array()
-                                            'quicktags' => true // load Quicktags, can be used to pass settings directly to Quicktags using an array()
-                                        );
-                                        wp_editor($content, "hh_successful_payment_user_editor", $settings);
-                                        ?>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div id="hh_successful_payment_admin" class="postbox ">
-                        <div class="handlediv" title="Click to toggle">
-                            <br>
-                        </div>
-                        <h3 class="hndle"><span><?php _e("Successful membership payment notification to admin", __HHTEXTDOMAIN__); ?></span>
-                        </h3>
-
-                        <div class="inside">
-                            <table id="tvolution_fields" style="width:100%" class="form-table">
-                                <tbody>
-                                <tr>
-                                    <th><label for="membership">Subject</label></th>
-                                    <td>
-                                        <input size="100" class="regular-text pt_input_text" type="text"
-                                               value="<?php echo $data['successful_payment_admin']['subject']; ?>"
-                                               name="hh_email_membership[successful_payment_admin][subject]" id="hh_email" placeholder="">
-
-                                        <p class="description"></p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th><label for="membership">Message</label></th>
-                                    <td>
-                                        <?php
-                                        $content = $data['successful_payment_admin']['message'];
-                                        $settings = array(
-                                            'wpautop' => false, // use wpautop?
-                                            'media_buttons' => false, // show insert/upload button(s)
-                                            'textarea_name' => "hh_email_membership[successful_payment_admin][message]", // set the textarea name to something different, square brackets [] can be used here
-                                            'textarea_rows' => '7', // rows="..."
-                                            'tabindex' => '',
-                                            'editor_css' => '<style>.wp-editor-wrap{width:640px;margin-left:0px;}</style>', // intended for extra styles for both visual and HTML editors buttons, needs to include the <style> tags, can use "scoped".
-                                            'editor_class' => '', // add extra class(es) to the editor textarea
-                                            'teeny' => true, // output the minimal editor config used in Press This
-                                            'dfw' => true, // replace the default fullscreen with DFW (supported on the front-end in WordPress 3.4)
-                                            'tinymce' => true, // load TinyMCE, can be used to pass settings directly to TinyMCE using an array()
-                                            'quicktags' => true // load Quicktags, can be used to pass settings directly to Quicktags using an array()
-                                        );
-                                        wp_editor($content, "hh_successful_payment_admin_editor", $settings);
-                                        ?>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div id="hh_upgrade_downgrade_user" class="postbox ">
-                        <div class="handlediv" title="Click to toggle">
-                            <br>
-                        </div>
-                        <h3 class="hndle"><span><?php _e("Membership upgrade/downgrade notification to user", __HHTEXTDOMAIN__); ?></span>
-                        </h3>
-
-                        <div class="inside">
-                            <table id="tvolution_fields" style="width:100%" class="form-table">
-                                <tbody>
-                                <tr>
-                                    <th><label for="membership">Subject</label></th>
-                                    <td>
-                                        <input size="100" class="regular-text pt_input_text" type="text"
-                                               value="<?php echo $data['upgrade_downgrade_user']['subject']; ?>"
-                                               name="hh_email_membership[upgrade_downgrade_user][subject]" id="hh_email" placeholder="">
-
-                                        <p class="description"></p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th><label for="membership">Message</label></th>
-                                    <td>
-                                        <?php
-                                        $content = $data['upgrade_downgrade_user']['message'];
-                                        $settings = array(
-                                            'wpautop' => false, // use wpautop?
-                                            'media_buttons' => false, // show insert/upload button(s)
-                                            'textarea_name' => "hh_email_membership[upgrade_downgrade_user][message]", // set the textarea name to something different, square brackets [] can be used here
-                                            'textarea_rows' => '7', // rows="..."
-                                            'tabindex' => '',
-                                            'editor_css' => '<style>.wp-editor-wrap{width:640px;margin-left:0px;}</style>', // intended for extra styles for both visual and HTML editors buttons, needs to include the <style> tags, can use "scoped".
-                                            'editor_class' => '', // add extra class(es) to the editor textarea
-                                            'teeny' => true, // output the minimal editor config used in Press This
-                                            'dfw' => true, // replace the default fullscreen with DFW (supported on the front-end in WordPress 3.4)
-                                            'tinymce' => true, // load TinyMCE, can be used to pass settings directly to TinyMCE using an array()
-                                            'quicktags' => true // load Quicktags, can be used to pass settings directly to Quicktags using an array()
-                                        );
-                                        wp_editor($content, "hh_upgrade_downgrade_user_editor", $settings);
-                                        ?>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div id="hh_upgrade_downgrade_admin" class="postbox ">
-                        <div class="handlediv" title="Click to toggle">
-                            <br>
-                        </div>
-                        <h3 class="hndle"><span><?php _e("Membership upgrade/downgrade notification to admin", __HHTEXTDOMAIN__); ?></span>
-                        </h3>
-
-                        <div class="inside">
-                            <table id="tvolution_fields" style="width:100%" class="form-table">
-                                <tbody>
-                                <tr>
-                                    <th><label for="membership">Subject</label></th>
-                                    <td>
-                                        <input size="100" class="regular-text pt_input_text" type="text"
-                                               value="<?php echo $data['upgrade_downgrade_admin']['subject']; ?>"
-                                               name="hh_email_membership[upgrade_downgrade_admin][subject]" id="hh_email" placeholder="">
-
-                                        <p class="description"></p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th><label for="membership">Message</label></th>
-                                    <td>
-                                        <?php
-                                        $content = $data['upgrade_downgrade_admin']['message'];
-                                        $settings = array(
-                                            'wpautop' => false, // use wpautop?
-                                            'media_buttons' => false, // show insert/upload button(s)
-                                            'textarea_name' => "hh_email_membership[upgrade_downgrade_admin][message]", // set the textarea name to something different, square brackets [] can be used here
-                                            'textarea_rows' => '7', // rows="..."
-                                            'tabindex' => '',
-                                            'editor_css' => '<style>.wp-editor-wrap{width:640px;margin-left:0px;}</style>', // intended for extra styles for both visual and HTML editors buttons, needs to include the <style> tags, can use "scoped".
-                                            'editor_class' => '', // add extra class(es) to the editor textarea
-                                            'teeny' => true, // output the minimal editor config used in Press This
-                                            'dfw' => true, // replace the default fullscreen with DFW (supported on the front-end in WordPress 3.4)
-                                            'tinymce' => true, // load TinyMCE, can be used to pass settings directly to TinyMCE using an array()
-                                            'quicktags' => true // load Quicktags, can be used to pass settings directly to Quicktags using an array()
-                                        );
-                                        wp_editor($content, "hh_upgrade_downgrade_admin_editor", $settings);
-                                        ?>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div id="hh_cancel_to_user" class="postbox ">
-                        <div class="handlediv" title="Click to toggle">
-                            <br>
-                        </div>
-                        <h3 class="hndle"><span><?php _e("Membership Cancel notification to user", __HHTEXTDOMAIN__); ?></span></h3>
-
-                        <div class="inside">
-                            <table id="tvolution_fields" style="width:100%" class="form-table">
-                                <tbody>
-                                <tr>
-                                    <th><label for="membership">Subject</label></th>
-                                    <td>
-                                        <input size="100" class="regular-text pt_input_text" type="text"
-                                               value="<?php echo $data['cancel_to_user']['subject']; ?>"
-                                               name="hh_email_membership[cancel_to_user][subject]" id="hh_email" placeholder="">
-
-                                        <p class="description"></p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th><label for="membership">Message</label></th>
-                                    <td>
-                                        <?php
-                                        $content = $data['cancel_to_user']['message'];
-                                        $settings = array(
-                                            'wpautop' => false, // use wpautop?
-                                            'media_buttons' => false, // show insert/upload button(s)
-                                            'textarea_name' => "hh_email_membership[cancel_to_user][message]", // set the textarea name to something different, square brackets [] can be used here
-                                            'textarea_rows' => '7', // rows="..."
-                                            'tabindex' => '',
-                                            'editor_css' => '<style>.wp-editor-wrap{width:640px;margin-left:0px;}</style>', // intended for extra styles for both visual and HTML editors buttons, needs to include the <style> tags, can use "scoped".
-                                            'editor_class' => '', // add extra class(es) to the editor textarea
-                                            'teeny' => true, // output the minimal editor config used in Press This
-                                            'dfw' => true, // replace the default fullscreen with DFW (supported on the front-end in WordPress 3.4)
-                                            'tinymce' => true, // load TinyMCE, can be used to pass settings directly to TinyMCE using an array()
-                                            'quicktags' => true // load Quicktags, can be used to pass settings directly to Quicktags using an array()
-                                        );
-                                        wp_editor($content, "hh_cancel_to_user_editor", $settings);
-                                        ?>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div id="hh_cancel_to_admin" class="postbox ">
-                        <div class="handlediv" title="Click to toggle">
-                            <br>
-                        </div>
-                        <h3 class="hndle"><span><?php _e("Membership Cancel notification to admin", __HHTEXTDOMAIN__); ?></span></h3>
-
-                        <div class="inside">
-                            <table id="tvolution_fields" style="width:100%" class="form-table">
-                                <tbody>
-                                <tr>
-                                    <th><label for="membership">Subject</label></th>
-                                    <td>
-                                        <input size="100" class="regular-text pt_input_text" type="text"
-                                               value="<?php echo $data['cancel_to_admin']['subject']; ?>"
-                                               name="hh_email_membership[cancel_to_admin][subject]" id="hh_email" placeholder="">
-
-                                        <p class="description"></p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th><label for="membership">Message</label></th>
-                                    <td>
-                                        <?php
-                                        $content = $data['cancel_to_admin']['message'];
-                                        $settings = array(
-                                            'wpautop' => false, // use wpautop?
-                                            'media_buttons' => false, // show insert/upload button(s)
-                                            'textarea_name' => "hh_email_membership[cancel_to_admin][message]", // set the textarea name to something different, square brackets [] can be used here
-                                            'textarea_rows' => '7', // rows="..."
-                                            'tabindex' => '',
-                                            'editor_css' => '<style>.wp-editor-wrap{width:640px;margin-left:0px;}</style>', // intended for extra styles for both visual and HTML editors buttons, needs to include the <style> tags, can use "scoped".
-                                            'editor_class' => '', // add extra class(es) to the editor textarea
-                                            'teeny' => true, // output the minimal editor config used in Press This
-                                            'dfw' => true, // replace the default fullscreen with DFW (supported on the front-end in WordPress 3.4)
-                                            'tinymce' => true, // load TinyMCE, can be used to pass settings directly to TinyMCE using an array()
-                                            'quicktags' => true // load Quicktags, can be used to pass settings directly to Quicktags using an array()
-                                        );
-                                        wp_editor($content, "hh_cancel_to_admin_editor", $settings);
-                                        ?>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <?php do_action('after_email_template'); ?>
-                    <?php submit_button('Save Change', 'primary', 'hh_save_email_template') ?>
-                    </div>
-            </div>
-        </form>
-    </div>
-</div>
+                    </td>
+                </tr>
+                </tbody></table>
+        </td>
+    </tr>
+    </tbody>
+</table>

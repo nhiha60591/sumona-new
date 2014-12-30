@@ -1346,11 +1346,16 @@ jQuery(document).ready(function (){
 		jQuery(this).addClass('current');
 		jQuery("#email_setting_form div#"+this.id).show();				
 		jQuery("#email_setting_form div#"+this.id).addClass('tmpl-email-settings form-table active-tab');	
-		
+
 		if(this.id == "notifications_settings"){
 			jQuery("#legend_notifications").hide();
-		}else{
+            jQuery("#legend_membership_notifications").hide();
+		}else if(this.id == "membership_notifications"){
+            jQuery("#legend_notifications").hide();
+            jQuery("#legend_membership_notifications").show();
+        }else{
 			jQuery("#legend_notifications").show();
+            jQuery("#legend_membership_notifications").hide();
 		}
 	});
 });

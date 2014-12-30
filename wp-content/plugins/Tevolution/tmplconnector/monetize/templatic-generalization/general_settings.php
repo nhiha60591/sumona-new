@@ -313,6 +313,7 @@ if(isset($_REQUEST['updated']) && $_REQUEST['updated'] == 'true' ): ?>
 			<ul id="tev_email_settings" class="filter-links">
 				<li class="active"><a id="email_settings" href="javascript:void(0);" class="current"><?php echo __('Emails',ADMINDOMAIN); ?></a></li>
 				<li><a id="notifications_settings" href="javascript:void(0);"><?php echo __('Notifications',ADMINDOMAIN); ?></a></li>
+				<li><a id="membership_notifications" href="javascript:void(0);"><?php echo __('Membership Notifications',ADMINDOMAIN); ?></a></li>
 			</ul>
 		</div>
 		<!-- Email settings start -->
