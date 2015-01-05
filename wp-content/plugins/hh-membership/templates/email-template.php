@@ -89,14 +89,14 @@ $list_membership_mail = array(
                 <span class="qucik_reset">Data reset</span>
             </td>
         </tr>
-        <tr class="edit-<?php echo $mail['name']; ?>-class" style="display:none">
+        <tr class="edit-<?php echo $mail['name']; ?>-class<?php echo $class; ?>" style="display:none">
             <td width="100%" colspan="2">
                 <h4 class="edit-sub-title">Quick Edit</h4>
                 <table width="98%" align="left" class="tab-sub-table">
                     <tbody>
                         <tr>
                             <td style="line-height:10px"><label class="form-textfield-label sub-title">Subject</label></td>
-                            <td><input type="text" name="<?php echo $mail['name']; ?>_subject" value="<?php echo $data[$mail['name'].'_subject']; ?>" /></td>
+                            <td><input type="text" style="width: 50%;" name="<?php echo $mail['name']; ?>_subject" value="<?php echo $data[$mail['name'].'_subject']; ?>" /></td>
                         </tr>
                         <tr>
                            <td style="line-height:10px">
