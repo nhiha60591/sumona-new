@@ -295,6 +295,7 @@ class HH_Membership_Tab{
         wp_register_script( 'hh-admin-membership', plugins_url( '/assets/js/hh-admin-membership.js', __FILE__ ) );
         wp_enqueue_script( 'hh-admin-membership' );
         wp_enqueue_script( 'hh-membership-ui', plugin_dir_url( __FILE__ )."assets/js/jquery.validate.js", array( 'jquery' ) );
+        wp_enqueue_script('post');
     }
 
     /**
