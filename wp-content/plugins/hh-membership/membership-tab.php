@@ -12,9 +12,9 @@ define( '__HHTEXTDOMAIN__', 'hh_membership');
 /**
  * Class HH_Membership_Tab
  */
+include ( "includes/class-hh-membership-mail.php");
 class HH_Membership_Tab{
     function __construct(){
-        include ( "includes/class-hh-membership-mail.php");
         add_action( 'templatic_monetizations_tabs', array( $this, 'add_tab_link' ), 10, 2 );
         add_action( 'monetization_tabs_content', array( $this, 'membership_panel' ), 10, 2 );
         add_action( 'init', array( $this, 'update_membership_package' ), 10, 2 );
@@ -34,6 +34,8 @@ class HH_Membership_Tab{
         add_action( 'author_box_content', array( $this, 'upgrade_page' ) );
         add_action( 'templatic_general_data_email', array( $this, 'hh_templatic_general_membership'), 20 );
         //add_action( 'init', array( $this, 'hh_setting_options') );
+
+        add_action( 'tevolution_submition_success_msg', array( $this, 'hh_send_mail_success_payment') );
     }
 
     /**
@@ -568,6 +570,21 @@ class HH_Membership_Tab{
                 <?php
                 break;
         }
+    }
+    function hh_send_mail_success_payment(){
+        $data = get_option('templatic_settings');
+        $transaction_detail = '';
+        $replace_array = array(
+            '[#site_name#]' => home_url(),
+            '[#to_name#]' => $_POST['first_name'],
+            '[#payable_amt#]' => wp_login_url(),
+            '[#transaction_details#]' => $transaction_detail,
+        );
+        $HH_Mail = new HH_Membership_Mail();
+        $admin_msg = $HH_Mail->replace_message( $replace_array, $data['hh_new_user_admin']);
+        $user_msg = $HH_Mail->replace_message( $replace_array, $data['hh_new_user']);
+        $HH_Mail->send_mail( $user->user_email, $data['hh_new_user_subject'], $user_msg );
+        $HH_Mail->send_mail( get_option( "admin_email" ), $data['hh_new_user_admin_subject'], $admin_msg );
     }
 }
 new HH_Membership_Tab();
