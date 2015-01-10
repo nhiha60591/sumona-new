@@ -75,23 +75,40 @@ do_action( 'templ_before_container_breadcrumb' );  ?>
                                             $data = array();
                                         }
                                         $user = get_user_by( 'id', $user_id );
+                                        global $current_user;
+                                        $current_user = $user;
+                                        $HH_Mail = new HH_Membership_Mail();
+                                        if( isset( $_REQUEST['action']) && $_REQUEST['action'] == 'upgrade'){
+                                            $old_package = get_user_meta( $user_id, 'membership_package_id', true );
+                                            $old_package_data = get_post( $old_package );
+                                            $replace_array = array(
+                                                '[#site_name#]' => home_url(),
+                                                '[#to_name#]' => $user->dislay_name,
+                                                '[#old_membership_level#]' => $old_package_data->post_title,
+                                                '[#new_membership_level#]' => get_the_title()
+                                            );
+                                            $admin_msg = $HH_Mail->replace_message($replace_array, $data['hh_cancel_to_user']);
+                                            $user_msg = $HH_Mail->replace_message($replace_array, $data['hh_upgrade_admin']);
+                                            $HH_Mail->send_mail($user->user_email, $data['hh_cancel_to_user_subject'], $user_msg);
+                                            $HH_Mail->send_mail(get_option("admin_email"), $data['hh_upgrade_admin_subject'], $admin_msg);
+                                        }else {
+                                            $replace_array = array(
+                                                '[#site_name#]' => home_url(),
+                                                '[#to_name#]' => $_POST['first_name'],
+                                                '[#site_login_url_link#]' => wp_login_url(),
+                                                '[#user_login#]' => $_POST['username'],
+                                                '[#user_password#]' => $_POST['confirm_password'],
+                                                '[#membership_level#]' => get_the_title()
+                                            );
+                                            $admin_msg = $HH_Mail->replace_message($replace_array, $data['hh_new_user_admin']);
+                                            $user_msg = $HH_Mail->replace_message($replace_array, $data['hh_new_user']);
+                                            $HH_Mail->send_mail($user->user_email, $data['hh_new_user_subject'], $user_msg);
+                                            $HH_Mail->send_mail(get_option("admin_email"), $data['hh_new_user_admin_subject'], $admin_msg);
+                                        }
                                         update_user_meta( $user_id, 'membership_package_id', $post->ID );
                                         update_user_meta( $user_id, 'membership_package_register', date( "Y-m-d") );
                                         $payable_amount = get_post_meta( $post->ID, 'package_amount', true );
                                         $trans_id = insert_transaction_detail($_POST['paymentmethod'],$post->ID,0,1);
-                                        $replace_array = array(
-                                            '[#site_name#]' => home_url(),
-                                            '[#to_name#]' => $_POST['first_name'],
-                                            '[#site_login_url_link#]' => wp_login_url(),
-                                            '[#user_login#]' => $_POST['username'],
-                                            '[#user_password#]' => $_POST['confirm_password'],
-                                            '[#membership_level#]' => get_the_title()
-                                        );
-                                        $HH_Mail = new HH_Membership_Mail();
-                                        $admin_msg = $HH_Mail->replace_message( $replace_array, $data['hh_new_user_admin']);
-                                        $user_msg = $HH_Mail->replace_message( $replace_array, $data['hh_new_user']);
-                                        $HH_Mail->send_mail( $user->user_email, $data['hh_new_user_subject'], $user_msg );
-                                        $HH_Mail->send_mail( get_option( "admin_email" ), $data['hh_new_user_admin_subject'], $admin_msg );
                                         insert_update_users_packageperlist(0,$_POST,$trans_id);
                                         payment_menthod_response_url($_POST['paymentmethod'],get_the_ID(),'membership',get_the_ID(),$payable_amount);
                                     }

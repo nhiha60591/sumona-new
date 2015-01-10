@@ -521,7 +521,7 @@ class HH_Membership_Tab{
         }
         ?>
         <div class="upgrade-box">
-            <a href="<?php echo $permalink; ?>" class="button upgrade">Upgrade/Downgrade Membership</a>
+            <a href="<?php echo add_query_arg( array( 'action' => 'upgrade', 'user_id' => get_current_user_id()), $permalink ); ?>" class="button upgrade">Upgrade/Downgrade Membership</a>
             <a href="<?php echo add_query_arg( array('cancel-membership'=>true ), $_SERVER['REQUES_URI'] ); ?>" class="button cancel-mbship">Cancel Membership</a>
         </div>
         <script type="text/javascript">
@@ -549,6 +549,18 @@ class HH_Membership_Tab{
             if ( !current_user_can( 'manage_options' ) ) {
                 $user->set_role( 'subscriber' );
             }
+            $data = get_option('templatic_settings');
+            $HH_Mail = new HH_Membership_Mail();
+            $replace_array = array(
+                '[#site_name#]' => home_url(),
+                '[#to_name#]' => $user->dislay_name,
+                '[#user_login#]' => $current_user->user_login,
+                '[#user_email#]' => $current_user->user_email
+            );
+            $admin_msg = $HH_Mail->replace_message($replace_array, $data['hh_upgrade_user']);
+            $user_msg = $HH_Mail->replace_message($replace_array, $data['hh_cancel_to_admin']);
+            $HH_Mail->send_mail($user->user_email, $data['hh_upgrade_user_subject'], $user_msg);
+            $HH_Mail->send_mail(get_option("admin_email"), $data['hh_cancel_to_admin_subject'], $admin_msg);
         }
     }
     function hh_setting_options(){
@@ -572,19 +584,23 @@ class HH_Membership_Tab{
         }
     }
     function hh_send_mail_success_payment(){
+        global $payable_amount,$wpdb;
+        $transaction_tabel = $wpdb->prefix."transactions";
+        $user_id = $wpdb->get_var("select user_id from $transaction_tabel order by trans_id DESC limit 1");
+        $user_details = get_userdata( $user_id );
         $data = get_option('templatic_settings');
         $transaction_detail = '';
         $replace_array = array(
             '[#site_name#]' => home_url(),
-            '[#to_name#]' => $_POST['first_name'],
-            '[#payable_amt#]' => wp_login_url(),
+            '[#to_name#]' => $user_details->display_name,
+            '[#payable_amt#]' => $payable_amount,
             '[#transaction_details#]' => $transaction_detail,
         );
         $HH_Mail = new HH_Membership_Mail();
-        $admin_msg = $HH_Mail->replace_message( $replace_array, $data['hh_new_user_admin']);
-        $user_msg = $HH_Mail->replace_message( $replace_array, $data['hh_new_user']);
-        $HH_Mail->send_mail( $user->user_email, $data['hh_new_user_subject'], $user_msg );
-        $HH_Mail->send_mail( get_option( "admin_email" ), $data['hh_new_user_admin_subject'], $admin_msg );
+        $admin_msg = $HH_Mail->replace_message( $replace_array, $data['hh_success_payment_user']);
+        $user_msg = $HH_Mail->replace_message( $replace_array, $data['hh_success_payment_admin']);
+        $HH_Mail->send_mail( $user_details->user_email, $data['hh_success_payment_user_subject'], $user_msg );
+        $HH_Mail->send_mail( get_option( "admin_email" ), $data['hh_success_payment_admin_subject'], $admin_msg );
     }
 }
 new HH_Membership_Tab();
