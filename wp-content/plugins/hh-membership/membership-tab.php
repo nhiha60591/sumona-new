@@ -551,12 +551,17 @@ class HH_Membership_Tab{
             }
             $data = get_option('templatic_settings');
             $HH_Mail = new HH_Membership_Mail();
+            $membership_package = get_user_meta( $current_user, 'membership_package_id', true );
+            $membership_package = get_post( $membership_package );
             $replace_array = array(
                 '[#site_name#]' => home_url(),
                 '[#to_name#]' => $user->dislay_name,
                 '[#user_login#]' => $user->user_login,
-                '[#user_email#]' => $user->user_email
+                '[#user_email#]' => $user->user_email,
+                '[#old_membership_level#]'=> $membership_package->post_title,
+                '[#new_membership_level#]'=> 'Subscriber',
             );
+            delete_user_meta( $current_user, 'membership_package_id' );
             $admin_msg = $HH_Mail->replace_message($replace_array, $data['hh_upgrade_user']);
             $user_msg = $HH_Mail->replace_message($replace_array, $data['hh_cancel_to_admin']);
             $HH_Mail->send_mail($user->user_email, $data['hh_upgrade_user_subject'], $user_msg);
