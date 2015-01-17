@@ -554,8 +554,8 @@ class HH_Membership_Tab{
             $replace_array = array(
                 '[#site_name#]' => home_url(),
                 '[#to_name#]' => $user->dislay_name,
-                '[#user_login#]' => $current_user->user_login,
-                '[#user_email#]' => $current_user->user_email
+                '[#user_login#]' => $user->user_login,
+                '[#user_email#]' => $user->user_email
             );
             $admin_msg = $HH_Mail->replace_message($replace_array, $data['hh_upgrade_user']);
             $user_msg = $HH_Mail->replace_message($replace_array, $data['hh_cancel_to_admin']);

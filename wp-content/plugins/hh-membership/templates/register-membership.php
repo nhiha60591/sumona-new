@@ -78,8 +78,8 @@ do_action( 'templ_before_container_breadcrumb' );  ?>
                                         global $current_user;
                                         $current_user = $user;
                                         $HH_Mail = new HH_Membership_Mail();
-                                        if( isset( $_REQUEST['action']) && $_REQUEST['action'] == 'upgrade'){
-                                            $old_package = get_user_meta( $user_id, 'membership_package_id', true );
+                                        $old_package = get_user_meta( $user_id, 'membership_package_id', true );
+                                        if( $old_package ){
                                             $old_package_data = get_post( $old_package );
                                             $replace_array = array(
                                                 '[#site_name#]' => home_url(),
