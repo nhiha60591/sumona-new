@@ -6,6 +6,7 @@
  * singular views of the 'post' post type.
  */
 $current_user = wp_get_current_user();
+$hh_check = false;
 get_header(); // Loads the header.php template.
 do_action( 'before_content' );
 do_action( 'templ_before_container_breadcrumb' );  ?>
@@ -54,6 +55,7 @@ do_action( 'templ_before_container_breadcrumb' );  ?>
                                         echo '<div class="error">'.$mess.'</div>';
                                     }
                                 }else{
+                                    $hh_check = true;
                                     global $post;
                                     if( !$current_user->ID ):
                                         $userdata = array(
@@ -107,17 +109,26 @@ do_action( 'templ_before_container_breadcrumb' );  ?>
                                         }
                                         update_user_meta( $user_id, 'membership_package_id', $post->ID );
                                         update_user_meta( $user_id, 'membership_package_register', date( "Y-m-d") );
-                                        $payable_amount = get_post_meta( $post->ID, 'package_amount', true );
-                                        $trans_id = insert_transaction_detail($_POST['paymentmethod'],$post->ID,0,1);
-                                        insert_update_users_packageperlist(0,$_POST,$trans_id);
-                                        payment_menthod_response_url($_POST['paymentmethod'],get_the_ID(),'membership',get_the_ID(),$payable_amount);
+                                        $datasigon = array(
+                                            'user_login' => $userdata['user_login'],
+                                            'user_password' => $userdata['user_pass'],
+                                        );
+                                        if( is_wp_error(wp_authenticate( $datasigon['user_login'], $datasigon['user_password'] ) ) ){
+
+                                        }
                                     }
                                 }
                             }
+                            if( isset( $_POST['checkout'] ) ){
+                                $payable_amount = get_post_meta( $post->ID, 'package_amount', true );
+                                $trans_id = insert_transaction_detail($_POST['paymentmethod'],$post->ID,0,1);
+                                insert_update_users_packageperlist( get_the_ID(), $_POST, $trans_id);
+                                payment_menthod_response_url($_POST['paymentmethod'],get_the_ID(),'membership',get_the_ID(),$payable_amount);
+                            }
                         ?>
                         <section class="entry-content">
+                            <?php if( !$current_user->ID && !$hh_check ): ?>
                             <form name="membership_register" id="membership_register" class="membership_register" action="<?php echo add_query_arg( array('action'=>'payment-method'), get_the_permalink()); ?>" method="post" _lpchecked="1">
-                                <?php if( !$current_user->ID ): ?>
                                 <p class="register_membership">
                                     <label for="username">Username:</label>
                                     <input type="text" name="username" value="" id="username" placeholder="" class="placeholder" style="cursor: auto; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==); background-attachment: scroll; background-position: 100% 50%; background-repeat: no-repeat;">
@@ -142,13 +153,23 @@ do_action( 'templ_before_container_breadcrumb' );  ?>
                                     <label for="last_name">Last Name:</label>
                                     <input type="text" name="last_name" value="" id="last_name" placeholder="" class="placeholder">
                                 </p>
-                                <?php endif; ?>
-                                <h3>Payment method</h3>
-                                <div class="method">
-                                    <?php templatic_payment_option_preview_page(); ?>
-                                </div>
                                 <input type="submit" name="hh_register" value="Register">
                             </form>
+                            <?php endif; ?>
+                            <?php if( ( isset( $_POST['hh_register'] ) && $hh_check ) || $current_user->ID ): ?>
+                                <h3>Payment method</h3>
+                                <form name="" method="post" action="">
+                                    <?php if( sizeof( $_POST ) > 0 ): unset( $_POST['hh_register']); ?>
+                                        <?php foreach( $_POST as $k=>$v): ?>
+                                            <input type="hidden" name="<?php echo $k; ?>" value="<?php echo $v; ?>" />
+                                        <?php endforeach; ?>
+                                    <?php endif; ?>
+                                    <div class="method">
+                                        <?php templatic_payment_option_preview_page(); ?>
+                                    </div>
+                                    <input type="submit" name="checkout" value="Checkout">
+                                </form>
+                            <?php endif; ?>
                             <script type="text/javascript">
                                 jQuery(document).ready(function($){
                                     $("#membership_register").validate({

@@ -3,6 +3,30 @@
 $data = get_option('templatic_settings');
 $list_membership_mail = array(
     array(
+        'title' => 'Membership registration STEP 1 completion email to user',
+        'name' => 'hh_step1_user',
+        'subject' => 'Welcome to [#site_title#]! Membership registration STEP 1 completed',
+        'content' => '<p>Dear [#to_name#],</p>
+<p>Thank you for your interest in membership registration at [#site_name#].</p>
+<p>Your membership registration STEP 1 has been completed. If you have not completed the STEP 2 (Payment) yet then you can login to your account by using the details below and complete payment process to get instant access of your membership. </p>
+<p>Login URL: [#site_login_url_link#]</p>
+<p>Username: [#user_login#]</p>
+<p>Password: [#user_password#]</p>
+<p>Thanks</p>'
+    ),
+    array(
+        'title' => 'Membership registration STEP 1 completion email to admin',
+        'name' => 'hh_step1_admin',
+        'subject' => 'Membership Registration STEP 1 completion notification',
+        'content' => '<p>Dear Admin,</p>
+<p>A new user is trying to register as a [#membership_level#] member and completed the STEP 1 of the registration process. </p>
+<p>See the user registration details below: </p>
+<p>User Email: [#user_email#]</p>
+<p>Username: [#user_login#]</p>
+<p>Password: [#user_password#]</p>
+<p>Thanks</p>'
+    ),
+    array(
         'title' => 'Membership Registration email to user',
         'name' => 'hh_new_user',
         'subject' => '',
@@ -11,18 +35,6 @@ $list_membership_mail = array(
     array(
         'title' => 'Membership Registration email to admin',
         'name' => 'hh_new_user_admin',
-        'subject' => '',
-        'content' => '<p>Hey [#to_name#],</p><p>[#frnd_comments#]</p><p>Link: [#post_title#]</p><p>Cheers<br/>[#your_name#]</p>'
-    ),
-    array(
-        'title' => 'Successful membership payment notification to user',
-        'name' => 'hh_success_payment_user',
-        'subject' => '',
-        'content' => '<p>Hey [#to_name#],</p><p>[#frnd_comments#]</p><p>Link: [#post_title#]</p><p>Cheers<br/>[#your_name#]</p>'
-    ),
-    array(
-        'title' => 'Successful membership payment notification to admin',
-        'name' => 'hh_success_payment_admin',
         'subject' => '',
         'content' => '<p>Hey [#to_name#],</p><p>[#frnd_comments#]</p><p>Link: [#post_title#]</p><p>Cheers<br/>[#your_name#]</p>'
     ),
@@ -71,13 +83,13 @@ $list_membership_mail = array(
             if($data[$mail['name'].'_subject'] != ""){
                 $subject = stripslashes($data[$mail['name'].'_subject']);
             }else{
-                $subject = $data[$mail['subject']];
+                $subject = $mail['subject'];
             }
 
             if($data[$mail['name']] != ""){
                 $content = stripslashes($data[$mail['name']]);
             }else{
-                $content = $data[$mail['content']];
+                $content = $mail['content'];
             }
         ?>
         <tr class="<?php echo $mail['name']; ?>-class<?php echo $class; ?>">
@@ -96,7 +108,7 @@ $list_membership_mail = array(
                     <tbody>
                         <tr>
                             <td style="line-height:10px"><label class="form-textfield-label sub-title">Subject</label></td>
-                            <td><input type="text" style="width: 50%;" name="<?php echo $mail['name']; ?>_subject" value="<?php echo $data[$mail['name'].'_subject']; ?>" /></td>
+                            <td><input type="text" style="width: 50%;" name="<?php echo $mail['name']; ?>_subject" value="<?php echo $subject; ?>" /></td>
                         </tr>
                         <tr>
                            <td style="line-height:10px">
