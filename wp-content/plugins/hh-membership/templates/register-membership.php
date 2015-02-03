@@ -58,117 +58,53 @@ do_action( 'templ_before_container_breadcrumb' );  ?>
                                 }else{
                                     $hh_check = true;
                                     global $post;
-                                    if( !$current_user->ID ):
-                                        $user_pass = wp_hash_password( $_POST['confirm_password'] );
-                                        $sanitized_user_login = sanitize_user( $_POST['username'], true );
-                                        $userdata = array(
-                                            'user_pass' => $user_pass,
-                                            'user_login' => $sanitized_user_login,
-                                            'display_name' => $sanitized_user_login,
-                                            'user_email' => $_POST['user_email'],
+                                    $user_pass = wp_hash_password( $_POST['confirm_password'] );
+                                    $sanitized_user_login = sanitize_user( $_POST['username'], true );
+                                    $userdata = array(
+                                        'user_pass' => $user_pass,
+                                        'user_login' => $sanitized_user_login,
+                                        'display_name' => $sanitized_user_login,
+                                        'user_email' => $_POST['user_email'],
+                                    );
+                                    $wpdb->insert( $wpdb->users, $userdata );
+                                    $user_id = (int) $wpdb->insert_id;
+                                    update_user_meta( $user_id, 'first_name', $_POST['first_name'] );
+                                    update_user_meta( $user_id, 'last_name', $_POST['last_name'] );
+                                    //On success
+                                    if( !is_wp_error($user_id) ) {
+                                        $data = get_option('templatic_settings');
+                                        if (!is_array($data)) {
+                                            $data = array();
+                                        }
+                                        $user = get_user_by( 'id', $user_id );
+                                        $current_user = $user;
+                                        $HH_Mail = new HH_Membership_Mail();
+                                        $old_package = get_user_meta( $user_id, 'membership_package_id', true );
+                                        $replace_array = array(
+                                            '[#site_name#]' => home_url(),
+                                            '[#to_name#]' => $_POST['first_name'],
+                                            '[#site_login_url_link#]' => wp_login_url(),
+                                            '[#user_login#]' => $_POST['username'],
+                                            '[#user_password#]' => $_POST['confirm_password'],
                                         );
-                                        $wpdb->insert( $wpdb->users, $userdata );
-                                        $user_id = (int) $wpdb->insert_id;
-                                        update_user_meta( $user_id, 'first_name', $_POST['first_name'] );
-                                        update_user_meta( $user_id, 'last_name', $_POST['last_name'] );
-                                        //On success
-                                        if( !is_wp_error($user_id) ) {
-                                            $data = get_option('templatic_settings');
-                                            if (!is_array($data)) {
-                                                $data = array();
-                                            }
-                                            $user = get_user_by( 'id', $user_id );
-                                            $current_user = $user;
-                                            $HH_Mail = new HH_Membership_Mail();
-                                            $old_package = get_user_meta( $user_id, 'membership_package_id', true );
-                                            if( $old_package ){
-                                                $old_package_data = get_post( $old_package );
-                                                $replace_array = array(
-                                                    '[#site_name#]' => home_url(),
-                                                    '[#to_name#]' => $user->dislay_name,
-                                                    '[#old_membership_level#]' => $old_package_data->post_title,
-                                                    '[#new_membership_level#]' => get_the_title()
-                                                );
-                                                $admin_msg = $HH_Mail->replace_message($replace_array, $data['hh_cancel_to_user']);
-                                                $user_msg = $HH_Mail->replace_message($replace_array, $data['hh_upgrade_admin']);
-                                                $HH_Mail->send_mail($user->user_email, $data['hh_cancel_to_user_subject'], $user_msg);
-                                                $HH_Mail->send_mail(get_option("admin_email"), $data['hh_upgrade_admin_subject'], $admin_msg);
-                                            }else {
-                                                $replace_array = array(
-                                                    '[#site_name#]' => home_url(),
-                                                    '[#to_name#]' => $_POST['first_name'],
-                                                    '[#site_login_url_link#]' => wp_login_url(),
-                                                    '[#user_login#]' => $_POST['username'],
-                                                    '[#user_password#]' => $_POST['confirm_password'],
-                                                    '[#membership_level#]' => get_the_title()
-                                                );
-                                                $admin_msg = $HH_Mail->replace_message($replace_array, $data['hh_new_user_admin']);
-                                                $user_msg = $HH_Mail->replace_message($replace_array, $data['hh_new_user']);
-                                                $HH_Mail->send_mail($user->user_email, $data['hh_new_user_subject'], $user_msg);
-                                                $HH_Mail->send_mail(get_option("admin_email"), $data['hh_new_user_admin_subject'], $admin_msg);
-                                            }
-                                            update_user_meta( $user_id, 'membership_package_id', $post->ID );
-                                            update_user_meta( $user_id, 'membership_package_register', date( "Y-m-d") );
-                                            if( !get_current_user_id() ){
-                                                $datasigon = array(
-                                                    'user_login' => $_POST['username'],
-                                                    'user_password' => $_POST['confirm_password'],
-                                                );
-                                                wp_signon( $datasigon );
-                                            }
+                                        $admin_msg = $HH_Mail->replace_message($replace_array, $data['hh_step1_user']);
+                                        $user_msg = $HH_Mail->replace_message($replace_array, $data['hh_step1_admin']);
+                                        $HH_Mail->send_mail($user->user_email, $data['hh_step1_user_subject'], $user_msg);
+                                        $HH_Mail->send_mail(get_option("admin_email"), $data['hh_step1_admin_subject'], $admin_msg);
+
+                                        update_user_meta( $user_id, 'membership_package_id', $post->ID );
+                                        update_user_meta( $user_id, 'membership_package_register', date( "Y-m-d") );
+                                        if( !get_current_user_id() ){
+                                            $datasigon = array(
+                                                'user_login' => $_POST['username'],
+                                                'user_password' => $_POST['confirm_password'],
+                                            );
+                                            wp_signon( $datasigon );
                                         }
-                                        wp_signon( array( 'user_login'=> $sanitized_user_login, 'user_password'=>$_POST['confirm_password'] ) );
-                                        wp_redirect( add_query_arg( array('action'=>'payment-method'), get_the_permalink()) );
-                                        exit();
-                                    else:
-                                        $user_id = $current_user->ID;
-                                        //On success
-                                        if( !is_wp_error($user_id) ) {
-                                            $data = get_option('templatic_settings');
-                                            if (!is_array($data)) {
-                                                $data = array();
-                                            }
-                                            $user = get_user_by( 'id', $user_id );
-                                            $current_user = $user;
-                                            $HH_Mail = new HH_Membership_Mail();
-                                            $old_package = get_user_meta( $user_id, 'membership_package_id', true );
-                                            if( $old_package ){
-                                                $old_package_data = get_post( $old_package );
-                                                $replace_array = array(
-                                                    '[#site_name#]' => home_url(),
-                                                    '[#to_name#]' => $user->dislay_name,
-                                                    '[#old_membership_level#]' => $old_package_data->post_title,
-                                                    '[#new_membership_level#]' => get_the_title()
-                                                );
-                                                $admin_msg = $HH_Mail->replace_message($replace_array, $data['hh_cancel_to_user']);
-                                                $user_msg = $HH_Mail->replace_message($replace_array, $data['hh_upgrade_admin']);
-                                                $HH_Mail->send_mail($user->user_email, $data['hh_cancel_to_user_subject'], $user_msg);
-                                                $HH_Mail->send_mail(get_option("admin_email"), $data['hh_upgrade_admin_subject'], $admin_msg);
-                                            }else {
-                                                $replace_array = array(
-                                                    '[#site_name#]' => home_url(),
-                                                    '[#to_name#]' => $_POST['first_name'],
-                                                    '[#site_login_url_link#]' => wp_login_url(),
-                                                    '[#user_login#]' => $_POST['username'],
-                                                    '[#user_password#]' => $_POST['confirm_password'],
-                                                    '[#membership_level#]' => get_the_title()
-                                                );
-                                                $admin_msg = $HH_Mail->replace_message($replace_array, $data['hh_new_user_admin']);
-                                                $user_msg = $HH_Mail->replace_message($replace_array, $data['hh_new_user']);
-                                                $HH_Mail->send_mail($user->user_email, $data['hh_new_user_subject'], $user_msg);
-                                                $HH_Mail->send_mail(get_option("admin_email"), $data['hh_new_user_admin_subject'], $admin_msg);
-                                            }
-                                            update_user_meta( $user_id, 'membership_package_id', $post->ID );
-                                            update_user_meta( $user_id, 'membership_package_register', date( "Y-m-d") );
-                                            if( !get_current_user_id() ){
-                                                $datasigon = array(
-                                                    'user_login' => $_POST['username'],
-                                                    'user_password' => $_POST['confirm_password'],
-                                                );
-                                                wp_signon( $datasigon );
-                                            }
-                                        }
-                                    endif;
+                                    }
+                                    wp_signon( array( 'user_login'=> $sanitized_user_login, 'user_password'=>$_POST['confirm_password'] ) );
+                                    wp_redirect( add_query_arg( array('action'=>'payment-method'), get_the_permalink()) );
+                                    exit();
                                 }
                             }
                             if( isset( $_POST['checkout'] ) ){
