@@ -520,25 +520,45 @@ class HH_Membership_Tab{
                 break;
             }
         }
+        if( isset( $_POST['yes']) ){
+            self::cancel_membership_package();
+            ?>
+            <h2>Your membership cancellation request successful.</h2>
+            <h2>You are now free user</h2>
+            <p>
+                We're sorry for going to have let you go. We hope you will come back again for your membership in near future
+            </p>
+            <p>
+                Thanks!
+            </p>
+            <?php
+            return;
+        }
+        if( isset( $_POST['cancel-membership'] ) ){
+            ?>
+            <div class="cancel-membership">
+                <h1>Are you want to Cancel your current Membership?</h1>
+                <span class="">Note:</span>
+                <ol>
+                    <li>Please not that, if you cancel your membership you will lose view access of premium contents and you will be changed to Free user</li>
+                </ol>
+                <form name="" action="" method="post">
+                    <input type="submit" name="back" value="Back" class="button">
+                    <input type="submit" name="yes" value="Yes" class="button">
+                </form>
+            </div>
+            <?php
+            return;
+        }
         ?>
         <div class="upgrade-box">
+            <form name="" action="" method="post">
             <a href="<?php echo add_query_arg( array( 'action' => 'upgrade', 'user_id' => get_current_user_id()), $permalink ); ?>" class="button upgrade">Upgrade/Downgrade Membership</a>
             <?php $memebership = get_user_meta( $current_user, 'membership_package_id', true ); if( !empty( $memebership ) ): ?>
-            <a href="<?php echo add_query_arg( array('cancel-membership'=>true ), $_SERVER['REQUES_URI'] ); ?>" class="button cancel-mbship">Cancel Membership</a>
+                <input name="cancel-membership" class="button" type="submit" value="Cancel Membership"/>
             <?php endif; ?>
+            </form>
         </div>
-        <script type="text/javascript">
-            jQuery(document).ready(function($){
-                $(".cancel-mbship").click(function (){
-                    var r = confirm("<?php _e( 'Do you want cancel your membership?', __HHTEXTDOMAIN__ ); ?>");
-                    if( r == true ){
-                        return true;
-                    }else{
-                        return false;
-                    }
-                });
-            });
-        </script>
         <?php
     }
 
@@ -546,30 +566,28 @@ class HH_Membership_Tab{
      * Cancel Membership Package
      */
     function cancel_membership_package(){
-        if( isset( $_REQUEST['cancel-membership']) && $_REQUEST['cancel-membership'] ){
-            $current_user = get_current_user_id();
-            $user = new WP_User( $current_user );
-            if ( !current_user_can( 'manage_options' ) ) {
-                $user->set_role( 'subscriber' );
-            }
-            $data = get_option('templatic_settings');
-            $HH_Mail = new HH_Membership_Mail();
-            $membership_package = get_user_meta( $current_user, 'membership_package_id', true );
-            $membership_package = get_post( $membership_package );
-            $replace_array = array(
-                '[#site_name#]' => home_url(),
-                '[#to_name#]' => $user->dislay_name,
-                '[#user_login#]' => $user->user_login,
-                '[#user_email#]' => $user->user_email,
-                '[#old_membership_level#]'=> $membership_package->post_title,
-                '[#new_membership_level#]'=> 'Subscriber',
-            );
-            delete_user_meta( $current_user, 'membership_package_id' );
-            $admin_msg = $HH_Mail->replace_message($replace_array, $data['hh_upgrade_user']);
-            $user_msg = $HH_Mail->replace_message($replace_array, $data['hh_cancel_to_admin']);
-            $HH_Mail->send_mail($user->user_email, $data['hh_upgrade_user_subject'], $user_msg);
-            $HH_Mail->send_mail(get_option("admin_email"), $data['hh_cancel_to_admin_subject'], $admin_msg);
+        $current_user = get_current_user_id();
+        $user = new WP_User( $current_user );
+        if ( !current_user_can( 'manage_options' ) ) {
+            $user->set_role( 'subscriber' );
         }
+        $data = get_option('templatic_settings');
+        $HH_Mail = new HH_Membership_Mail();
+        $membership_package = get_user_meta( $current_user, 'membership_package_id', true );
+        $membership_package = get_post( $membership_package );
+        $replace_array = array(
+            '[#site_name#]' => home_url(),
+            '[#to_name#]' => $user->dislay_name,
+            '[#user_login#]' => $user->user_login,
+            '[#user_email#]' => $user->user_email,
+            '[#old_membership_level#]'=> $membership_package->post_title,
+            '[#new_membership_level#]'=> 'Subscriber',
+        );
+        delete_user_meta( $current_user, 'membership_package_id' );
+        $admin_msg = $HH_Mail->replace_message($replace_array, $data['hh_upgrade_user']);
+        $user_msg = $HH_Mail->replace_message($replace_array, $data['hh_cancel_to_admin']);
+        $HH_Mail->send_mail($user->user_email, $data['hh_upgrade_user_subject'], $user_msg);
+        $HH_Mail->send_mail(get_option("admin_email"), $data['hh_cancel_to_admin_subject'], $admin_msg);
     }
     function hh_setting_options(){
         if( isset( $_POST['hh_save_email_template'] ) ){
@@ -607,10 +625,10 @@ class HH_Membership_Tab{
                 '[#payable_amt#]' => $payable_amount,
                 '[#transaction_details#]' => $transaction_detail,
             );
-            $admin_msg = $HH_Mail->replace_message( $replace_array, $data['hh_new_user']);
-            $user_msg = $HH_Mail->replace_message( $replace_array, $data['hh_new_admin']);
-            $HH_Mail->send_mail( $user_details->user_email, $data['hh_success_payment_user_subject'], $user_msg );
-            $HH_Mail->send_mail( get_option( "admin_email" ), $data['hh_success_payment_admin_subject'], $admin_msg );
+            $admin_msg = $HH_Mail->replace_message( $replace_array, $data['hh_upgrade_user']);
+            $user_msg = $HH_Mail->replace_message( $replace_array, $data['hh_upgrade_admin']);
+            $HH_Mail->send_mail( $user_details->user_email, $data['hh_upgrade_user_subject'], $user_msg );
+            $HH_Mail->send_mail( get_option( "admin_email" ), $data['hh_upgrade_admin_subject'], $admin_msg );
             return;
         }
         $transaction_detail = '';
