@@ -18,7 +18,7 @@ class HH_Membership_Tab{
         add_action( 'templatic_monetizations_tabs', array( $this, 'add_tab_link' ), 10, 2 );
         add_action( 'monetization_tabs_content', array( $this, 'membership_panel' ), 10, 2 );
         add_action( 'init', array( $this, 'update_membership_package' ), 10, 2 );
-        add_action( 'init', array( $this, 'cancel_membership_package' ), 10, 2 );
+        //add_action( 'init', array( $this, 'cancel_membership_package' ), 10, 2 );
         add_action( 'init', array( $this, 'register_post_type' ),1 );
         add_filter( 'template_include', array( $this, 'template_include') );
         add_action( 'wp_enqueue_scripts', array( $this, 'front_script' ) );
@@ -566,11 +566,11 @@ class HH_Membership_Tab{
      * Cancel Membership Package
      */
     function cancel_membership_package(){
+        if( !get_current_user_id() ) return;
+        if( current_user_can( 'manage_options' ) ) return;
         $current_user = get_current_user_id();
         $user = new WP_User( $current_user );
-        if ( !current_user_can( 'manage_options' ) ) {
-            $user->set_role( 'subscriber' );
-        }
+        $user->set_role( 'subscriber' );
         $data = get_option('templatic_settings');
         $HH_Mail = new HH_Membership_Mail();
         $membership_package = get_user_meta( $current_user, 'membership_package_id', true );
@@ -613,12 +613,14 @@ class HH_Membership_Tab{
         global $payable_amount,$wpdb;
         $transaction_tabel = $wpdb->prefix."transactions";
         $user_id = $wpdb->get_var("select user_id from $transaction_tabel order by trans_id DESC limit 1");
+        $transactionID = $wpdb->get_var("select trans_id from $transaction_tabel order by trans_id DESC limit 1");
         $user_details = get_userdata( $user_id );
         $data = get_option('templatic_settings');
         $old = get_user_meta( $user_id, 'membership_package_id', true );
         $HH_Mail = new HH_Membership_Mail();
+        $transaction_detail = get_order_detailinfo_price_package($transactionID);
         if( !empty( $old ) ){
-            $transaction_detail = '';
+
             $replace_array = array(
                 '[#site_name#]' => home_url(),
                 '[#to_name#]' => $user_details->display_name,
@@ -631,7 +633,6 @@ class HH_Membership_Tab{
             $HH_Mail->send_mail( get_option( "admin_email" ), $data['hh_upgrade_admin_subject'], $admin_msg );
             return;
         }
-        $transaction_detail = '';
         $replace_array = array(
             '[#site_name#]' => home_url(),
             '[#to_name#]' => $user_details->display_name,
@@ -642,6 +643,197 @@ class HH_Membership_Tab{
         $user_msg = $HH_Mail->replace_message( $replace_array, $data['hh_new_admin']);
         $HH_Mail->send_mail( $user_details->user_email, $data['hh_success_payment_user_subject'], $user_msg );
         $HH_Mail->send_mail( get_option( "admin_email" ), $data['hh_success_payment_admin_subject'], $admin_msg );
+    }
+
+    public static function templatic_payment_option_preview_page()
+    {
+        global $wpdb,$monetization;
+        $paymentsql = "select * from $wpdb->options where option_name like 'payment_method_%' order by option_id";
+        $paymentinfo = $wpdb->get_results($paymentsql);
+        $one_payment='';
+        if($paymentinfo)
+        {
+            $paymentOptionArray = array();
+            $paymethodKeyarray = array();
+            $i=0;
+            foreach($paymentinfo as $paymentinfoObj)
+            {
+                $paymentInfo = unserialize($paymentinfoObj->option_value);
+                if($paymentInfo['isactive'])
+                {
+                    $paymethodKeyarray[] = $paymentInfo['key'];
+                    $paymentOptionArray[$paymentInfo['display_order']][] = $paymentInfo;
+                    $i++;
+                }
+            }
+            if($i==1):?>
+                <h5 class="payment_head">
+                    <?php
+                    $one_payment=1;
+                    $pay_with_title = 'Pay With';
+                    if(function_exists('icl_register_string')){
+                        icl_register_string(ADMINDOMAIN,$pay_with_title,$pay_with_title);
+                    }
+
+                    if(function_exists('icl_t')){
+                        $pay_with_title1 = icl_t(ADMINDOMAIN,$pay_with_title,$pay_with_title);
+                    }else{
+                        $pay_with_title1 = __($pay_with_title,ADMINDOMAIN);
+                    }
+                    echo apply_filters('tevolution_payment_title',$pay_with_title1);
+                    ?>
+                </h5>
+            <?php else:?>
+                <h5 class="payment_head">
+                    <?php
+                    $select_payment_method_title = SELECT_PAY_MEHTOD_TEXT;
+                    if(function_exists('icl_register_string')){
+                        icl_register_string(ADMINDOMAIN,$select_payment_method_title,$select_payment_method_title);
+                    }
+
+                    if(function_exists('icl_t')){
+                        $select_payment_method_title1 = icl_t(ADMINDOMAIN,$select_payment_method_title,$select_payment_method_title);
+                        echo apply_filters('tevolution_payment_title',$select_payment_method_title1);
+                    }else{
+                        echo apply_filters('tevolution_payment_title',__('Select Payment Method',DOMAIN));
+                    }
+
+                    ?>
+                </h5>
+            <?php
+            endif;
+            echo '<ul class="payment_method">';
+            ksort($paymentOptionArray);
+            if($paymentOptionArray)
+            {
+                foreach($paymentOptionArray as $key=>$paymentInfoval)
+                {
+                    if( $paymentInfoval[0]['key'] == 'prebanktransfer') continue;
+                    $count_payopts = count($paymentOptionArray);
+                    for($i=0;$i<count($paymentInfoval);$i++)
+                    {
+
+                        $paymentInfo = $paymentInfoval[$i];
+                        $jsfunction = 'onclick="showoptions(this.value);"';
+                        $chked = '';
+                        if($key==1)
+                        {
+                            $chked = 'checked="checked"';
+                        }elseif($count_payopts == 1 && $paymentInfo['key'] == 'prebanktransfer' ){
+                            $chked = 'checked="checked"';
+                        }
+                        $disable_input = false;
+                        $payment_display_name = "";
+                        if(isset($_SESSION['custom_fields']['package_select']) && isset($_SESSION['custom_fields']['total_price']) )
+                            $listing_price_info = $monetization->templ_get_price_info($_SESSION['custom_fields']['package_select'],$_SESSION['custom_fields']['total_price']);
+                        $payment_display_name = $paymentInfo['name'];
+                        ?>
+                        <li id="<?php echo $paymentInfo['key'];?>">
+                            <label>
+                                <?php if(count($paymentOptionArray) > 1)
+                                {?>
+                                    <input <?php echo $jsfunction;?>  type="radio" value="<?php echo $paymentInfo['key'];?>" id="<?php echo $paymentInfo['key'];?>_id" name="paymentmethod" <?php echo $chked; if($disable_input){echo "disabled=true";}?> />
+                                <?php }else{?>
+                                    <input <?php echo $jsfunction;?>  type="radio" value="<?php echo $paymentInfo['key'];?>" id="<?php echo $paymentInfo['key'];?>_id" name="paymentmethod" checked style="display:none" />
+                                <?php }?>
+                                <?php
+                                if(function_exists('icl_register_string')){
+                                    $context = DOMAIN;
+                                    icl_register_string($context,$payment_display_name,$payment_display_name);
+                                }
+                                if(function_exists('icl_t')){
+                                    $payment_display_name = icl_t(DOMAIN,$payment_display_name,$payment_display_name);
+                                }
+                                else
+                                {
+                                    $payment_display_name = sprintf(__('%1$s',DOMAIN), __($payment_display_name,DOMAIN));
+                                }
+                                echo $payment_display_name;
+                                ?>
+                            </label>
+                        </li>
+                    <?php
+                    }
+                }
+            }else
+            {
+                ?>
+                <li><?php echo NO_PAYMENT_METHOD_MSG;?></li>
+            <?php
+            }
+
+            ?>
+
+            </ul>
+            <?php
+            if($paymentOptionArray)
+            {
+                echo "<div class='payment_method payment_credit_card_info'>";
+                foreach($paymentOptionArray as $key=>$paymentInfoval)
+                {
+                    $count_payopts = count($paymentOptionArray);
+                    for($i=0;$i<count($paymentInfoval);$i++)
+                    {
+
+                        $paymentInfo = $paymentInfoval[$i];
+                        $jsfunction = 'onclick="showoptions(this.value);"';
+                        $chked = '';
+                        if($key==1 || $one_payment==1)
+                        {
+                            $chked = 'checked="checked"';
+                        }elseif($count_payopts == 1 && $paymentInfo['key'] == 'prebanktransfer' ){
+                            $chked = 'checked="checked"';
+                        }
+                        $disable_input = false;
+                        $payment_display_name = "";
+                        if(isset($_SESSION['custom_fields']['package_select']) && isset($_SESSION['custom_fields']['total_price']) )
+                            $listing_price_info = $monetization->templ_get_price_info($_SESSION['custom_fields']['package_select'],$_SESSION['custom_fields']['total_price']);
+                        $payment_display_name = $paymentInfo['name'];
+
+                        if(file_exists(get_tmpl_plugin_directory() . 'Tevolution-'.$paymentInfo['key'].'/includes/'.$paymentInfo['key'].'.php'))
+                        {
+                            include(get_tmpl_plugin_directory() . 'Tevolution-'.$paymentInfo['key'].'/includes/'.$paymentInfo['key'].'.php');
+                        }
+
+
+                        if(file_exists(TEMPL_PAYMENT_FOLDER_PATH.$paymentInfo['key'].'/'.$paymentInfo['key'].'.php'))
+                        {
+
+                            include_once(TEMPL_PAYMENT_FOLDER_PATH.$paymentInfo['key'].'/'.$paymentInfo['key'].'.php');
+
+                        }
+                    }
+                }
+                echo '</div>';
+            }
+
+        }
+        ?>
+        <script type="text/javascript">
+            /* <![CDATA[ */
+            function showoptions(paymethod)
+            {
+                <?php for($i=0;$i<count($paymethodKeyarray);$i++){?>
+                showoptvar = '<?php echo $paymethodKeyarray[$i]?>options';
+                if(document.getElementById(showoptvar))
+                {
+                    document.getElementById(showoptvar).style.display = 'none';
+                    if(paymethod=='<?php echo $paymethodKeyarray[$i]?>'){
+                        document.getElementById(showoptvar).style.display = '';
+                    }
+                }
+                <?php }?>
+            }
+
+            <?php for($i=0;$i<count($paymethodKeyarray);$i++){?>
+            if(document.getElementById('<?php echo $paymethodKeyarray[$i];?>_id').checked)
+            {
+                showoptions(document.getElementById('<?php echo $paymethodKeyarray[$i];?>_id').value);
+            }
+            <?php }	?>
+            /* ]]> */
+        </script>
+    <?php
     }
 }
 new HH_Membership_Tab();

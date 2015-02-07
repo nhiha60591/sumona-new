@@ -103,11 +103,34 @@ do_action( 'templ_before_container_breadcrumb' );  ?>
                                         }
                                     }
                                     wp_signon( array( 'user_login'=> $sanitized_user_login, 'user_password'=>$_POST['confirm_password'] ) );
-                                    wp_redirect( add_query_arg( array('action'=>'payment-method'), get_the_permalink()) );
+                                    wp_redirect( add_query_arg( array('action'=>'payment-method', 'type'=>'new-membership'), get_the_permalink()) );
                                     exit();
                                 }
                             }
                             if( isset( $_POST['checkout'] ) ){
+                                if( !isset( $_REQUEST['type'])){
+                                    $data = get_option('templatic_settings');
+                                    if (!is_array($data)) {
+                                        $data = array();
+                                    }
+                                    $user = get_user_by( 'id', $user_id );
+                                    $current_user = $user;
+                                    $HH_Mail = new HH_Membership_Mail();
+                                    $old_package = get_user_meta( $user_id, 'membership_package_id', true );
+                                    $replace_array = array(
+                                        '[#site_name#]' => home_url(),
+                                        '[#to_name#]' => $_POST['first_name'],
+                                        '[#old_membership_level#]' => get_the_title( $old_package ),
+                                        '[#new_membership_level#]' => get_the_title( $post->ID )
+                                    );
+                                    $admin_msg = $HH_Mail->replace_message($replace_array, $data['hh_upgrade_user']);
+                                    $user_msg = $HH_Mail->replace_message($replace_array, $data['hh_upgrade_admin']);
+                                    $HH_Mail->send_mail($user->user_email, $data['hh_upgrade_user_subject'], $user_msg);
+                                    $HH_Mail->send_mail(get_option("admin_email"), $data['hh_upgrade_admin_subject'], $admin_msg);
+
+                                    update_user_meta( $user_id, 'membership_package_id', $post->ID );
+                                    update_user_meta( $user_id, 'membership_package_register', date( "Y-m-d") );
+                                }
                                 $payable_amount = get_post_meta( $post->ID, 'package_amount', true );
                                 $trans_id = insert_transaction_detail($_POST['paymentmethod'],$post->ID,0,1);
                                 insert_update_users_packageperlist( get_the_ID(), $_POST, $trans_id);
@@ -153,7 +176,7 @@ do_action( 'templ_before_container_breadcrumb' );  ?>
                                         <?php endforeach; ?>
                                     <?php endif; ?>
                                     <div class="method">
-                                        <?php templatic_payment_option_preview_page(); ?>
+                                        <?php HH_Membership_Tab::templatic_payment_option_preview_page(); ?>
                                     </div>
                                     <input type="submit" name="checkout" value="Checkout">
                                 </form>
